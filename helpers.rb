@@ -4,7 +4,7 @@ class Helpers
 
 	def getAgent()
 		agent = Mechanize.new
-		agent.user_agent_alias = 'Mac Safari'
+		agent.user_agent_alias = 'Windows Mozilla'
 		return agent
 	end
 	
