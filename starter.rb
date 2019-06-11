@@ -1,7 +1,7 @@
 require "mechanize"
 require_relative "helpers"
 
-def parseArguments()
+def getArticles()
     if ARGV.length < 1
         print "Not Enough Arguments\n"
     else
@@ -18,21 +18,34 @@ def parseArguments()
 
         # Get all links to Volumes published after 2008
         volumes = singleview_page.links_with(:text => %r{(2009|201[0-9])})
+
+        # This line may need reworked, but it works for now.
         volumes = volumes.drop(4)
+
+        # Array to hold article links
+        articles = []
 
         # Follow Volume links and navigate to corresponding Table of Contents
         volumes.each do |vol|
+
+            # Visit volume
             vol_page = vol.click
-            print vol_toc = vol_page.links_with(:href => %r{citations}).count
 
-            /vol_toc = vol_page.links.find_all{|l| l.attributes.parent.name == "span" and l.attributes.parent.parent.name == "td"}
+            # Grab all Article links
+            vol_toc = vol_page.links_with(:href => %r{citation\.cfm\?id=[0-9]*})
+            vol_toc = vol_toc.select {|link| link.attributes.values.count == 1 and link.text != 'tabbed view' and !link.text.include? "Editorial"}
 
-            vol_toc.links_with(:href => 'citations')
+            # Place each article link into the article array
             vol_toc.each do |link|
-                puts link
-            end/
+                articles << link
+            end
         end
+
+        # Return the array of article links
+        return articles
     end
 end
 
-parseArguments()
+getArticles().each do |link|
+  puts link
+end
