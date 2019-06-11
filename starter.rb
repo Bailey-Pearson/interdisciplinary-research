@@ -1,5 +1,7 @@
 require "mechanize"
 require_relative "helpers"
+require_relative "article"
+require_relative "author"
 
 def getArticles()
     if ARGV.length < 1
