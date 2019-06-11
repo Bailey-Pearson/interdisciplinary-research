@@ -5,7 +5,7 @@ class Article
   attr_reader :citedBy
   attr_reader :authors
 
-  def initialize(name,refs,citedBy=[],authors)
+  def initialize(name,refs,citedBy,authors)
     @name = name
     @references = refs
     @citedBy = citedBy
