@@ -10,6 +10,10 @@ def main()
     issueLinks = []
     # The list of links to all articles that are within the issues
     articleLinks = []
+    # The list of article objects
+    articles = []
+    # The list of author objects
+    authors = []
 
 
     # Open the browser connection
@@ -33,7 +37,7 @@ def main()
     currentIssue = 0
     issueLinks.each do |issueLink|
         currentIssue += 1
-        print "Issue " + currentIssue + " out of " + totalIssues + "\n\n"
+        print "Issue " + currentIssue.to_s + " out of " + totalIssues.to_s + "\n\n"
         articleLinks = getArticleLinks(issueLink, articleLinks, browser)
     end
 
@@ -46,8 +50,8 @@ def main()
     currentArticle = 0
     articleLinks.each do |article|
         currentArticle += 1
-        print "Article " + currentArticle + " out of " + totalArticles + "\n\n"
-        getInformation(article)
+        print "Article " + currentArticle.to_s + " out of " + totalArticles.to_s + "\n\n"
+        getInformation(article, articles, authors, browser)
     end
     
     # Close the browser at the end of the session
@@ -87,10 +91,53 @@ def getArticleLinks(issueLink, articleLinks, browser)
     browser.element(class: ["results-actions", "hide-mobile"]).wait_until(&:present?)
     browser.links.each do |article|
         if article.href.include?("document") && !article.href.include?("media") && !article.href.include?("citations")
-            articleLinks << article.href
+            articleLinks << [article.href, article.text]
         end
     end
     return articleLinks
+end
+
+def getInformation(articleLink, articlesList, authorsList, browser)
+    name = articleLink[1]
+    references = []
+    citedBy = []
+    authors = []
+
+    # Go to the article and wait for it to load
+    browser.goto(articleLink[0])
+    browser.element(class: ["document-header-title-container", "col"]).wait_until(&:present?)
+
+    #Get Authors
+    authorDiv = browser.div(class: "authors-info-container")
+    authorLinks = authorDiv.as()
+    authorLinks.each do |author|
+        if !author.text.empty?
+            authors << author.text
+        end
+    end
+
+    # Open the references tab
+    browser.link(text: 'References').fire_event(:onclick)
+    browser.element(id: "references").wait_until(&:present?)
+    referenceDivs = browser.divs(class: "reference-container")
+
+    # Collect the references from the divs
+    referenceDivs.each do |referenceDiv|
+        spans = referenceDiv.spans()
+        spanCounter = 0
+        spans.each do |span|
+            spanCounter += 1
+            if spanCounter == 2 && !span.text.empty?
+                references << span.text
+            end
+        end
+    end
+
+    print "Article Title: "  + name + "\nReferences: "
+    pp references
+    print "\n Authors: "
+    pp authors
+    print "\n\n\n"
 end
 
 main()
