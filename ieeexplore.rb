@@ -1,5 +1,6 @@
 require 'webdrivers'
 require "watir"
+require 'pp'
 
 def main()
     browser = Watir::Browser.new
@@ -20,15 +21,16 @@ def main()
     issues = getIssues(issues, browser)
 
     issues.each do |issue|
-        url = issue.href
-        if url.include?("ieeexplore")
-            url = issue.href
-            print issue.text
-            print "\n"
-            print url
-            print "\n\n"
-            # getArticles(issue, articles, browser)
-        end
+        articles = getArticles(issue, articles, browser)
+    end
+
+    print "Total Article Count: "
+    print articles.count
+    print "\n\n\n"
+
+    articles.each do |article|
+        print article
+        print "\n\n"
     end
     
     browser.close
@@ -40,7 +42,7 @@ def getIssues(issues, browser)
             volume.click
             browser.links.each do |issue|
                 if issue.text.include?("Issue") && !issue.text.include?("Current") && !issue.text.include?("All")
-                    issues << issue
+                    issues << issue.href
                 end
             end
         end
@@ -49,21 +51,16 @@ def getIssues(issues, browser)
 end
 
 def getArticles(issue, articles, browser)
-    url = issue.href
-    print issue.text
-    print "\n"
-    print url
-    print "\n\n"
-    # if url.include?("xpl")
-    #     browser.goto(url)
-    #     browser.element(class: ["results-actions", "hide-mobile"]).wait_until(&:present?)
-    #     browser.links.each do |article|
-    #         if article.href.include?("document") && !article.href.include?("media") && !article.href.include?("citations")
-    #             print article.text
-    #             print "\n"
-    #         end
-    #     end
-    # end
+    print "getting url of article \n"
+    url = issue
+    browser.goto(url)
+    browser.element(class: ["results-actions", "hide-mobile"]).wait_until(&:present?)
+    browser.links.each do |article|
+        if article.href.include?("document") && !article.href.include?("media") && !article.href.include?("citations")
+            articles << article.href
+        end
+    end
+    return articles
 end
 
 main()
