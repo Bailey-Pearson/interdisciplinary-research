@@ -33,23 +33,18 @@ def getArticles(browser,volumes)
   # For each volume
   volumes.each do |vol|
 
-    puts "\n"
-    puts "Visiting href: " + vol
-
     # Visit volume
     browser.goto(vol)
-
-    puts "Arrived at volume: " + browser.title
 
     # Grab all Article links
     vol_toc = browser.links(href: %r{citation\.cfm\?id=[0-9]*})
 
     # Filter out editorials and any extra non-article links
-    vol_toc = vol_toc.select {|link| link.attribute_list.count == 1 and link.text != 'tabbed view' and !link.text.include? "Editorial"}
+    vol_toc = vol_toc.select {|link|
+      link.attribute_list.count == 1 and link.text != 'tabbed view' and !link.text.include? "Editorial"}
 
     # Place each article link into the article array
     vol_toc.each do |link|
-      puts "Adding to array link: " + link.text + "\n"
       articles << [link.text,link.href]
     end
 
@@ -62,7 +57,19 @@ end
 
 def encapArticleData(browser,articles)
 
+  # For each article
+  articles.each do |art|
 
+    # Visit article
+    browser.goto(art[1])
+
+    # Compile list of article's authors
+    authors = browser.links(href:  %r{author_page\.cfm\?id=[0-9]*})
+
+    # Compile list of article's resources (refs)
+
+
+  end
 
 end
 
