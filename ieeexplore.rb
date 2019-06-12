@@ -1,6 +1,8 @@
 require 'webdrivers'
 require "watir"
 require 'pp'
+require_relative "author.rb"
+require_relative "article.rb"
 
 #  main()
 #  This method creates the browsers connection to the website
@@ -12,8 +14,9 @@ def main()
     articleLinks = []
     # The list of article objects
     articles = []
+    test = Author.new("Marc Palyart", ["just testin"])
     # The list of author objects
-    authors = []
+    authors = [test]
 
 
     # Open the browser connection
@@ -51,9 +54,13 @@ def main()
     articleLinks.each do |article|
         currentArticle += 1
         print "Article " + currentArticle.to_s + " out of " + totalArticles.to_s + "\n\n"
-        getInformation(article, articles, authors, browser)
+        articles, authors = getInformation(article, articles, authors, browser)
     end
     
+    print "Articles: \n"
+    pp articles
+    print "\n Authors: \n"
+    pp authors
     # Close the browser at the end of the session
     browser.close
 end
@@ -72,11 +79,12 @@ def getIssueLinks(issueLinks, browser)
             browser.links.each do |issue|
                 if issue.text.include?("Issue") && !issue.text.include?("Current") && !issue.text.include?("All")
                     issueLinks << issue.href
+                    return issueLinks
                 end
             end
         end
     end
-    return issueLinks
+    # return issueLinks
 end
 
 #  getArticleLinks()
@@ -92,6 +100,7 @@ def getArticleLinks(issueLink, articleLinks, browser)
     browser.links.each do |article|
         if article.href.include?("document") && !article.href.include?("media") && !article.href.include?("citations")
             articleLinks << [article.href, article.text]
+            # return articleLinks
         end
     end
     return articleLinks
@@ -106,15 +115,6 @@ def getInformation(articleLink, articlesList, authorsList, browser)
     # Go to the article and wait for it to load
     browser.goto(articleLink[0])
     browser.element(class: ["document-header-title-container", "col"]).wait_until(&:present?)
-
-    #Get Authors
-    authorDiv = browser.div(class: "authors-info-container")
-    authorLinks = authorDiv.as()
-    authorLinks.each do |author|
-        if !author.text.empty?
-            authors << author.text
-        end
-    end
 
     # Open the references tab
     browser.link(text: 'References').fire_event(:onclick)
@@ -133,11 +133,34 @@ def getInformation(articleLink, articlesList, authorsList, browser)
         end
     end
 
-    print "Article Title: "  + name + "\nReferences: "
-    pp references
-    print "\n Authors: "
-    pp authors
-    print "\n\n\n"
+    #Get Authors
+    authorDiv = browser.div(class: "authors-info-container")
+    authorLinks = authorDiv.as()
+    authorLinks.each do |author|
+        if !author.text.empty?
+            if !authorsList.any?{|knownAuthor| knownAuthor.name == author.text}
+                if references.count != 0 && name != ""
+                    authorObject = Author.new(author.text, [name])
+                    authorsList << authorObject
+                    authors << authorObject
+                end
+            else
+                if references.count != 0 && name != ""
+                    index = authorsList.find_index {|knownAuthor| knownAuthor.name == author.text}
+                    authorObject = authorsList[index]
+                    authorObject.addArticle(name)
+                    authors << authorObject
+                end
+            end
+        end
+    end
+
+    if references.count != 0 && name != ""
+        article = Article.new(name, references, citedBy, authors)
+        articlesList << article
+    end
+
+    return articlesList, authorsList
 end
 
 main()
