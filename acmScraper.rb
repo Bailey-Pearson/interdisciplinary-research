@@ -57,6 +57,10 @@ end
 
 def encapArticleData(browser,articles)
 
+  # Arrays to hold Article and Author objects
+  articleObjs = []
+  authorObjs = []
+
   # For each article
   articles.each do |art|
 
@@ -64,12 +68,37 @@ def encapArticleData(browser,articles)
     browser.goto(art[1])
 
     # Compile list of article's authors
-    authors = browser.links(href:  %r{author_page\.cfm\?id=[0-9]*})
+    # May need reworked (Mauro Pezze may not always be the editor. Also nothing says the editor can't also author a paper.)
+    auths = browser.links.select{|a| a.title == 'Author Profile Page' and a.text != 'Mauro Pezzè'}
+    authtexts = []
+    auths.each do |auth|
+      authtexts << auth.text
+    end
 
     # Compile list of article's resources (refs)
+    refs = browser.divs.select{|d| d.attribute_list.count == 0 and d.parent.tag_name == 'td'}
+    reftexts = []
+    refs.each do |ref|
+      reftexts << ref.text
+    end
 
+    # Create an Article object for this article
+    article = Article.new(art[0],reftexts,0,authtexts)
+
+    # add it to Article object array
+    articleObjs << article
+
+    # For each author
+    authtexts.each do |auth|
+      # Make an author object and add it to the author object array
+      author = Author.new(auth,art[0])
+      authorObjs << author
+    end
 
   end
+
+  # Return array with articleObjs as first elem and authorObjs as second elem
+  return [articleObjs,authorObjs]
 
 end
 
@@ -79,4 +108,14 @@ browser.goto "https://dl.acm.org/citation.cfm?id=J790"
 
 volumes = getVolumes(browser)
 articles = getArticles(browser,volumes)
+articleData = encapArticleData(browser,articles)
+
+articleData[0].each do |art|
+  puts "\n" + art.name
+end
+
+articleData[1].each do |auth|
+  puts "\n" + auth.name
+end
+
 
