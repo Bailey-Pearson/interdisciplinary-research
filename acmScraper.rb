@@ -76,7 +76,14 @@ def encapArticleData(browser,articles)
     end
 
     # Compile list of article's resources (refs)
-    refs = browser.divs.select{|d| d.attribute_list.count == 0 and d.parent.tag_name == 'td'}
+    refs = browser.divs.select{|d| d.attribute_list.count == 0 and d.parent.tag_name == 'td' and
+      !d.parent.parent.parent.parent.previous_sibling.text.include? "Citations"}
+
+    # Don't need articles with no references
+    unless refs.count > 0
+      next
+    end
+
     reftexts = []
     refs.each do |ref|
       reftexts << ref.text
@@ -138,8 +145,6 @@ def runAmber(links)
   browser.link(text: 'single page view').click
 
   articles = getArticles(browser,links)
-
-
   articleData = encapArticleData(browser,articles)
 
   articleData[0].each do |art|
@@ -176,5 +181,5 @@ end
 
 # Choose which one to run:
 # runAmber(links)
-# runTaylor()
+runTaylor()
 
