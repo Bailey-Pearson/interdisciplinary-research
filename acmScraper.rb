@@ -174,6 +174,7 @@ def runTaylor
 end
 
 
+# Choose which one to run:
 # runAmber(links)
 # runTaylor()
 
