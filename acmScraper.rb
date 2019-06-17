@@ -66,14 +66,14 @@ def parseRefForTitle(reference)
 
   # Iterate over string
   reference.split("").each do |c|
-    unless periods != 2
-      unless c == "."
-        refTitle << c
-      else
+    if periods == 2
+      if c == "."
         ++periods
+      else
+        refTitle << c
       end
     else
-      unless prevChar.to_c.in?('A'..'Z')
+      unless prevChar === prevChar.capitalize
         if c == "."
           ++periods
         end
@@ -92,28 +92,31 @@ def storeArticleData(browser,articles)
   db = SQLite3::Database.new( "irse.db" )
 
   # Insert Queries
-  insertArticle = "INSERT INTO ARTICLE(title) VALUES (?)"
-  insertAuthor = "INSERT INTO AUTHOR(name) VALUES (?)"
-  insertReference = "INSERT INTO REFERENCE(title, citation) VALUES (?, ?)"
-  insertWrite = "INSERT INTO WRITE(author, article) VALUES (?, ?)"
-  insertCite = "INSERT INTO CITE(article, reference) VALUES (?, ?)"
+  insertArticle = "INSERT INTO article(title) VALUES (?)"
+  insertAuthor = "INSERT INTO author(name) VALUES (?)"
+  insertReference = "INSERT INTO reference(title, citation) VALUES (?, ?)"
+  insertWrite = "INSERT INTO write(author, article) VALUES (?, ?)"
+  insertCite = "INSERT INTO cite(article, reference) VALUES (?, ?)"
+  checkAuthor = "SELECT * from author where name = ?"
+  checkRefs = "SELECT * from reference where title = ?"
 
   # For each article
   articles.each do |art|
 
     # Insert article into database
-    db.execute(insertArticle, art.text)
+    print art[0] + "\n"
+    db.execute(insertArticle, art[0])
 
     # Visit article
     browser.goto(art[1])
 
     # Compile list of article's authors
     auths = browser.links.select{|a| a.title == 'Author Profile Page' and a.parent.previous_sibling.text != 'Editor'}
-    authtexts = []
     auths.each do |auth|
-      authtexts << auth.text
-      db.execute(insertAuthor, auth.text)
-      db.execute(insertWrite, auth.text, art.text)
+      if (db.execute(checkAuthor, auth.text))
+        db.execute(insertAuthor, auth.text)
+      end
+      db.execute(insertWrite, auth.text, art[0])
     end
 
     # Compile list of article's resources (refs)
@@ -125,12 +128,17 @@ def storeArticleData(browser,articles)
       next
     end
 
-    reftexts = []
     refs.each do |ref|
-      refTitle = parseRefForTitle(ref)
-      reftexts << ref.text
-      db.execute(insertReference, refTitle, ref.text)
-      db.execute(insertCite, art.text, refTitle)
+      if ref.children[0].tag_name == 'a'
+        browser.goto(ref.children[0])
+        refTitle = browser.h1.text
+      else
+        refTitle = parseRefForTitle(ref.text)
+      end
+      if db.execute(checkRefs, refTitle)
+        db.execute(insertReference, refTitle, ref.text)
+      end
+      db.execute(insertCite, art[0], refTitle)
     end
 
   end
@@ -168,19 +176,19 @@ end
 
 def main
 
-  links = ['https://dl.acm.org/citation.cfm?id=3180155', 'https://dl.acm.org/citation.cfm?id=3097368',
-           'https://dl.acm.org/citation.cfm?id=3097368', 'https://dl.acm.org/citation.cfm?id=2884781',
-           'https://dl.acm.org/citation.cfm?id=2818754', 'https://dl.acm.org/citation.cfm?id=2819009',
-           'https://dl.acm.org/citation.cfm?id=2568225', 'https://dl.acm.org/citation.cfm?id=2486788',
-           'https://dl.acm.org/citation.cfm?id=2337223', 'https://dl.acm.org/citation.cfm?id=1806799',
-           'https://dl.acm.org/citation.cfm?id=1810295', 'https://dl.acm.org/citation.cfm?id=1555001',
-           'https://dl.acm.org/citation.cfm?id=1747491', 'https://dl.acm.org/citation.cfm?id=1858996',
-           'https://dl.acm.org/citation.cfm?id=2190078', 'https://dl.acm.org/citation.cfm?id=2351676',
-           'https://dl.acm.org/citation.cfm?id=3107656', 'https://dl.acm.org/citation.cfm?id=2642937',
-           'https://dl.acm.org/citation.cfm?id=2970276', 'https://dl.acm.org/citation.cfm?id=3155562',
-           'https://dl.acm.org/citation.cfm?id=3238147', 'https://dl.acm.org/citation.cfm?id=1595696',
-           'https://dl.acm.org/citation.cfm?id=2491411', 'https://dl.acm.org/citation.cfm?id=2786805',
-           'https://dl.acm.org/citation.cfm?id=3106237', 'https://dl.acm.org/citation.cfm?id=3236024']
+  links = ['https://dl.acm.org/citation.cfm?id=3180155'] #, 'https://dl.acm.org/citation.cfm?id=3097368',
+  #          'https://dl.acm.org/citation.cfm?id=3097368', 'https://dl.acm.org/citation.cfm?id=2884781',
+  #          'https://dl.acm.org/citation.cfm?id=2818754', 'https://dl.acm.org/citation.cfm?id=2819009',
+  #          'https://dl.acm.org/citation.cfm?id=2568225', 'https://dl.acm.org/citation.cfm?id=2486788',
+  #          'https://dl.acm.org/citation.cfm?id=2337223', 'https://dl.acm.org/citation.cfm?id=1806799',
+  #          'https://dl.acm.org/citation.cfm?id=1810295', 'https://dl.acm.org/citation.cfm?id=1555001',
+  #          'https://dl.acm.org/citation.cfm?id=1747491', 'https://dl.acm.org/citation.cfm?id=1858996',
+  #          'https://dl.acm.org/citation.cfm?id=2190078', 'https://dl.acm.org/citation.cfm?id=2351676',
+  #          'https://dl.acm.org/citation.cfm?id=3107656', 'https://dl.acm.org/citation.cfm?id=2642937',
+  #          'https://dl.acm.org/citation.cfm?id=2970276', 'https://dl.acm.org/citation.cfm?id=3155562',
+  #          'https://dl.acm.org/citation.cfm?id=3238147', 'https://dl.acm.org/citation.cfm?id=1595696',
+  #          'https://dl.acm.org/citation.cfm?id=2491411', 'https://dl.acm.org/citation.cfm?id=2786805',
+  #          'https://dl.acm.org/citation.cfm?id=3106237', 'https://dl.acm.org/citation.cfm?id=3236024']
 
 
   # Ask user for input
@@ -198,7 +206,9 @@ def main
 
   if choice.to_i == 2
     runTaylor
-  else
+  end
+
+  if choice.to_i != 2
     puts "Invalid input."
     main
   end
@@ -206,4 +216,5 @@ def main
 end
 
 #main
-runTaylor
+#runTaylor
+runAmber(['https://dl.acm.org/citation.cfm?id=3180155'])
