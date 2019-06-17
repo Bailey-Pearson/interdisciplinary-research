@@ -1,4 +1,5 @@
 require 'watir'
+require 'sqlite3'
 require 'pp'
 require_relative "helpers"
 require_relative "article"
@@ -55,7 +56,50 @@ def getArticles(browser,volumes)
 
 end
 
-def encapArticleData(browser,articles)
+def parseRefForTitle(reference)
+
+  # Count # of periods
+  periods = 0
+
+  # Building onto this string
+  refTitle = ""
+
+  # Used to keep track of previous character
+  prevChar = ""
+
+  # Iterate over string
+  reference.split("").each do |c|
+    unless periods != 2
+      unless c == "."
+        refTitle << c
+      else
+        ++periods
+      end
+    else
+      unless prevChar.to_c.in?('A'..'Z')
+        if c == "."
+          ++periods
+        end
+      end
+    end
+    prevChar = c
+  end
+
+  return refTitle
+
+end
+
+def storeArticleData(browser,articles)
+
+  # Load database
+  db = SQLite3::Database.new( "irse.db" )
+
+  # Insert Queries
+  insertArticle = "INSERT INTO ARTICLE(title) VALUES (?)"
+  insertAuthor = "INSERT INTO AUTHOR(name) VALUES (?)"
+  insertReference = "INSERT INTO REFERENCE(title, citation) VALUES (?, ?)"
+  insertWrite = "INSERT INTO WRITE(author, article) VALUES (?, ?)"
+  insertCite = "INSERT INTO CITE(article, reference) VALUES (?, ?)"
 
   # Arrays to hold Article and Author objects
   articleObjs = []
@@ -64,15 +108,19 @@ def encapArticleData(browser,articles)
   # For each article
   articles.each do |art|
 
+    # Insert article into database
+    db.execute(insertArticle, art.text)
+
     # Visit article
     browser.goto(art[1])
 
     # Compile list of article's authors
-    # May need reworked (Mauro Pezze may not always be the editor. Also nothing says the editor can't also author a paper.)
     auths = browser.links.select{|a| a.title == 'Author Profile Page' and a.parent.previous_sibling.text != 'Editor'}
     authtexts = []
     auths.each do |auth|
       authtexts << auth.text
+      db.execute(insertAuthor, auth.text)
+      db.execute(insertWrite, auth.text, art.text)
     end
 
     # Compile list of article's resources (refs)
@@ -86,7 +134,10 @@ def encapArticleData(browser,articles)
 
     reftexts = []
     refs.each do |ref|
+      refTitle = parseRefForTitle(ref)
       reftexts << ref.text
+      db.execute(insertReference, refTitle, ref.text)
+      db.execute(insertCite, art.text, refTitle)
     end
 
     # Create an Article object for this article
@@ -130,7 +181,7 @@ def runAmber(links)
   browser.link(text: 'single page view').click
 
   articles = getArticles(browser,links)
-  articleData = encapArticleData(browser,articles)
+  articleData = storeArticleData(browser,articles)
 
   articleData[0].each do |art|
     puts "\n" + art.name
@@ -151,7 +202,7 @@ def runTaylor
 
   volumes = getVolumes(browser)
   articles = getArticles(browser,volumes)
-  articleData = encapArticleData(browser,articles)
+  articleData = storeArticleData(browser,articles)
 
   articleData[0].each do |art|
     puts "\n" + art.name
@@ -163,8 +214,8 @@ def runTaylor
 
 end
 
-def main
 
+def main
 
   links = ['https://dl.acm.org/citation.cfm?id=3180155', 'https://dl.acm.org/citation.cfm?id=3097368',
            'https://dl.acm.org/citation.cfm?id=3097368', 'https://dl.acm.org/citation.cfm?id=2884781',
@@ -179,7 +230,6 @@ def main
            'https://dl.acm.org/citation.cfm?id=3238147', 'https://dl.acm.org/citation.cfm?id=1595696',
            'https://dl.acm.org/citation.cfm?id=2491411', 'https://dl.acm.org/citation.cfm?id=2786805',
            'https://dl.acm.org/citation.cfm?id=3106237', 'https://dl.acm.org/citation.cfm?id=3236024']
-
 
 
   # Ask user for input
@@ -203,6 +253,7 @@ def main
   end
 
 end
+
 
 #main
 runTaylor
