@@ -1,9 +1,6 @@
 require 'watir'
 require 'sqlite3'
 require 'pp'
-require_relative "helpers"
-require_relative "article"
-require_relative "author"
 
 def getVolumes(browser)
 
@@ -101,10 +98,6 @@ def storeArticleData(browser,articles)
   insertWrite = "INSERT INTO WRITE(author, article) VALUES (?, ?)"
   insertCite = "INSERT INTO CITE(article, reference) VALUES (?, ?)"
 
-  # Arrays to hold Article and Author objects
-  articleObjs = []
-  authorObjs = []
-
   # For each article
   articles.each do |art|
 
@@ -140,33 +133,7 @@ def storeArticleData(browser,articles)
       db.execute(insertCite, art.text, refTitle)
     end
 
-    # Create an Article object for this article
-    article = Article.new(art[0],reftexts,0,authtexts)
-
-    # add it to Article object array
-    articleObjs << article
-
-    # For each author
-    authtexts.each do |auth|
-      # Make an author object and add it to the author object array
-      author = Author.new(auth,art[0])
-      authorObjs << author
-    end
-
-    puts "\nArticle Name: " + article.name
-    puts "\nReferences: "
-    article.references.each do |ref|
-      puts ref
-    end
-    puts "\nAuthors: "
-    authorObjs.each do |auth|
-      puts auth.name
-    end
-
   end
-
-  # Return array with articleObjs as first elem and authorObjs as second elem
-  return [articleObjs,authorObjs]
 
 end
 
@@ -181,15 +148,7 @@ def runAmber(links)
   browser.link(text: 'single page view').click
 
   articles = getArticles(browser,links)
-  articleData = storeArticleData(browser,articles)
-
-  articleData[0].each do |art|
-    puts "\n" + art.name
-  end
-
-  articleData[1].each do |auth|
-    puts "\n" + auth.name
-  end
+  storeArticleData(browser,articles)
 
 end
 
@@ -202,15 +161,7 @@ def runTaylor
 
   volumes = getVolumes(browser)
   articles = getArticles(browser,volumes)
-  articleData = storeArticleData(browser,articles)
-
-  articleData[0].each do |art|
-    puts "\n" + art.name
-  end
-
-  articleData[1].each do |auth|
-     puts "\n" + auth.name
-  end
+  storeArticleData(browser,articles)
 
 end
 
@@ -253,7 +204,6 @@ def main
   end
 
 end
-
 
 #main
 runTaylor
