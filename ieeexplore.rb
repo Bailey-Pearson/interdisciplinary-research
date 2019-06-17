@@ -100,12 +100,19 @@ def getArticleLinks(issueLink, articleLinks, browser)
     browser.links.each do |article|
         if article.href.include?("document") && !article.href.include?("media") && !article.href.include?("citations")
             articleLinks << [article.href, article.text]
-            # return articleLinks
+            return articleLinks
         end
     end
-    return articleLinks
+    # return articleLinks
 end
 
+#  getArticleLinks()
+#                                                   
+#  Opens an issue and retrieves the links to every article associated with it
+#  @param   issueLink       =>  link to the issue currently being looked at
+#  @param   articleLinks    =>  array of all article links
+#  @param   browser         =>  current browser location
+#  @return  the updated articleLinks array
 def getInformation(articleLink, articlesList, authorsList, browser)
     name = articleLink[1]
     references = []
