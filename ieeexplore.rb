@@ -1,8 +1,9 @@
 require 'webdrivers'
 require "watir"
 require 'pp'
-require_relative "author.rb"
-require_relative "article.rb"
+require 'net/http'
+require 'nokogiri'
+require 'sqlite3'
 
 #  main()
 #  This method creates the browsers connection to the website
@@ -12,12 +13,6 @@ def main()
     issueLinks = []
     # The list of links to all articles that are within the issues
     articleLinks = []
-    # The list of article objects
-    articles = []
-    test = Author.new("Marc Palyart", ["just testin"])
-    # The list of author objects
-    authors = [test]
-
 
     # Open the browser connection
     browser = Watir::Browser.new
@@ -54,13 +49,13 @@ def main()
     articleLinks.each do |article|
         currentArticle += 1
         print "Article " + currentArticle.to_s + " out of " + totalArticles.to_s + "\n\n"
-        articles, authors = getInformation(article, articles, authors, browser)
+        getInformation(article, browser)
     end
     
-    print "Articles: \n"
-    pp articles
-    print "\n Authors: \n"
-    pp authors
+    # print "Articles: \n"
+    # pp articles
+    # print "\n Authors: \n"
+    # pp authors
     # Close the browser at the end of the session
     browser.close
 end
@@ -113,11 +108,20 @@ end
 #  @param   articleLinks    =>  array of all article links
 #  @param   browser         =>  current browser location
 #  @return  the updated articleLinks array
-def getInformation(articleLink, articlesList, authorsList, browser)
-    name = articleLink[1]
-    references = []
-    citedBy = []
-    authors = []
+def getInformation(articleLink, browser)
+    # Load database
+    db = SQLite3::Database.new( "irse.db" )
+
+    # Insert Queries
+    insertArticle = "INSERT INTO article(title) VALUES (?)"
+    insertAuthor = "INSERT INTO author(name) VALUES (?)"
+    insertReference = "INSERT INTO reference(title, citation) VALUES (?, ?)"
+    insertWrite = "INSERT INTO write(author, article) VALUES (?, ?)"
+    insertCite = "INSERT INTO cite(article, reference) VALUES (?, ?)"
+    checkAuthor = "SELECT * from author where name = ?"
+    checkRefs = "SELECT * from reference where title = ?"
+
+    articleTitle = articleLink[1]
 
     # Go to the article and wait for it to load
     browser.goto(articleLink[0])
@@ -135,7 +139,22 @@ def getInformation(articleLink, articlesList, authorsList, browser)
         spans.each do |span|
             spanCounter += 1
             if spanCounter == 2 && !span.text.empty?
-                references << span.text
+                uri = URI('http://freecite.library.brown.edu/citations/create')
+                Net::HTTP.start(uri.host, uri.port) do |http|
+                    response = http.post('/citations/create',
+                    'citation=' + span.text,
+                    'Accept' => 'text/xml')
+
+                    bodyXML = Nokogiri::XML(response.body)
+                    citationNode = bodyXML.at_xpath('//citation')
+                    titleNode = citationNode.at_xpath('//title')
+                    unless titleNode.nil?
+                        if db.execute(checkRefs, titleNode.content)
+                            db.execute(insertReference, titleNode.content, span.text)
+                        end
+                        db.execute(insertCite, articleTitle, titleNode.content)
+                    end
+                end
             end
         end
     end
@@ -144,30 +163,19 @@ def getInformation(articleLink, articlesList, authorsList, browser)
     authorDiv = browser.div(class: "authors-info-container")
     authorLinks = authorDiv.as()
     authorLinks.each do |author|
-        if !author.text.empty?
-            if !authorsList.any?{|knownAuthor| knownAuthor.name == author.text}
-                if references.count != 0 && name != ""
-                    authorObject = Author.new(author.text, [name])
-                    authorsList << authorObject
-                    authors << authorObject
-                end
-            else
-                if references.count != 0 && name != ""
-                    index = authorsList.find_index {|knownAuthor| knownAuthor.name == author.text}
-                    authorObject = authorsList[index]
-                    authorObject.addArticle(name)
-                    authors << authorObject
+                if references.count != 0 && articleTitle != ""
+                    if (db.execute(checkAuthor, author.text))
+                        db.execute(insertAuthor, author.text)
+                    end
+                    db.execute(insertWrite, author.text, articleTitle)
                 end
             end
         end
     end
 
-    if references.count != 0 && name != ""
-        article = Article.new(name, references, citedBy, authors)
-        articlesList << article
+    if references.count != 0 && articleTitle != ""
+        db.execute(insertArticle, articleTitle)
     end
-
-    return articlesList, authorsList
 end
 
 main()
