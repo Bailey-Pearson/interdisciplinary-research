@@ -1,6 +1,7 @@
 require 'watir'
 require 'sqlite3'
 require 'pp'
+require 'net/http'
 
 def getVolumes(browser)
 
@@ -53,63 +54,6 @@ def getArticles(browser,volumes)
 
 end
 
-def parseRefForTitle(reference)
-
-  # Count # of periods
-  periods = 0
-
-  # Building onto this string
-  refTitle = ""
-
-  # Used to keep track of previous character
-  prevChar = ""
-
-  head = reference.chars.first(1).join
-
-  # Iterate over string
-  if head.to_i.to_s == head
-    reference.split("").each do |c|
-      if periods > 0 and periods < 3
-        if c == "."
-          periods += 1
-          refTitle << c
-        else
-          unless c == " "
-            refTitle << c
-          end
-        end
-      else
-        if c == "."
-          periods += 1
-        end
-      end
-    end
-  else
-    reference.split("").each do |c|
-      if periods > 1 and periods < 4
-        if c == "."
-          periods += 1
-          refTitle << c
-        else
-          unless c == " "
-            refTitle << c
-          end
-        end
-      else
-        unless prevChar === prevChar.capitalize
-          if c == "."
-            periods += 1
-          end
-        end
-      end
-      prevChar = c
-    end
-  end
-
-  return refTitle
-
-end
-
 def storeArticleData(browser,articles)
 
   # Load database
@@ -148,7 +92,7 @@ def storeArticleData(browser,articles)
 
     # Store author information in database
     auths.each do |auth|
-      if (db.execute(checkAuthor, auth.text))
+      if db.execute(checkAuthor, auth.text) == []
         db.execute(insertAuthor, auth.text)
       end
       db.execute(insertWrite, auth.text, art[0])
@@ -156,23 +100,38 @@ def storeArticleData(browser,articles)
 
     # Store reference data in database
     refs.each do |ref|
-      if ref.links.count > 0
-        browser.goto(ref.link.href)
-        refTitle = browser.h1.text
-        browser.goto(art[1])
-      else
-        refTitle = parseRefForTitle(ref.text)
-      end
-      if db.execute(checkRefs, refTitle)
-        db.execute(insertReference, refTitle, ref.text)
-      end
-      db.execute(insertCite, art[0], refTitle)
-    end
 
+      # Used to check reference format
+      head = ref.text.chars.first(1).join
+
+      # Use FreeCite API to parse reference
+      uri = URI('http://freecite.library.brown.edu/citations/create')
+      Net::HTTP.start(uri.host, uri.port) do |http|
+        response = http.post('/citations/create',
+                             'citation=' + ref.text,
+                             'Accept' => 'text/xml')
+
+        bodyXML = Nokogiri::XML(response.body)
+        citationNode = bodyXML.at_xpath('//citation')
+
+        # Some reference formats cause parser to put title in author node
+        if head.to_i.to_s == head # Title is in author node
+          titleNode = citationNode.at_xpath('//author')
+        else
+          titleNode = citationNode.at_xpath('//title')
+        end
+
+        unless titleNode.nil?
+          if db.execute(checkRefs, titleNode.content) == []
+            db.execute(insertReference, titleNode.content, ref.text)
+          end
+          db.execute(insertCite, art[0], titleNode.content)
+        end
+      end
+    end
   end
 
 end
-
 
 def runAmber(links)
 
@@ -188,7 +147,6 @@ def runAmber(links)
 
 end
 
-
 def runTaylor
 
   # Get Watir browser and go to ACM TOSEM page
@@ -200,7 +158,6 @@ def runTaylor
   storeArticleData(browser,articles)
 
 end
-
 
 def main
 
