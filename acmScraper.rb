@@ -64,22 +64,42 @@ def parseRefForTitle(reference)
   # Used to keep track of previous character
   prevChar = ""
 
+  head = reference.chars.first(1).join
+
   # Iterate over string
-  reference.split("").each do |c|
-    if periods == 2
-      if c == "."
-        ++periods
+  if head.to_i.to_s == head
+    reference.split("").each do |c|
+      if periods > 0 and periods < 3
+        if c == "."
+          ++periods
+          refTitle << c
+        else
+          refTitle << c
+        end
       else
-        refTitle << c
-      end
-    else
-      unless prevChar === prevChar.capitalize
         if c == "."
           ++periods
         end
       end
     end
-    prevChar = c
+  else
+    reference.split("").each do |c|
+      if periods > 1 and periods < 4
+        if c == "."
+          ++periods
+          refTitle << c
+        else
+          refTitle << c
+        end
+      else
+        unless prevChar === prevChar.capitalize
+          if c == "."
+            ++periods
+          end
+        end
+      end
+      prevChar = c
+    end
   end
 
   return refTitle
@@ -129,8 +149,8 @@ def storeArticleData(browser,articles)
     end
 
     refs.each do |ref|
-      if ref.children[0].tag_name == 'a'
-        browser.goto(ref.children[0])
+      if ref.links.count > 0
+        browser.goto(ref.link)
         refTitle = browser.h1.text
       else
         refTitle = parseRefForTitle(ref.text)
