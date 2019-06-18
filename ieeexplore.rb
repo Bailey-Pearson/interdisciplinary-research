@@ -122,6 +122,7 @@ def getInformation(articleLink, browser)
     checkRefs = "SELECT * from reference where title = ?"
 
     articleTitle = articleLink[1]
+    references = []
 
     # Go to the article and wait for it to load
     browser.goto(articleLink[0])
@@ -153,6 +154,7 @@ def getInformation(articleLink, browser)
                             db.execute(insertReference, titleNode.content, span.text)
                         end
                         db.execute(insertCite, articleTitle, titleNode.content)
+                        references << titleNode.content
                     end
                 end
             end
@@ -163,12 +165,12 @@ def getInformation(articleLink, browser)
     authorDiv = browser.div(class: "authors-info-container")
     authorLinks = authorDiv.as()
     authorLinks.each do |author|
-                if references.count != 0 && articleTitle != ""
-                    if (db.execute(checkAuthor, author.text))
-                        db.execute(insertAuthor, author.text)
-                    end
-                    db.execute(insertWrite, author.text, articleTitle)
+        if !author.text.empty?
+            if references.count != 0 && articleTitle != ""
+                if (db.execute(checkAuthor, author.text))
+                    db.execute(insertAuthor, author.text)
                 end
+                db.execute(insertWrite, author.text, articleTitle)
             end
         end
     end
