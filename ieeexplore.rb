@@ -51,11 +51,7 @@ def main()
         print "Article " + currentArticle.to_s + " out of " + totalArticles.to_s + "\n\n"
         getInformation(article, browser)
     end
-    
-    # print "Articles: \n"
-    # pp articles
-    # print "\n Authors: \n"
-    # pp authors
+
     # Close the browser at the end of the session
     browser.close
 end
