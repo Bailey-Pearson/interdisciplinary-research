@@ -71,14 +71,16 @@ def parseRefForTitle(reference)
     reference.split("").each do |c|
       if periods > 0 and periods < 3
         if c == "."
-          ++periods
+          periods += 1
           refTitle << c
         else
-          refTitle << c
+          unless c == " "
+            refTitle << c
+          end
         end
       else
         if c == "."
-          ++periods
+          periods += 1
         end
       end
     end
@@ -86,15 +88,17 @@ def parseRefForTitle(reference)
     reference.split("").each do |c|
       if periods > 1 and periods < 4
         if c == "."
-          ++periods
+          periods += 1
           refTitle << c
         else
-          refTitle << c
+          unless c == " "
+            refTitle << c
+          end
         end
       else
         unless prevChar === prevChar.capitalize
           if c == "."
-            ++periods
+            periods += 1
           end
         end
       end
@@ -123,6 +127,18 @@ def storeArticleData(browser,articles)
   # For each article
   articles.each do |art|
 
+    # Compile list of article's resources (refs)
+    refs = browser.divs.select{|d| d.attribute_list.count == 0 and d.parent.tag_name == 'td' and
+        !d.parent.parent.parent.parent.previous_sibling.text.include? "Citations"}
+
+    # Don't need articles with no references
+    unless refs.count > 0
+      next
+    end
+
+    # Compile list of article's authors
+    auths = browser.links.select{|a| a.title == 'Author Profile Page' and a.parent.previous_sibling.text != 'Editor'}
+
     # Insert article into database
     print art[0] + "\n"
     db.execute(insertArticle, art[0])
@@ -130,8 +146,7 @@ def storeArticleData(browser,articles)
     # Visit article
     browser.goto(art[1])
 
-    # Compile list of article's authors
-    auths = browser.links.select{|a| a.title == 'Author Profile Page' and a.parent.previous_sibling.text != 'Editor'}
+    # Store author information in database
     auths.each do |auth|
       if (db.execute(checkAuthor, auth.text))
         db.execute(insertAuthor, auth.text)
@@ -139,19 +154,12 @@ def storeArticleData(browser,articles)
       db.execute(insertWrite, auth.text, art[0])
     end
 
-    # Compile list of article's resources (refs)
-    refs = browser.divs.select{|d| d.attribute_list.count == 0 and d.parent.tag_name == 'td' and
-      !d.parent.parent.parent.parent.previous_sibling.text.include? "Citations"}
-
-    # Don't need articles with no references
-    unless refs.count > 0
-      next
-    end
-
+    # Store reference data in database
     refs.each do |ref|
       if ref.links.count > 0
-        browser.goto(ref.link)
+        browser.goto(ref.link.href)
         refTitle = browser.h1.text
+        browser.goto(art[1])
       else
         refTitle = parseRefForTitle(ref.text)
       end
