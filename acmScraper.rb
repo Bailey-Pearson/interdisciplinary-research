@@ -1,7 +1,9 @@
+require 'webdrivers'
 require 'watir'
 require 'sqlite3'
 require 'pp'
 require 'net/http'
+require 'nokogiri'
 
 def getVolumes(browser)
 
@@ -56,6 +58,9 @@ end
 
 def storeArticleData(browser,articles)
 
+  artCount = articles.count
+  citeErrors = 0
+
   # Load database
   db = SQLite3::Database.new( "irse.db" )
 
@@ -65,38 +70,55 @@ def storeArticleData(browser,articles)
   insertReference = "INSERT INTO reference(title, citation) VALUES (?, ?)"
   insertWrite = "INSERT INTO write(author, article) VALUES (?, ?)"
   insertCite = "INSERT INTO cite(article, reference) VALUES (?, ?)"
+  checkArticle = "SELECT * from article where title = ?"
   checkAuthor = "SELECT * from author where name = ?"
   checkRefs = "SELECT * from reference where title = ?"
+  checkWrite = "SELECT * from write where author = ? and article = ?"
+  checkCite = "SELECT * from cite where article = ? and reference = ?"
 
   # For each article
   articles.each do |art|
 
+    # Skip articles already added to database
+    unless db.execute(checkArticle, art[0]) == []
+      print "Article '" + art[0] + "' already scraped and stored.\n"
+      artCount -= 1
+      next
+    end
+
+    print "\nArticles left to scrape: " + artCount.to_s + "\n"
+
+    # Visit article
+    browser.goto(art[1])
+    print "Scraping article: '" + art[0] + "'\n"
+
     # Compile list of article's resources (refs)
     refs = browser.divs.select{|d| d.attribute_list.count == 0 and d.parent.tag_name == 'td' and
+        d.parent.parent.parent.parent.previous_sibling.present? and
         !d.parent.parent.parent.parent.previous_sibling.text.include? "Citations"}
 
     # Don't need articles with no references
     unless refs.count > 0
+      artCount -= 1
       next
     end
 
     # Compile list of article's authors
     auths = browser.links.select{|a| a.title == 'Author Profile Page' and a.parent.previous_sibling.text != 'Editor'}
 
-    # Insert article into database
-    print art[0] + "\n"
-    db.execute(insertArticle, art[0])
-
-    # Visit article
-    browser.goto(art[1])
+    print "Data scraped.\n"
 
     # Store author information in database
     auths.each do |auth|
       if db.execute(checkAuthor, auth.text) == []
         db.execute(insertAuthor, auth.text)
       end
-      db.execute(insertWrite, auth.text, art[0])
+      if db.execute(checkWrite, auth.text, art[0]) == []
+        db.execute(insertWrite, auth.text, art[0])
+      end
     end
+
+    print "Authors stored.\n"
 
     # Store reference data in database
     refs.each do |ref|
@@ -111,24 +133,49 @@ def storeArticleData(browser,articles)
                              'citation=' + ref.text,
                              'Accept' => 'text/xml')
 
-        bodyXML = Nokogiri::XML(response.body)
-        citationNode = bodyXML.at_xpath('//citation')
+        # Some responses were returning empty due to some error
+        if response.body == " "
+          citeErrors += 1
+          puts "!!! REFERENCE ERROR !!!"
+          titleNode = "FreeCite response error #" + citeErrors.to_s + "for article: '" + art[0] + "'"
 
-        # Some reference formats cause parser to put title in author node
-        if head.to_i.to_s == head # Title is in author node
-          titleNode = citationNode.at_xpath('//author')
-        else
-          titleNode = citationNode.at_xpath('//title')
-        end
-
-        unless titleNode.nil?
-          if db.execute(checkRefs, titleNode.content) == []
-            db.execute(insertReference, titleNode.content, ref.text)
+          if db.execute(checkRefs, titleNode) == []
+            db.execute(insertReference, titleNode, ref.text)
           end
-          db.execute(insertCite, art[0], titleNode.content)
+          if db.execute(checkCite, art[0], titleNode) == []
+            db.execute(insertCite, art[0], titleNode)
+          end
+        else
+          bodyXML = Nokogiri::XML(response.body)
+          citationNode = bodyXML.at_xpath('//citation')
+
+          # Some reference formats cause parser to put title in author node
+          if head.to_i.to_s == head # Title is in author node
+            titleNode = citationNode.at_xpath('//author')
+          else
+            titleNode = citationNode.at_xpath('//title')
+          end
+
+          unless titleNode.nil?
+            if db.execute(checkRefs, titleNode.content) == []
+              db.execute(insertReference, titleNode.content, ref.text)
+            end
+            if db.execute(checkCite, art[0], titleNode.content) == []
+              db.execute(insertCite, art[0], titleNode.content)
+            end
+          end
         end
       end
     end
+
+    print "References stored.\n"
+
+    # Insert article into database
+    db.execute(insertArticle, art[0])
+
+    print "Article stored.\n"
+
+    artCount -= 1
   end
 
 end
@@ -136,7 +183,7 @@ end
 def runAmber(links)
 
   # Get Watir browser and go to ACM TOSEM page
-  browser = Watir::Browser.new :firefox
+  browser = Watir::Browser.new :chrome
   browser.goto "https://dl.acm.org/citation.cfm?id=J790"
 
   # Switch to single page view
@@ -150,7 +197,7 @@ end
 def runTaylor
 
   # Get Watir browser and go to ACM TOSEM page
-  browser = Watir::Browser.new :firefox
+  browser = Watir::Browser.new :chrome
   browser.goto "https://dl.acm.org/citation.cfm?id=J790"
 
   volumes = getVolumes(browser)
@@ -161,19 +208,16 @@ end
 
 def main
 
-  links = ['https://dl.acm.org/citation.cfm?id=3180155'] #, 'https://dl.acm.org/citation.cfm?id=3097368',
-  #          'https://dl.acm.org/citation.cfm?id=3097368', 'https://dl.acm.org/citation.cfm?id=2884781',
-  #          'https://dl.acm.org/citation.cfm?id=2818754', 'https://dl.acm.org/citation.cfm?id=2819009',
-  #          'https://dl.acm.org/citation.cfm?id=2568225', 'https://dl.acm.org/citation.cfm?id=2486788',
-  #          'https://dl.acm.org/citation.cfm?id=2337223', 'https://dl.acm.org/citation.cfm?id=1806799',
-  #          'https://dl.acm.org/citation.cfm?id=1810295', 'https://dl.acm.org/citation.cfm?id=1555001',
-  #          'https://dl.acm.org/citation.cfm?id=1747491', 'https://dl.acm.org/citation.cfm?id=1858996',
-  #          'https://dl.acm.org/citation.cfm?id=2190078', 'https://dl.acm.org/citation.cfm?id=2351676',
-  #          'https://dl.acm.org/citation.cfm?id=3107656', 'https://dl.acm.org/citation.cfm?id=2642937',
-  #          'https://dl.acm.org/citation.cfm?id=2970276', 'https://dl.acm.org/citation.cfm?id=3155562',
-  #          'https://dl.acm.org/citation.cfm?id=3238147', 'https://dl.acm.org/citation.cfm?id=1595696',
-  #          'https://dl.acm.org/citation.cfm?id=2491411', 'https://dl.acm.org/citation.cfm?id=2786805',
-  #          'https://dl.acm.org/citation.cfm?id=3106237', 'https://dl.acm.org/citation.cfm?id=3236024']
+  links = ['https://dl.acm.org/citation.cfm?id=3097368',
+           'https://dl.acm.org/citation.cfm?id=2337223', 'https://dl.acm.org/citation.cfm?id=1806799',
+           'https://dl.acm.org/citation.cfm?id=1810295', 'https://dl.acm.org/citation.cfm?id=1555001',
+           'https://dl.acm.org/citation.cfm?id=1747491', 'https://dl.acm.org/citation.cfm?id=1858996',
+           'https://dl.acm.org/citation.cfm?id=2190078', 'https://dl.acm.org/citation.cfm?id=2351676',
+           'https://dl.acm.org/citation.cfm?id=3107656', 'https://dl.acm.org/citation.cfm?id=2642937',
+           'https://dl.acm.org/citation.cfm?id=2970276', 'https://dl.acm.org/citation.cfm?id=3155562',
+           'https://dl.acm.org/citation.cfm?id=3238147', 'https://dl.acm.org/citation.cfm?id=1595696',
+           'https://dl.acm.org/citation.cfm?id=2491411', 'https://dl.acm.org/citation.cfm?id=2786805',
+           'https://dl.acm.org/citation.cfm?id=3106237', 'https://dl.acm.org/citation.cfm?id=3236024']
 
 
   # Ask user for input
@@ -202,4 +246,4 @@ end
 
 #main
 #runTaylor
-runAmber(['https://dl.acm.org/citation.cfm?id=3180155'])
+runAmber(['https://dl.acm.org/citation.cfm?id=2337223'])
