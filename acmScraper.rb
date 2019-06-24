@@ -92,12 +92,6 @@ def storeArticleData(browser,articles)
     browser.goto(art[1])
     print "Scraping article: '" + art[0] + "'\n"
 
-    # Make sure page is in single page view
-    # spvLink = browser.link(text: 'single page view')
-    # unless spvLink.nil?
-    #   spvLink.click
-    # end
-
     # Compile list of article's resources (refs)
     refs = browser.divs.select{|d| d.attribute_list.count == 0 and d.parent.tag_name == 'td' and
         d.parent.parent.parent.parent.previous_sibling.present? and
