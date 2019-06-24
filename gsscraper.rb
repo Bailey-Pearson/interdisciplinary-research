@@ -9,6 +9,8 @@ def getCitations(browser)
 
   # google scholar url
   # https://scholar.google.com/
+  #
+  # i want to fucking destory my computer
 
   #create a new watir object
   browser = Watir::Browser.new :chrome
