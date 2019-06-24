@@ -14,7 +14,7 @@ def getTitles(browser, url)
   browser.goto url
 
   # Go through all the pages
-  while browser.link(text: '[next 100 entries]').attribute_value('class') != 'disabled'
+  begin
 
     # Grab all links on the page
     links = browser.div(class: 'hide-body').links
@@ -30,9 +30,24 @@ def getTitles(browser, url)
     # Go to next page
     browser.goto url + "?pos=" + pos.to_s
 
-  end
+  end while browser.link(text: '[next 100 entries]').attribute_value('class') != 'disabled'
 
   return titles
+
+end
+
+def saveTitle(confs,journals)
+
+  # Open/Write to file
+  open('cs_titles.csv','w') do |f|
+    confs.each do |title|
+      f << title + ','
+    end
+    journals.each do |title|
+      f << title + ','
+    end
+  end
+
 
 end
 
@@ -45,12 +60,5 @@ conferences = getTitles(browser,"https://dblp.org/db/conf/")
 # Get titles for cosci journals
 journals = getTitles(browser,"https://dblp1.uni-trier.de/db/journals/")
 
-puts "Conferences:"
-conferences.each do |title|
-  puts title
-end
-
-puts "\nJounrals:"
-journals.each do |title|
-  puts title
-end
+# Save the titles to their own files
+saveTitle(conferences,journals)
