@@ -10,7 +10,7 @@ def getCitations(browser)
   # google scholar url
   # https://scholar.google.com/
 
-  create a new watir object
+  #create a new watir object
   browser = Watir::Browser.new :chrome
 
   # get all the article titles from the database
