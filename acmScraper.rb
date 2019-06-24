@@ -92,6 +92,12 @@ def storeArticleData(browser,articles)
     browser.goto(art[1])
     print "Scraping article: '" + art[0] + "'\n"
 
+    # Make sure page is in single page view
+    # spvLink = browser.link(text: 'single page view')
+    # unless spvLink.nil?
+    #   spvLink.click
+    # end
+
     # Compile list of article's resources (refs)
     refs = browser.divs.select{|d| d.attribute_list.count == 0 and d.parent.tag_name == 'td' and
         d.parent.parent.parent.parent.previous_sibling.present? and
@@ -99,6 +105,7 @@ def storeArticleData(browser,articles)
 
     # Don't need articles with no references
     unless refs.count > 0
+      puts "No references present for article."
       artCount -= 1
       next
     end
@@ -208,16 +215,8 @@ end
 
 def main
 
-  links = ['https://dl.acm.org/citation.cfm?id=3097368',
-           'https://dl.acm.org/citation.cfm?id=2337223', 'https://dl.acm.org/citation.cfm?id=1806799',
-           'https://dl.acm.org/citation.cfm?id=1810295', 'https://dl.acm.org/citation.cfm?id=1555001',
-           'https://dl.acm.org/citation.cfm?id=1747491', 'https://dl.acm.org/citation.cfm?id=1858996',
-           'https://dl.acm.org/citation.cfm?id=2190078', 'https://dl.acm.org/citation.cfm?id=2351676',
-           'https://dl.acm.org/citation.cfm?id=3107656', 'https://dl.acm.org/citation.cfm?id=2642937',
-           'https://dl.acm.org/citation.cfm?id=2970276', 'https://dl.acm.org/citation.cfm?id=3155562',
-           'https://dl.acm.org/citation.cfm?id=3238147', 'https://dl.acm.org/citation.cfm?id=1595696',
-           'https://dl.acm.org/citation.cfm?id=2491411', 'https://dl.acm.org/citation.cfm?id=2786805',
-           'https://dl.acm.org/citation.cfm?id=3106237', 'https://dl.acm.org/citation.cfm?id=3236024']
+  links = ['https://dl.acm.org/citation.cfm?id=3097368', 'https://dl.acm.org/citation.cfm?id=1806799',
+           'https://dl.acm.org/citation.cfm?id=1747491']
 
 
   # Ask user for input
@@ -246,4 +245,4 @@ end
 
 #main
 #runTaylor
-runAmber(['https://dl.acm.org/citation.cfm?id=2337223'])
+runAmber(['https://dl.acm.org/citation.cfm?id=1747491'])
