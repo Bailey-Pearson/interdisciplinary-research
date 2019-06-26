@@ -3,7 +3,7 @@ require 'sqlite3'
 def get_sample(size)
 
   # Select query
-  select = "SELECT title, isCS FROM reference"
+  select = "SELECT * FROM reference"
 
   # Load database
   db = SQLite3::Database.new( "irse.db" )
@@ -26,8 +26,8 @@ def get_sample(size)
 end
 
 def do_calculations(correct,total)
-  puts "Percent correct: " + (correct / total).to_s
-  puts "Percent incorrect: " + ((total - correct) / total).to_s
+  puts "\nPercent correct: " + (correct.to_f / total).to_s
+  puts "Percent incorrect: " + ((total - correct).to_f / total).to_s
 end
 
 def query_user
@@ -41,27 +41,42 @@ def query_user
 
   # Query the user about each reference CS label
   correct_labels = 0
+  remaining = sample_size.to_i
   sample.each do |samp|
+
+    # Highly likely articles labeled as CS are correct
+    if samp[2] == 1
+      correct_labels += 1
+      remaining -= 1
+      next
+    end
+
+    puts "\nArticles remaining: " + remaining.to_s
 
     puts "\nIs this article labeled correctly? (y/n):\n"
     puts "Title: " + samp[0]
+    puts "Citation: " + samp[1]
 
-    if samp[1] == 0
+    if samp[2] == 0
       puts "Label: non-CS"
     else
       puts "Label: CS\n"
     end
 
     user_label = gets
+    user_label = user_label.chomp
 
-    if user_label.downcase != 'y' and user_label.downcase != 'n'
+    while user_label.downcase != 'y' and user_label.downcase != 'n'
       puts "\nIncorrect input. Correct input: (y/n)"
-      next
+      user_label = gets
+      user_label = user_label.chomp
     end
 
     if user_label.downcase == 'y'
       correct_labels += 1
     end
+
+    remaining -= 1
 
   end
 
