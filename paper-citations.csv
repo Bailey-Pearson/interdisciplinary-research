@@ -1,0 +1,2231 @@
+﻿Title,Citation
+Was my contribution fairly reviewed?: a framework to study the perception of fairness in modern code reviews,2
+A Baseline Model for Software Effort Estimation,45
+A Classification Framework for Software Component Models,276
+A Comparative Study of Software Model Checkers as Unit Testing Tools: An Industrial Case Study,36
+A Comparative Study to Benchmark Cross-Project Defect Prediction Approaches,28
+A Comparison of Program Comprehension Strategies by Blind and Sighted Programmers,3
+A Comparison of Six UML-Based Languages for Software Process Modeling,108
+A Comparison of Tabular Expression-Based Testing Strategies,10
+A Compiler for Multimodal Scenarios: Transforming LSCs into AspectJ,21
+A Component Model for Model Transformations,45
+A Comprehensive Approach to Naming and Accessibility in Refactoring Java Programs,24
+A Continuous ASM Modelling Approach to Pacemaker Sensing,9
+A Controlled Experiment for Evaluating the Impact of Coupling on the Maintainability of Service-Oriented Software,53
+A Controlled Experiment for Program Comprehension through Trace Visualization,119
+A Cooperative Parallel Search-Based Software Engineering Approach for Code-Smells Detection,45
+A Data Mining Approach for Detecting Higher-Level Clones in Software,129
+A Developer Centered Bug Prediction Model,27
+A Dissection of the Test-Driven Development Process: Does It Really Matter to Test-First or to Test-Last?,35
+A Dynamic Slicing Technique for UML Architectural Models,42
+A Feature-Based Classification of Model Repair Approaches,22
+A Flexible Infrastructure for Multilevel Language Engineering,126
+A Flowchart Language for Quantum Programming,18
+A Formal Specification and Verification Framework for Timed Security Protocols,4
+A Framework for Programming Robust Context-Aware Applications,58
+A Game-Theoretic Foundation for the Maximum Software Resilience against Dense Errors,5
+A General Software Defect-Proneness Prediction Framework,273
+"A General Testability Theory: Classes, Properties, Complexity, and Testing Reductions",20
+A Generative Programming Framework for Context-Aware CSCW Applications,17
+A Genetic Algorithm-Based Stress Test Requirements Generator Tool and Its Empirical Evaluation,25
+A Large-Scale Evaluation of Automated Unit Test Generation Using EvoSuite,81
+A Learning-Based Framework for Engineering Feature-Oriented Self-Adaptive Software Systems,71
+A Lightweight System for Detecting and Tolerating Concurrency Bugs,6
+A Logic-Based Approach for the Verification of UML Timed Models,0
+A Machine Learning Approach to Software Requirements Prioritization,92
+A Methodology for Exposing Risk in Achieving Emergent System Properties,5
+A Model of Data Warehousing Process Maturity,67
+A Model-Based Approach to Families of Embedded Domain-Specific Languages,53
+A Model-Driven Methodology for Developing Secure Data-Management Applications,17
+A Multi-Objective Technique to Prioritize Test Cases,20
+A Multi-Site Joint Replication of a Design Patterns Experiment Using Moderator Variables to Generalize across Contexts,5
+A PVS-Simulink Integrated Environment for Model-Based Analysis of Cyber-Physical Systems,9
+"A Posteriori Typing for Model-Driven Engineering: Concepts, Analysis, and Applications",16
+A Practical Approach to Size Estimation of Embedded Software Components,12
+A Precise Method-Method Interaction-Based Cohesion Metric for Object-Oriented Classes,109
+A Probabilistic Analysis of the Efficiency of Automated Software Testing,27
+A Qualitative Study of Application-Level Caching,9
+A Quantitative Approach to Input Generation in Real-Time Testing of Stochastic Systems,5
+A Quantitative Investigation of the Acceptable Risk Levels of Object-Oriented Metrics in Open-Source Systems,124
+A Risk Management Methodology for Project Risk Dependencies,86
+A SEALANT for inter-app security holes in android,19
+A Scalable Approach to Exact Model and Commonality Counting for Extended Feature Models,9
+A Second Replicated Quantitative Analysis of Fault Distributions in Complex Software Systems,38
+A Semi-Automatic Approach for Extracting Software Product Lines,32
+A Stack Memory Abstraction and Symbolic Analysis Framework for Executables,4
+A Static Approach to Prioritizing JUnit Test Cases,104
+A Study of Causes and Consequences of Client-Side JavaScript Bugs,14
+A Study of Social Interactions in Open Source Component Use,4
+A Study of Variability Models and Languages in the Systems Software Domain,107
+A System for Profiling and Monitoring Database Access Patterns by Application Programs for Anomaly Detection,13
+A Systematic Study on Explicit-State Non-Zenoness Checking for Timed Automata,5
+A Templating System to Generate Provenance,16
+A Theoretical and Empirical Analysis of the Role of Test Sequence Length in Software Testing for Structural Coverage,34
+A Theoretical and Empirical Study of Diversity-Aware Mutation Adequacy Criterion,8
+"A Theoretical and Empirical Study of Search-Based Testing: Local, Global, and Hybrid Search",338
+A Tool-Supported Methodology for Validation and Refinement of Early-Stage Domain Models,3
+"A Two-Component Language for Adaptation: Design, Semantics and Program Analysis",12
+A UML/MARTE Model Analysis Method for Uncovering Scenarios Leading to Starvation and Deadlocks in Concurrent Systems,30
+A Unified Test Case Prioritization Approach,61
+A Uniform Representation of Hybrid Criteria for Regression Testing,41
+A bounded statistical approach for model checking of unbounded until properties,20
+A case-study on using an Automated In-process Software Engineering Measurement and Analysis system in an industrial environment,58
+A combinatorial approach for exposing off-nominal behaviors,3
+A comparative analysis of software architecture recovery techniques,98
+A comparative study of programming languages in Rosetta code,70
+A comparative study to benchmark cross-project defect prediction approaches,28
+A comparison of 10 sampling algorithms for configurable systems,67
+A compiler and verifier for page access oblivious computation,8
+A comprehensive study of real-world numerical bug characteristics,9
+A comprehensive study on real world concurrency bugs in Node.js,12
+A cut-off approach for bounded verification of parameterized systems,20
+A decentralized self-adaptation mechanism for service-based applications in the cloud,89
+A degree-of-knowledge model to capture source code familiarity,111
+A discriminative model approach for accurate duplicate bug report retrieval,230
+A dynamic analysis to support object-sharing code refactorings,7
+A fast causal profiler for task parallel programs,7
+A feasibility study of using automated program repair for introductory programming assignments,23
+A flexible and non-intrusive approach for computing complex structural coverage metrics,8
+A fluid model for layered queueing networks,33
+A formal model for automated software modularity and evolvability analysis,6
+A framework for the checking and refactoring of crosscutting concepts,2
+A general framework for dynamic stub injection,1
+A genetic algorithm for detecting significant floating-point inaccuracies,18
+A genetic algorithm for goal-conflict identification,0
+A graph solver for the automated generation of consistent domain-specific models,5
+A guided genetic algorithm for automated crash reproduction,16
+A history-based matching approach to identification of framework evolution,62
+A large scale exploratory analysis of software vulnerability life cycles,115
+A large-scale empirical study of just-in-time quality assurance,191
+A large-scale empirical study of practitioners' use of object-oriented concepts,28
+A large-scale empirical study on the effects of code obfuscations on Android apps and anti-malware products,4
+A large-scale study of test coverage evolution,3
+A learning-based method for combining testing techniques,15
+A logical verification methodology for service-oriented computing,41
+A machine learning approach for tracing regulatory codes to product specific requirements,158
+A method to identify and correct problematic software activity data: exploiting capacity constraints and data redundancies,5
+A methodology for testing CPU emulators,7
+A model for spectra-based software diagnosis,283
+A novel automated approach for software effort estimation based on data augmentation,2
+A performance comparison of contemporary algorithmic approaches for automated analysis operations on feature models,42
+A practical guide to select quality indicators for assessing pareto-based search algorithms in search-based software engineering,64
+A program differencing algorithm for verilog HDL,18
+A programming model for sustainable software,24
+A qualitative study on user guidance capabilities in product configuration tools,48
+A revisit of fault class hierarchies in general boolean specifications,34
+A rule-based approach to the semantic lifting of model differences in the context of model versioning,87
+A scalable approach for malware detection through bounded feature space behavior modeling,24
+A search engine for finding highly relevant applications,131
+A sentence-matching method for automatic license identification of source code files,81
+A static verification framework for message passing in Go using behavioural types,13
+A statistical semantic language model for source code,119
+A study and toolkit for asynchronous programming in c#,46
+A study of equivalent and stubborn mutation operators using human analysis of equivalence,105
+A study of repetitiveness of code changes in software evolution,75
+A symbolic justice violations transition system for unrealizable GR(1) specifications,4
+A symbolic model checking approach to the analysis of string and length constraints,0
+A synergistic analysis method for explaining failed regression tests,11
+A systematic study of automated program repair: fixing 55 out of 105 bugs for $8 each,395
+A tactic-centric approach for automating traceability of quality concerns,74
+A tale of two cities: how WebView induces bugs to Android applications,3
+A temporal permission analysis and enforcement framework for Android,4
+A test-suite diagnosability metric for spectrum-based fault localization approaches,22
+A theoretical analysis of the risk evaluation formulas for spectrum-based fault localization,185
+A topic-based approach for narrowing the search space of buggy files from a bug report,131
+A two-phase approximation for model checking probabilistic unbounded until properties of probabilistic systems,4
+A two-step technique for extract class refactoring,49
+A user-guided approach to program analysis,44
+A verification system for interval-based specification languages,9
+A web-centred approach to end-user software engineering,8
+ADAM: External dependency-driven architecture discovery and analysis of quality attributes,3
+APE: an annotation language and middleware for energy-efficient mobile application development,34
+APEx: automated inference of error specifications for C APIs,8
+API change and fault proneness: a threat to the success of Android apps,187
+API method recommendation without worrying about the task-API knowledge gap,5
+AR-miner: mining informative reviews for developers from mobile app marketplace,285
+ARENA: An Approach for the Automated Generation of Release Notes,19
+ARTINALI: dynamic invariant detection for cyber-physical system security,4
+ASCENT: An Algorithmic Technique for Designing Hardware and Software in Tandem,17
+AURA: a hybrid approach to identify framework evolution,115
+Abstracting runtime heaps for program understanding,27
+Accounting for defect characteristics in evaluations of testing techniques,20
+Accurate Interprocedural Null-Dereference Analysis for Java,77
+Accurate and efficient refactoring detection in commit history,20
+Achieving accuracy and scalability simultaneously in detecting application clones on Android markets,189
+Achieving scalable model-based testing through test case diversity,148
+Active code completion,71
+Active learning and effort estimation: Finding the essential content of software effort estimation data,55
+Active refinement of clone anomaly reports,30
+Adaptive Multi-Objective Evolutionary Algorithms for Overtime Planning in Software Projects,18
+Adaptive bug isolation,62
+Adaptive coverage and operational profile-based testing for reliability improvement,3
+Adaptive unpacking of Android apps,30
+Adaptively generating high quality fixes for atomicity violations,2
+Adding sparkle to social coding: an empirical study of repository badges in the npm ecosystem,23
+Adversarial symbolic execution for detecting concurrency-related cache timing leaks,5
+"Aligning Qualitative, Real-Time, and Probabilistic Property Specification Patterns Using a Structured English Grammar",66
+"All about activity injection: threats, semantics, and detection",1
+Alloy Meets the Algebra of Programming: A Case Study,12
+Alloy*: a general-purpose higher-order relational constraint solver,50
+Almost there: a study on quasi-contributors in open source software projects,14
+Alternate refactoring paths reveal usability problems,18
+Aluminum: principled scenario exploration through minimality,51
+Ambient awareness of build status in collocated software teams,22
+Amoeba: A methodology for modeling and evolving cross-organizational business processes,100
+Amorphous Slicing of Extended Finite State Machines,24
+Amplifying Tests to Validate Exception Handling Code: An Extended Study in the Mobile Application Domain,59
+Amplifying tests to validate exception handling code,20
+An Active Learning Approach for Improving the Accuracy of Automated Domain Model Extraction,0
+An Analysis and Survey of the Development of Mutation Testing,1186
+An Approach for Modeling Architectural Design Rules in UML and its Application to Embedded Software,16
+An Approach to Checking Consistency between UML Class Model and Its Java Implementation,12
+An Attack Surface Metric,553
+An Autonomous Engine for Services Configuration and Deployment,16
+An Efficient and Scalable Approach to Correct Class Model Refinement,11
+An Empirical Analysis of Business Process Execution Language Usage,20
+An Empirical Comparison of Model Validation Techniques for Defect Prediction Models,121
+An Empirical Evaluation of Mutation Testing for Improving the Test Quality of Safety-Critical Software,47
+An Empirical Methodology to Evaluate Vulnerability Discovery Models,31
+An Empirical Study of Meta- and Hyper-Heuristic Search for Multi-Objective Release Planning,6
+An Enhanced Bailout Protocol for Mixed Criticality Embedded Software,16
+An Experience in Testing the Security of Real-World Electronic Voting Systems,52
+An Eye-Tracking Study of Java Programmers and Application to Source Code Summarization,20
+An I/O Efficient Approach for Detecting All Accepting Cycles,1
+An Improved SDA Based Defect Prediction Framework for Both Within-Project and Cross-Project Class-Imbalance Problems,42
+An Industrial Survey of Safety Evidence Change Impact Analysis Practice,34
+"An Information Foraging Theory Perspective on Tools for Debugging, Refactoring, and Reuse Tasks",55
+An Integrative Economic Optimization Approach to Systems Development Risk Management,13
+An Investigation into the Functional Form of the Size-Defect Relationship for Software Modules,115
+An Observe-Model-Exercise* Paradigm to Test Event-Driven Systems with Undetermined Input Spaces,35
+An Ontology-Based Product Architecture Derivation Approach,10
+An algebra of design patterns,33
+An analysis of the relationship between conditional entropy and failed error propagation in software testing,33
+An analysis of the search spaces for generate and validate patch generation systems,75
+An analysis of the variability in forty preprocessor-based software product lines,268
+An automated approach for finding variable-constant pairing bugs,6
+An automated approach to estimating code coverage measures via execution logs,3
+An automated approach to forecasting QoS attributes based on linear and non-linear time series modeling,50
+An automated approach to generating efficient constraint solvers,12
+"An efficient, robust, and scalable approach for analyzing interacting android apps",16
+An empirical analysis of team review approaches for teaching quality software development,2
+An empirical analysis of the co-evolution of schema and code in database applications,55
+An empirical comparison of compiler testing techniques,25
+An empirical evaluation and comparison of manual and automated test selection,24
+An empirical evaluation of two user interfaces of an interactive program verifier,9
+An empirical investigation into the nature of test smells,38
+An empirical study about the effectiveness of debugging when random test cases are used,17
+An empirical study of Android test generation tools in industrial cases,3
+An empirical study of goto in C code from GitHub repositories,15
+An empirical study of optimizations in YOGI,28
+An empirical study of practitioners' perspectives on green software engineering,61
+An empirical study of reported bugs in server software with implications for automated bug diagnosis,58
+An empirical study of the effects of conscientiousness in pair programming using the five-factor personality model,60
+An empirical study on crash recovery bugs in large-scale distributed systems,3
+An empirical study on dependence clusters for effort-aware fault-proneness prediction,12
+"An empirical study on mutation, statement and branch coverage fault revelation that avoids the unreliable clean program assumption",53
+An empirical study on real bug fixes,77
+An empirical study on the developers' perception of software coupling,87
+An empirical study on the impact of C++ lambdas and programmer experience,28
+An experience report on scaling tools for mining software repositories using MapReduce,29
+An exploratory study of fault-proneness in evolving aspect-oriented programs,61
+An exploratory study of the evolution of software licensing,73
+An exploratory study of the pull-based software development model,280
+An in-depth study of the potentially confounding effect of class size in fault prediction,39
+An information retrieval approach for regression test prioritization based on program changes,63
+An optimal strategy for algorithmic debugging,5
+An unsupervised approach for discovering relevant tutorial fragments for APIs,16
+Analysis and applications of timed service protocols,33
+Analysis and testing of notifications in Android wear applications,18
+Analysis of user comments: an approach for software requirements evolution,223
+Analyze this! 145 questions for data scientists in software engineering,115
+Analyzing APIs documentation and code to detect directive defects,27
+Analyzing Critical Decision-Based Processes,8
+Analyzing critical process models through behavior model synthesis,40
+Analyzing multi-agent systems with probabilistic model checking approach,8
+Analyzing security architectures,25
+Analyzing temporal API usage patterns,29
+Analyzing temporal properties of abstract models,1
+Analyzing the Effect of Gain Time on Soft-Task Scheduling Policies in Real-Time Systems,6
+Analyzing the change-proneness of service-oriented systems from an industrial perspective,3
+Analyzing the effects of test driven development in GitHub,6
+Android testing via synthetic symbolic execution,2
+Angelix: scalable multiline program patch synthesis via symbolic analysis,199
+Angels and monsters: an empirical investigation of potential test effectiveness and efficiency improvement from strongly subsuming higher order mutation,35
+AnswerBot: automated generation of answer summary to developersź technical questions,13
+Ant Colony Optimization for Software Project Scheduling and Staffing with an Event-Based Scheduler,139
+AntMiner: mining more bugs by reducing noise interference,18
+Api hyperlinking via structural overlap,53
+AppContext: differentiating malicious and benign mobile app behaviors using context,169
+"AppFlow: using machine learning to synthesize robust, reusable UI tests",0
+Applications of psychological science for actionable analytics,6
+Applying combinatorial test data generation to big data applications,13
+Approaches to Co-Evolution of Metamodels and Models: A Survey,19
+Apt-pbo: solving the software dependency problem using pseudo-boolean optimization,28
+Archface: a contract place where architectural design and code meet together,70
+Architecture-Based Reliability Prediction with the Palladio Component Model,104
+Architecture-Level Configuration of Large-Scale Embedded Software Systems,10
+Architecture-centric support for adaptive service collaborations,23
+"Are ""non-functional"" requirements really non-functional?: an investigation of non-functional requirements in practice",38
+Are Fix-Inducing Changes a Moving Target? A Longitudinal Case Study of Just-In-Time Defect Prediction,15
+Are Slice-Based Cohesion Metrics Actually Useful in Effort-Aware Post-Release Fault-Proneness Prediction? An Empirical Study,26
+Are code examples on an online Q&A forum reliable?: a study of API misuse on stack overflow,31
+Are deep neural networks the best choice for modeling source code?,62
+Are developers aware of the architectural impact of their changes?,13
+Are fix-inducing changes a moving target?: a longitudinal case study of just-in-time defect prediction,15
+Are mutation scores correlated with real fault detection?: a large scale empirical study on the relationship between mutants and real faults,20
+Are students representatives of professionals in software engineering experiments?,130
+Are your incoming aliases really necessary? counting the cost of object ownership,10
+Array length inference for C library bindings,4
+AsDroid: detecting stealthy behaviors in Android applications by user interface and program behavior contradiction,171
+Asking and answering questions about unfamiliar APIs: an exploratory study,75
+Aspect-Oriented Race Detection in Java,35
+Aspect-Oriented Refactoring of Legacy Applications: An Evaluation,37
+Aspectizing Java Access Control,24
+Assert use in GitHub projects,31
+Asserting and checking determinism for multithreaded programs,86
+Assertion guided abstraction: a cooperative optimization for dynamic partial order reduction,19
+Assertion guided symbolic execution of multithreaded programs,30
+Assertions are strongly correlated with test suite effectiveness,40
+Assessing Software Service Quality and Trustworthiness at Selection Time,146
+Assessing the Cost Effectiveness of Fault Prediction in Acceptance Testing,47
+Assessing the Effect of Screen Mockups on the Comprehension of Functional Requirements,25
+Assessing the Effectiveness of Sequence Diagrams in the Comprehension of Functional Requirements: Results from a Family of Five Experiments,54
+Assessing the Refactorability of Software Clones,37
+Assessing the Refactoring of Brain Methods,0
+Assessing the threat of untracked changes in software evolution,3
+Assessing the type annotation burden,1
+"Assessing, Comparing, and Combining State Machine-Based Testing and Structural Testing: A Series of Experiments",72
+Assigning time budgets to component functions in the design of time-critical automotive systems,9
+Assisting developers of big data analytics applications when deploying on hadoop clouds,100
+Asymptotic Perturbation Bounds for Probabilistic Model Checking with Empirically Determined Probability Parameters,10
+AtexRace: across thread and execution sampling for in-house race detection,0
+Atomicity Analysis of Service Composition across Organizations,40
+Attributed variability models: outside the comfort zone,11
+Augmenting API documentation with insights from stack overflow,84
+Augmenting Field Data for Testing Systems Subject to Incremental Requirements Changes,4
+Augusto: exploiting popular functionalities for the generation of semantic GUI tests with Oracles,3
+Auto-completing bug reports for Android applications,48
+Auto-locating and fix-propagating for HTML validation errors to PHP server-side code,37
+Auto-patching DOM-based XSS at scale,17
+AutoCSP: automatically retrofitting CSP to web applications,20
+AutoConfig: automatic configuration tuning for distributed message systems,1
+AutoSense: A Framework for Automated Sensitivity Analysis of Program Data,5
+Autofolding for Source Code Summarization,17
+Automated API Property Inference Techniques,130
+Automated Abstractions for Contract Validation,34
+Automated Checking of Conformance to Requirements Templates Using Natural Language Processing,64
+Automated Comparison of State-Based Software Models in Terms of Their Language and Structure,18
+Automated Detection of Client-State Manipulation Vulnerabilities,16
+Automated Extraction and Clustering of Requirements Glossary Terms,8
+Automated Fixing of Programs with Contracts,87
+Automated Oracle Data Selection Support,16
+Automated Steering of Model-Based Test Oracles to Admit Real Program Behaviors,7
+Automated Support for Reproducing and Debugging Field Failures,5
+Automated Synthesis and Dynamic Analysis of Tradeoff Spaces for Object-Relational Mapping,6
+Automated Synthesis of Mediators to Support Component Interoperability,32
+Automated Test Case Generation as a Many-Objective Optimisation Problem with Dynamic Selection of the Targets,44
+Automated Trace Analysis of Discrete-Event System Models,42
+Automated analysis of CSS rules to support style maintenance,48
+Automated analysis of multithreaded programs for performance modeling,4
+Automated control of multiple software goals using multiple actuators,12
+Automated cookie collection testing,12
+Automated cross-platform inconsistency detection for mobile apps,14
+Automated data structure generation: refuting common wisdom,6
+Automated decomposition of build targets,22
+Automated design of self-adaptive software with control-theoretical formal guarantees,124
+Automated detection of client-state manipulation vulnerabilities,16
+Automated diagnosis of software configuration errors,94
+Automated directed fairness testing,5
+Automated documentation inference to explain failed tests,52
+Automated domain-specific C verification with mbeddr,16
+Automated energy optimization of HTTP requests for mobile applications,57
+Automated extraction of architecture-level performance models of distributed component-based systems,79
+Automated goal operationalisation based on interpolation and SAT solving,12
+Automated inference of goal-oriented performance prediction functions,43
+Automated localization for unreproducible builds,3
+Automated memory leak detection for production use,26
+Automated model repair for Alloy,8
+Automated model-based Android GUI testing using multi-level GUI comparison criteria,48
+Automated modularization of GUI test cases,4
+Automated multi-objective control for self-adaptive software design,52
+"Automated oracle creation support, or: how I learned to stop worrying about fault propagation and love mutation testing",64
+Automated oracles: an empirical study on cost and effectiveness,24
+Automated parameter optimization of classification techniques for defect prediction models,126
+Automated partitioning of android applications for trusted execution environments,20
+Automated patch extraction via syntax- and semantics-aware Delta debugging on source code changes,2
+Automated planning for feature model configuration based on stakeholders' business concerns,63
+Automated planning for software architecture evolution,22
+Automated refactoring of legacy Java software to default methods,8
+Automated reliability estimation over partial systematic explorations,14
+Automated repair of HTML generation errors in PHP applications using string constraint solving,104
+Automated repair of mobile friendly problems in web pages,8
+Automated reporting of GUI design violations for mobile apps,21
+Automated requirements analysis for a molecular watchdog timer,15
+Automated security testing of web widget interactions,41
+Automated software architecture security risk analysis using formalized signatures,55
+Automated support for repairing input-model faults,13
+Automated synthesis and deployment of cloud applications,30
+Automated test suite generation for time-continuous simulink models,41
+Automated transplantation and differential testing for clones,15
+Automated unit test generation for classes with environment dependencies,31
+Automated unit testing of large industrial embedded software using concolic testing,38
+Automated variability analysis and testing of an E-commerce site.: an experience report,11
+Automated verification of interactive rule-based configuration systems,5
+Automated verification of pattern-based interaction invariants in Ajax applications,4
+Automated web application testing using search based software engineering,101
+Automatic Contract Insertion with CCBot,4
+Automatic Detection and Resolution of Lexical Ambiguity in Process Models,45
+Automatic Detection of Unsafe Dynamic Component Loadings,11
+Automatic Extraction of Heap Reference Properties in Object-Oriented Programs,6
+Automatic Software Refactoring via Weighted Clustering in Method-Level Networks,1
+Automatic Source Code Summarization of Context for Java Methods,41
+Automatic Summarization of Bug Reports,76
+Automatic Workarounds: Exploiting the Intrinsic Redundancy of Web Applications,13
+Automatic creation of SQL Injection and cross-site scripting attacks,395
+Automatic detection of nocuous coordination ambiguities in natural language requirements,50
+Automatic dimension inference and checking for object-oriented programs,16
+Automatic generation of inter-component communication exploits for Android applications,14
+Automatic generation of load tests,78
+Automatic inference of code transforms for patch generation,54
+Automatic input rectification,56
+Automatic loop-invariant generation and refinement through selective sampling,3
+Automatic microbenchmark generation to prevent dead code elimination and constant folding,4
+Automatic model generation from documentation for Java API functions,22
+Automatic parameter recommendation for practical API usage,90
+Automatic patch generation learned from human-written patches,382
+Automatic query performance assessment during the retrieval of software artifacts,35
+Automatic query reformulations for text retrieval in software engineering,128
+Automatic recommendation of API methods from feature requests,52
+Automatic recovery from runtime failures,86
+Automatic runtime recovery via error handler synthesis,9
+Automatic steering of behavioral model inference,98
+Automatic summarization of API reviews,16
+Automatic synthesis of behavior protocols for composable web-services,153
+Automatic synthesis of modular connectors via composition of protocol mediation patterns,40
+Automatic testing of sequential and concurrent substitutability,19
+Automatic testing of symbolic execution engines via program generation and differential testing,9
+Automatic text input generation for mobile testing,21
+Automatic verification of interactions in asynchronous systems with unbounded buffers,16
+Automatically Detecting and Tracking Inconsistencies in Software Design Models,113
+Automatically Generating Test Cases for Specification Mining,61
+Automatically Recommending Peer Reviewers in Modern Code Review,40
+Automatically analyzing groups of crashes for finding correlations,4
+Automatically assessing code understandability: how far are we?,11
+Automatically capturing source code context of NL-queries for software maintenance and reuse,189
+Automatically computing path complexity of programs,6
+Automatically deriving pointer reference expressions from binary code for memory dump analysis,4
+Automatically diagnosing and repairing error handling bugs in C,13
+Automatically documenting program changes,114
+Automatically finding bugs in a commercial cyber-physical system development tool chain with SLforge,3
+Automatically finding patches using genetic programming,575
+Automatically finding performance problems with feedback-directed learning software testing,94
+Automatically generating commit messages from diffs using neural machine translation,38
+Automatically generating search heuristics for concolic testing,6
+Automatically learning semantic features for defect prediction,146
+Automatically partition software into least privilege components using dynamic data dependency analysis,21
+Automatically recommending code reviewers based on their expertise: an empirical comparison,8
+Automatically reducing tree-structured test inputs,11
+Automatically securing permission-based software by reducing the attack surface: an application to Android,138
+Automatically synthesizing SQL queries from input-output examples,31
+Automatically testing implementations of numerical abstract domains,2
+Automating Live Update for Generic Server Programs,7
+Automating regression verification,69
+Automating test automation,76
+Automating the formalization of product comparison matrices,19
+"Awareness 2.0: staying aware of projects, developers and tasks using dashboards and feeds",116
+Axis: automatically fixing atomicity violations through solving control constraints,72
+BALLERINA: automatic generation and clustering of efficient random unit tests for multithreaded code,51
+BDCI: behavioral driven conflict identification,0
+BLISS: Improved Symbolic Execution by Bounded Lazy Initialization with SAT Support,22
+BLITZ: compositional bounded model checking for real-world programs,27
+BProVe: a formal verification framework for business process models,12
+BURN: Enabling Workload Burstiness in Customized Service Benchmarks,14
+Backward-compatible constant-time exception-protected memory,3
+Balancing Privacy and Utility in Cross-Company Defect Prediction,69
+Balancing soundness and efficiency for practical testing of configurable systems,9
+Bayesian Approaches to Matching Architectural Diagrams,12
+Bayesian Networks For Evidence-Based Decision-Making in Software Engineering,39
+Bayesian inference using data flow analysis,46
+Bayesian specification learning for finding API usage errors,20
+Be careful of when: an empirical study on time-related misuse of issue tracking data,2
+Becoming agile: a grounded theory of agile transitions in practice,38
+Behavioral automata composition for automatic topology independent verification of parameterized systems,17
+Behavioral resource-aware model inference,40
+Behavioral validation of JFSL specifications through model synthesis,1
+Belief & evidence in empirical software engineering,75
+Better Debugging via Output Tracing and Callstack-Sensitive Slicing,42
+Better test cases for better automated program repair,34
+Beyond boolean product-line model checking: dealing with feature attributes and multi-features,80
+Bidirectional Symbolic Analysis for Effective Branch Testing,14
+BigDebug: debugging primitives for interactive big data processing in spark,37
+Billions and billions of constraints: whitebox fuzz testing in production,136
+"Bita: Coverage-guided, automatic testing of actor programs",27
+Black-Box String Test Case Generation through a Multi-Objective Optimization,14
+Boa: Ultra-Large-Scale Software Repository and Source-Code Mining,44
+Boa: a language and infrastructure for analyzing ultra-large-scale software repositories,235
+Boosting complete-code tool for partial program,8
+Boosting concolic testing via interpolation,47
+Borrowing from the crowd: a study of recombination in software design competitions,25
+Bounded satisfiability checking of metric temporal logic specifications,42
+Break the dead end of dynamic slicing: localizing data and control omission bug,1
+Bridging the gap between the total and additional test-case prioritization strategies,119
+Bristlecone: Language Support for Robust Software Applications,10
+Broken sets in software repository evolution,18
+Brownout: building more robust cloud applications,117
+Bug prediction based on fine-grained module histories,80
+Bug synthesis: challenging bug-finding tools with deep faults,3
+BugRedux: reproducing field failures for in-house debugging,147
+Bugram: bug detection with n-gram language models,37
+Build code analysis with symbolic evaluation,52
+Build it yourself!: homegrown tools in a large software company,11
+Building a theory of job rotation in software engineering from an instrumental case study,9
+Building it together: synchronous development in OSS,28
+Business Process Model Merging: An Approach to Business Process Consolidation,216
+Bypassing the Combinatorial Explosion: Using Similarity to Generate and Prioritize T-Wise Test Configurations for Software Product Lines,133
+C2O: a tool for guided decision-making,16
+CACheck: Detecting and Repairing Cell Arrays in Spreadsheets,14
+CARE: cache guided deterministic replay for concurrent Java programs,22
+CBCD: cloned buggy code detector,84
+CCAligner: a token based large-gap clone detector,10
+CHARMY: A Framework for Designing and Verifying Architectural Specifications,73
+CLAPP: characterizing loops in Android applications,31
+CLOTHO: saving programs from malformed strings and incorrect string-handling,4
+COVERT: Compositional Analysis of Android Inter-App Permission Leakage,81
+CUSTODES: automatic spreadsheet cell clustering and smell detection using strong and weak features,119
+Cachetor: detecting cacheable data to remove bloat,49
+Can I clone this piece of code here?,50
+Can automated pull requests encourage software developers to upgrade out-of-date dependencies?,23
+Can latent topics in source code predict missing architectural tactics?,1
+Capacity planning for event-based systems using automated performance predictions,12
+Capsule-Based User Interface Modeling for Large-Scale Applications,7
+Capturing propagation of infected program states,126
+Caramel: detecting and fixing performance problems that have non-intrusive fixes,80
+Carving and Replaying Differential Unit Test Cases from System Test Cases,47
+Cascade: a universal programmer-assisted type qualifier inference tool,9
+Cascading verification: an integrated method for domain-specific model checking,9
+Case studies and tools for contract specifications,21
+Cassandra: proactive conflict minimization through optimized task scheduling,48
+Categorizing bugs with social networks: a case study on four open source software communities,86
+Centroidal Voronoi Tessellations- A New Approach to Random Testing,50
+Characteristic studies of loop problems for structural test generation via symbolic execution,47
+Characterizing and detecting anti-patterns in the logging code,20
+Characterizing and detecting performance bugs for smartphone applications,170
+Characterizing and detecting resource leaks in android applications,73
+Characterizing and identifying misexposed activities in Android applications,1
+Characterizing and predicting which bugs get fixed: an empirical study of Microsoft Windows,221
+Characterizing and predicting which bugs get reopened,120
+Characterizing logging practices in open-source software,115
+Characterizing the natural language descriptions in software logging statements,3
+Checking app behavior against app descriptions,297
+"Choosing Component Origins for Software Intensive Systems: In-House, COTS, OSS or Outsourcing?—A Case Survey",17
+Chopped symbolic execution,11
+Chronicler: lightweight recording to reproduce field failures,41
+Cimplifier: automatically debloating containers,11
+Cina: Suppressing the Detection of Unstable Context Inconsistency,7
+ClDiff: generating concise linked code differences,4
+Clarifications on the Construction and Use of the ManyBugs Benchmark,1
+"Class Schema Evolution for Persistent Object-Oriented Software: Model, Empirical Study, and Automated Support",9
+Classifying developers into core and peripheral: an empirical study on count and network metrics,33
+Client-specific equivalence checking,0
+Clone Management for Evolving Software,102
+Clone refactoring with lambda expressions,15
+Clone region descriptors: Representing and tracking duplication in source code,82
+Clone-based and interactive recommendation for modifying pasted code,9
+CloneDetective - A workbench for clone detection research,125
+CloudRaid: hunting concurrency bugs in the cloud via log-mining,2
+Code anomalies flock together: exploring code anomaly agglomerations for locating design problems,40
+Code bubbles: rethinking the user interface paradigm of integrated development environments,137
+Code coverage for suite evaluation by developers,86
+Code defenders: crowdsourcing effective tests and subtle mutants with a mutation testing game,15
+Code patterns for automatically validating requirements-to-code traces,23
+Code review quality: how developers see it,38
+Code reviews do not find bugs: how the current code review best practice slows us down,27
+Code vectors: understanding programs through embedded abstracted symbolic traces,13
+Code-Smell Detection as a Bilevel Problem,44
+CodeCarbonCopy,11
+CodeHint: dynamic and interactive synthesis of code snippets,80
+CodeMatch: obfuscation won't conceal your repackaged app,19
+Codebook: discovering and exploiting relationships in software repositories,209
+Coexecutability for efficient verification of data model updates,5
+Collaborative reliability prediction of service-oriented systems,261
+Collective program analysis,4
+Combining Centralised and Distributed Testing,11
+Combining Genetic Algorithms and Constraint Programming to Support Stress Testing of Task Deadlines,16
+Combining Perceptions and Prescriptions in Requirements Engineering Process Assessment: An Industrial Case Study,45
+Combining functional and imperative programming for multicore software: an empirical study evaluating Scala and Java,50
+Combining multi-objective search and constraint solving for configuring large software product lines,97
+Combining search-based and constraint-based testing,70
+Combining symbolic execution and model checking for data flow testing,30
+Common Trends in Software Fault and Failure Data,131
+Comparative causality: explaining the differences between executions,36
+Comparing Semi-Automated Clustering Methods for Persona Development,16
+Comparing and combining test-suite reduction and regression test selection,50
+Comparing multi-point stride coverage and dataflow coverage,20
+Comparing static bug finders and statistical prediction,67
+Comparing the Defect Reduction Benefits of Code Inspection and Test-Driven Development,30
+Comparing white-box and black-box test prioritization,83
+Compatibility testing using patterns-based trace comparison,3
+Compiling mockups to flexible UIs,15
+Complementing global and local contexts in representing API descriptions to improve API retrieval tasks,2
+Complete and Interpretable Conformance Checking of Business Processes,33
+Complete and accurate clone detection in graph-based models,142
+Composing expressive runtime security policies,50
+Composite Constant Propagation and its Application to Android Program Analysis,11
+Composite constant propagation: application to Android inter-component communication analysis,143
+Compositional Control of IP Media,26
+Compositional Dependability Evaluation for STATEMATE,49
+Compositional Verification for Hierarchical Scheduling of Real-Time Systems,33
+Compositional symbolic execution with memoized replay,19
+Comprehending module dependencies and sharing,11
+Comprehensive failure characterization,1
+Computing repair trees for resolving inconsistencies in design models,47
+Con2colic testing,59
+ConLock: a constraint-based approach to dynamic checking on deadlocks in multithreaded programs,44
+ConMem: Detecting Crash-Triggering Concurrency Bugs through an Effect-Oriented Approach,15
+Conc-iSE: incremental symbolic execution of concurrent software,20
+Concept location using formal concept analysis and information retrieval,88
+Conceptual data model-based software size estimation for information systems,37
+Concolic testing for deep neural networks,39
+Concurrency Debugging with Differential Schedule Projections,22
+Concurrency verification with maximal path causality,0
+Conditional Commitments: Reasoning and Model Checking,14
+Configuring Software Product Lines by Combining Many-Objective Optimization and SAT Solvers,10
+ConflictJS: finding and understanding conflicts between JavaScript libraries,6
+Conservation of Information: Software’sHidden Clockwork?,9
+"Conservative Bounds for the pfd of a 1-out-of-2 Software-Based System Based on an Assessor's Subjective Probability of ""Not Worse Than Independence""",7
+"Conservative Reasoning about the Probability of Failure on Demand of a 1-out-of-2 Software-Based System in Which One Channel Is ""Possibly Perfect""",6
+Consistency-preserving edit scripts in model versioning,52
+Constraint normalization and parameterized caching for quantitative program analysis,3
+Constraint-based automatic symmetry detection,5
+Constructing parser for industrial software specifications containing formal and natural language description,7
+Construction and Validation of an Instrument for Measuring Programming Skill,26
+Content classification of development emails,79
+Context-Aware Adaptive Applications: Fault Patterns and Their Automated Identification,93
+Context-aware conversational developer assistants,7
+Context-aware patch generation for better automated program repair,36
+Continuous detection of design flaws in evolving object-oriented programs using incremental multi-pattern matching,5
+Continuous test generation: enhancing continuous integration with automated test generation,32
+Continuous variable-specific resolutions of feature interactions,7
+Contract-based program repair without the contracts,31
+ContractFuzzer: fuzzing smart contracts for vulnerability detection,23
+Control Explicit--Data Symbolic Model Checking,2
+Control flow-guided SMT solving for program verification,0
+Controlled modeling environment using flexibly-formatted spreadsheets,2
+Convergent contemporary software peer review practices,15
+Cooperative kernels: GPU multitasking for blocking algorithms,8
+Coordination Breakdowns and Their Impact on Development Productivity and Software Failures,106
+Coordination Challenges in Large-Scale Software Development: A Case Study of Planning Misalignment in Hybrid Settings,13
+Coping with Existing Systems in Information Systems Development,3
+Counter play-out: executing unrealizable scenario-based specifications,14
+Counterexample Generation in Probabilistic Model Checking,115
+Counterexample-guided approach to finding numerical invariants,10
+Coupling software architecture and human architecture for collaboration-aware system adaptation,13
+Coverage Estimation in Model Checking with Bitstate Hashing,4
+Coverage is not strongly correlated with test suite effectiveness,255
+Coverage-Aware Test Database Reduction,7
+Coverage-driven test code generation for concurrent classes,11
+"Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?",82
+Craig vs. Newton in software model checking,5
+Creating a shared understanding of testing culture on a social coding site,111
+Cross-checking oracles from intrinsic software redundancy,33
+Cross-language program slicing for dynamic web applications,28
+Cross-project defect prediction using a connectivity-based unsupervised classifier,92
+Cross-project defect prediction: a large scale experiment on data vs. domain vs. process,496
+Cross-supervised synthesis of web-crawlers,5
+Crosscutting revision control system,5
+Crossing the gap from imperative to functional programming through refactoring,44
+Crossover Designs in Software Engineering Experiments: Benefits and Perils,24
+Crowd debugging,28
+Crowd intelligence enhances automated mobile testing,14
+Crowdsourcing program preconditions via a classification game,9
+Customized awareness: recommending relevant external change events,61
+Customizing the Representation Capabilities of Process Models: Understanding the Effects of Perceived Modeling Impediments,13
+DARWIN: An approach to debugging evolving programs,20
+DASE: document-assisted symbolic execution for improving automated software testing,20
+"DC2: A framework for scalable, scope-bounded software verification",22
+DEC: Service Demand Estimation with Confidence,33
+DECAF: A Platform-Neutral Whole-System Dynamic Binary Analysis Platform,17
+DECOR: A Method for the Specification and Detection of Code and Design Smells,557
+DESCRY: reproducing system-level concurrency failures,7
+"DESSERT: a DividE-and-conquer methodology for identifying categorieS, choiceS, and choicE Relations for Test case generation",16
+DETERMIN: inferring likely deterministic specifications of multithreaded programs,21
+DIG: A Dynamic Invariant Generator for Polynomial and Array Invariants,20
+DSIbin: identifying dynamic data structures in C/C++ binaries,5
+Dangling references in multi-configuration and dynamic PHP-based web applications,12
+Darwin: an approach for debugging evolving programs,106
+Darwinian data structure selection,4
+Data Mining Techniques for Software Effort Estimation: A Comparative Study,192
+"Data Model Property Inference, Verification, and Repair for Web Applications",3
+Data Quality: Some Comments on the NASA Software Defect Datasets,219
+Data Scientists in Software Teams: State of the Art and Challenges,18
+Data clone detection and visualization in spreadsheets,59
+Data flow testing of service choreography,52
+Data race detection on compressed traces,2
+Data scientists in software teams: state of the art and challenges,18
+Data-delineation in software binaries and its application to buffer-overrun discovery,8
+Data-guided repair of selection statements,26
+Database-backed program analysis for scalable error propagation,7
+Dataflow tunneling: mining inter-request data dependencies for request-based applications,2
+Datalog-based scalable semantic diffing of concurrent programs,1
+DeFlaker: automatically detecting flaky tests,21
+Dealing with Burstiness in Multi-Tier Applications: Models and Their Parameterization,48
+Dealing with Traceability in the MDDof Model Transformations,17
+DebugAdvisor: a recommender system for debugging,113
+Debugging data flows in reactive programs,6
+Debugging for reactive programming,14
+Debugging with intelligence via probabilistic inference,0
+Deciding Type-Based Partial-Order Constraints for Path-Sensitive Analysis,1
+Decoding the representation of code in the brain: an fMRI study of code review and expertise,25
+Decoupling level: a new metric for architectural maintenance complexity,30
+Deep code search,35
+Deep learning based feature envy detection,2
+Deep learning code fragments for code clone detection,134
+Deep learning type inference,6
+DeepGauge: multi-granularity testing criteria for deep learning systems,36
+DeepRoad: GAN-based metamorphic testing and input validation framework for autonomous driving systems,30
+DeepSim: deep learning code functional similarity,6
+DeepTest: automated testing of deep-neural-network-driven autonomous cars,158
+Defining and Evaluating a Measure of Open Source Project Survivability,37
+Degree-of-knowledge: Modeling a developer's knowledge of code,43
+Departures from optimality: understanding human analyst's information foraging in assisted requirements tracing,32
+Dependence Guided Symbolic Execution,17
+Derailer: interactive security analysis for web applications,15
+Deriving Bisimulation Relations from Path Extension Based Equivalence Checkers,1
+Deriving a Slicing Algorithm via FermaT Transformations,16
+Deriving behavior of multi-user processes from interactive requirements validation,4
+Design and implementation of Sator: A web service aggregator,6
+Design and optimization of multi-clocked embedded systems using formal technique,57
+Design rule spaces: a new form of architecture insight,52
+Designing Autonomic Management Systems by Using Reactive Control Techniques,7
+DetReduce: minimizing Android GUI test suites for regression testing,1
+Detecting JavaScript races that matter,24
+Detecting Memory Leaks Statically with Full-Sparse Value-Flow Analysis,34
+Detecting Overly Strong Preconditions in Refactoring Engines,5
+Detecting Trivial Mutant Equivalences via Compiler Optimisations,23
+Detecting and characterizing semantic inconsistencies in ported code,27
+Detecting and summarizing GUI changes in evolving mobile apps,1
+Detecting and visualizing inter-worksheet smells in spreadsheets,115
+Detecting atomic-set serializability violations in multithreaded programs through active randomized testing,85
+Detecting bad smells in source code using change history information,155
+Detecting deadlock in programs with data-centric synchronization,24
+Detecting differences across multiple instances of code clones,39
+Detecting event anomalies in event-based systems,38
+Detecting fragile comments,8
+Detecting inconsistencies in JavaScript MVC applications,29
+Detecting information flow by mutating input data,12
+Detecting memory leaks through introspective dynamic behavior modelling using machine learning,18
+Detecting missing information in bug descriptions,22
+Detecting missing method calls as violations of the majority rule,23
+Detecting performance anti-patterns for applications developed using object-relational mapping,79
+Detecting similar software applications,105
+Detecting speech act types in developer question/answer conversations during bug repair,3
+Detecting spurious counterexamples efficiently in abstract model checking,17
+Detecting the Behavior of Design Patterns through Model Checking and Dynamic Analysis,6
+Detecting unknown inconsistencies in web applications,1
+Detecting user story information in developer-client conversations to generate extractive summaries,11
+"Detecting, Tracing, and Monitoring Architectural Tactics in Code",31
+Detection of energy inefficiencies in Android wear watch faces,1
+Detection of recurring software vulnerabilities,45
+Determining the Cause of a Design Model Inconsistency,23
+Deuce: a lightweight user interface for structured editing,1
+Developer Micro Interaction Metrics for Software Defect Prediction,25
+Developer onboarding in GitHub: the role of prior social links and language experience,47
+Developer prioritization in bug repositories,125
+Developers ask reachability questions,129
+Developing a Single Model and Test Prioritization Strategies for Event-Driven Software,138
+Developing and evaluating software engineering process theories,11
+Developing next generation ADLs through MDE techniques,45
+Development of auxiliary functions: should you be agile? an empirical assessment of pair programming and test-first programming,21
+Deviance from perfection is a better criterion than closeness to evil when identifying risky code,70
+DiaPro: Unifying Dynamic Impact Analyses for Improved and Variable Cost-Effectiveness,6
+Diagnosing assumption problems in safety-critical products,1
+Diagnosys: automatic generation of a debugging interface to the Linux kernel,13
+Dictionary learning based software defect prediction,93
+Differential assertion checking,84
+"Differential precondition checking: A lightweight, reusable analysis for refactoring tools",30
+DirectFix: looking for simple program repairs,171
+Directed Explicit State-Space Search in the Generation of Counterexamples for Stochastic Model Checking,61
+Directed Incremental Symbolic Execution,21
+Discipline Matters: Refactoring of Preprocessor Directives in the#ifdefHell,15
+"Discovering ""unknown known"" security requirements",18
+Discovering Multidimensional Correlations among Regulatory Requirements to Understand Risk,13
+Discovering Services during Service-Based System Design Using UML,49
+Discovering and representing systematic code changes,172
+Discovering essential code elements in informal documentation,119
+Discovering information explaining API types using text classification,42
+Discovering relational specifications,10
+Disengagement in pair programming: does it matter?,16
+"Disseminating architectural knowledge on open-source projects: a case study of the book ""architecture of open-source applications""",6
+DistIA: a cost-effective dynamic impact analysis for distributed programs,8
+Distilling privacy requirements for mobile applications,26
+Distributed program tracing,3
+Diversity in software engineering research,112
+Diversity maximization speedup for fault localization,27
+Do Android taint analysis tools keep their promises?,6
+Do Automatically Generated Test Cases Make Debugging Easier? An Experimental Assessment of Debugging Effectiveness and Efficiency,18
+Do all task dependencies require coordination? the role of task properties in identifying critical coordination needs in software projects,15
+Do code clones matter?,419
+Do developers read compiler error messages?,29
+Do programmers work at night or during the weekend?,8
+Do security patterns really help designers?,34
+Do the dependency conflicts in my project matter?,4
+Do we need to handle every temporal violation in scientific workflow systems?,57
+Do you remember this source code?,4
+Docovery: toward generic automatic document recovery,12
+Documenting Design-Pattern Instances: A Family of Experiments on Source-Code Comprehensibility,19
+Does Automated Unit Test Generation Really Help Software Testers? A Controlled Empirical Study,42
+Does Socio-Technical Congruence Have an Effect on Software Build Success? A Study of Coordination in a Software Project,102
+Does Software Process Improvement Reduce the Severity of Defects? A Longitudinal Field Study,52
+Does automated refactoring obviate systematic editing?,44
+Does bug prediction support human developers? findings from a google case study,74
+Does distributed development affect software quality? An empirical case study of Windows Vista,260
+Does latitude hurt while longitude kills? geographical and temporal separation in a large scale software development project,10
+Does organizing security patterns focus architectural choices?,30
+Does the failing test execute a single or multiple faults?: an approach to classifying failing tests,6
+Does the propagation of artifact changes across tasks reflect work dependencies?,2
+Domain-Specific Service Selection for Composite Services,42
+Domain-independent multi-threaded software model checking,3
+Dompletion: DOM-aware JavaScript code completion,9
+DoubleTake: fast and precise error detection via evidence-based dynamic analysis,19
+Drag-and-drop refactoring: intuitive and efficient program transformation,42
+DroidStar: callback typestates for Android classes,4
+Droidmarking: resilient software watermarking for impeding android application repackaging,38
+Dual ecological measures of focus in software development,72
+Dual-force: understanding WebView malware via cross-language forced execution,0
+Duplicate bug report detection with a combination of information retrieval and topic modeling,141
+Dynamic Analysis for Diagnosing Integration Faults,92
+Dynamic Dependence Summaries,1
+Dynamic QoS Management and Optimization in Service-Based Systems,333
+Dynamic Software Project Scheduling through a Proactive-Rescheduling Method,18
+Dynamic Software Updating Using a Relaxed Consistency Model,54
+Dynamic Testing for Deadlocks via Constraints,12
+Dynamic and Automatic Feedback-Based Threshold Adaptation for Code Smell Detection,11
+Dynamic and transparent analysis of commodity production systems,54
+Dynamic data flow testing of object oriented systems,25
+Dynamic generation of likely invariants for multithreaded programs,6
+Dynamic injection of sketching features into GEF based diagram editors,6
+Dynamic synthesis of local time requirement for service composition,25
+Dynamically transforming data structures,3
+Dynamite: A tool for the verification of alloy models based on PVS,6
+Dynodroid: an input generation system for Android apps,468
+EARMO: An Energy-Aware Refactoring Approach for Mobile Apps,11
+EDZL Schedulability Analysis in Real-Time Multicore Scheduling,3
+EHBDroid: beyond GUI testing for Android applications,16
+ELIXIR: effective object oriented program repair,36
+Early Detection of Collaboration Conflicts and Risks,61
+Early Evaluation of Implementation Alternatives of Composite Data Structures Toward Maintainability,2
+Easing software component repository evolution,8
+Easy over hard: a case study on deep learning,51
+Ecological inference in empirical software engineering,84
+Ecosystem-level determinants of sustained activity in open-source projects: a case study of the PyPI ecosystem,5
+Effect of Domain Knowledge on Elicitation Effectiveness: An Internally Replicated Controlled Experiment,10
+Effective API recommendation without historical software repositories,1
+Effective Techniques for Static Race Detection in Java Parallel Loops,9
+Effective and precise dynamic detection of hidden races for Java programs,28
+Effective dynamic detection of alias analysis errors,13
+Effective interprocedural resource leak detection,51
+Effective static deadlock detection,175
+Effective test suites for mixed discrete-continuous stateflow controllers,16
+Effectively Incorporating Expert Knowledge in Automated Software Remodularisation,0
+Effectiveness and challenges in generating concurrent tests for thread-safe classes,3
+Effects of Developer Experience on Learning and Applying Unit Test-Driven Development,21
+Effects of Personality on Pair Programming,141
+Effects of using examples on structural model comprehension: a controlled experiment,16
+Efficiency and early fault detection with lower and higher strength combinatorial interaction testing,79
+Efficient Consistency Measurement Based on Behavioral Profiles of Process Models,248
+Efficient Dynamic Updates of Distributed Components Through Version Consistency,9
+Efficient Software Verification: Statistical Testing Using Automated Search,59
+Efficient and change-resilient test automation: an industrial case study,32
+Efficient and reasonable object-oriented concurrency,19
+Efficient construction of approximate call graphs for JavaScript IDE services,86
+Efficient data race prediction with incremental reasoning on time-stamped lock history,1
+Efficient dependency detection for safe Java test acceleration,26
+Efficient detection of inconsistencies in a multi-developer engineering environment,5
+Efficient detection of thread safety violations via coverage-guided generation of concurrent tests,17
+Efficient hybrid typestate analysis by determining continuation-equivalent states,74
+Efficient large-scale trace checking using mapreduce,9
+Efficient parametric runtime verification with deterministic string rewriting,10
+Efficient sampling of SAT solutions for testing,10
+Efficient scalable verification of LTL specifications,8
+Efficiently manifesting asynchronous programming errors in Android apps,10
+Elaborating Requirements Using Model Checking and Inductive Learning,27
+Eliminating Path Redundancy via Postconditioned Symbolic Execution,9
+Eliminating navigation errors in web applications via model checking and runtime enforcement of navigation state machines,53
+Embedding Polychrony into Synchrony,14
+"Embedding, Evolution, and Validation of Model-Driven Spreadsheets",19
+Empirical Principles and an Industrial Case Study in Retrieving Equivalent Requirements via Natural Language Processing Techniques,80
+Empirical evaluation of a nesting testability transformation for evolutionary testing,55
+Empirical study towards a leading indicator for cost of formal software verification,18
+Empirically assessing opportunities for prefetching and caching in mobile apps,1
+EnMobile: entity-based characterization and analysis of mobile malware,4
+Enabledness-based program abstractions for behavior validation,17
+Enabling mutation testing for Android apps,29
+Energy profiles of Java collections classes,67
+EnergyPatch: Repairing Resource Leaks to Improve Energy-Efficiency of Android Apps,15
+Enforcing Exception Handling Policies with a Domain-Specific Language,9
+Engineering Adaptive Model-Driven User Interfaces,19
+Engineering Privacy,352
+Engineering Trustworthy Self-Adaptive Software with Dynamic Assurance Cases,33
+Engineering a Sound Assertion Semantics for the Verifying Compiler,13
+Engineering adaptive privacy: on the role of privacy awareness requirements,41
+Engineering of Framework-Specific Modeling Languages,70
+Engineering parallel applications with tunable architectures,24
+Enhanced Code Conversion Approach for the Integrated Cross-Platform Mobile Development (ICPMD),3
+Enhanced Modeling and Solution of Layered Queueing Networks,193
+Enhancing architecture-implementation conformance with change management and support for behavioral mapping,30
+Enhancing symbolic execution with built-in term rewriting and constrained lazy initialization,23
+Enhancing symbolic execution with veritesting,175
+Enhancing the Description-to-Behavior Fidelity in Android Apps with Privacy Policy,11
+Enlightened debugging,6
+Ensuring interoperable service-oriented systems through engineered self-healing,36
+Ensuring the Consistency of Adaptation through Inter- and Intra-Component Dependency Analysis,1
+Entropy Based Software Reliability Analysis of Multi-Version Open Source Software,5
+Entropy-based test generation for improved fault localization,48
+Equality and hashing for (almost) free: Generating implementations from abstraction functions,17
+Equality to Equals and Unequals: A Revisit of the Equivalence and Nonequivalence Criteria in Class-Level Testing of Object-Oriented Software,9
+Estimating Semantic Relatedness in Source Code,13
+Estimating mobile application energy consumption using program analysis,240
+"Evaluating Complexity, Code Churn, and Developer Activity Metrics as Indicators of Software Vulnerabilities",292
+Evaluating Dynamic Software Update Safety Using Systematic Testing,41
+Evaluating Legal Implementation Readiness Decision-Making,2
+Evaluating a query framework for software evolution data,10
+Evaluating and improving fault localization,90
+Evaluating non-adequate test-case reduction,16
+Evaluating the evaluations of code recommender systems: a reality check,11
+Evaluation of Accuracy in Design Pattern Occurrence Detection,62
+Evaluation of string constraint solvers in the context of symbolic execution,22
+Event Logs for the Analysis of Software Failures: A Rule-Based Approach,48
+Evolution of software development strategies,6
+Evolutionary Optimization of Software Quality Modeling with Multiple Repositories,114
+Exact and approximate probabilistic symbolic execution for nondeterministic programs,38
+Exact scalable sensitivity analysis for the next release problem,24
+Examining the Potentially Confounding Effect of Class Size on the Associations between Object-Oriented Metrics and Change-Proneness,100
+Exception Handling Patterns for Process Modeling,131
+Exception Handling for Repair in Service-Based Processes,134
+Exception handlers for healing component-based systems,11
+Exemplar: A Source Code Search Engine for Finding Highly Relevant Applications,99
+Expandable group identification in spreadsheets,2
+Expanding Queries for Code Search Using Semantically Related API Class-names,3
+"Expectations, outcomes, and challenges of modern code review",355
+Experiences applying automated architecture analysis tool suites,1
+Explaining inconsistent code,14
+Explicating symbolic execution (xSymExe): an evidence-based verification framework,9
+Exploiting Dynamic Information in IDEs Improves Speed and Correctness of Software Maintenance Tasks,37
+Exploiting Model Morphology for Event-Based Testing,8
+Exploiting the Essential Assumptions of Analogy-Based Effort Estimation,165
+Exploring API embedding for API usages and applications,41
+Exploring Mobile End User Development: Existing Use and Design Factors,9
+Exploring language support for immutability,22
+Exploring regular expression comprehension,13
+Exploring the Relationship between Software Process Adaptive Capability and Organisational Performance,29
+Exploring the impact of inter-smell relations on software maintainability: an empirical study,125
+Exploring variability-aware execution for testing plugin-based web applications,77
+Expositor: scriptable time-travel debugging with first-class traces,35
+Expressive and Extensible Parameter Passing for Distributed Object Systems,3
+Extending the UML Statecharts Notation to Model Security Aspects,17
+Extracting Development Tasks to Navigate Software Documentation,34
+Extracting and answering why and why not questions about Java program output,43
+FAML: A Generic Metamodel for MAS Development,163
+FAST approaches to scalable similarity-based test case prioritization,8
+"FEATUREHOUSE: Language-independent, automated software composition",258
+FEMOSAA: Feature-Guided and Knee-Driven Multi-Objective Optimization for Self-Adaptive Software,7
+FaCoY: a code-to-code search engine,12
+Facilitating Coordination between Software Developers: A Study and Techniques for Timely and Efficient Recommendations,9
+Facilitating the transition from use case models to analysis models: Approach and experiments,99
+Failure-directed program trimming,6
+Fair and balanced?: bias in bug-fix datasets,325
+FairFuzz: a targeted mutation strategy for increasing greybox fuzz testing coverage,19
+Fairness testing: testing software for discrimination,46
+Falcon: fault localization in concurrent programs,133
+Fault Localization for Dynamic Web Applications,42
+Fault localization prioritization: Comparing information-theoretic and coverage-based approaches,74
+Feasibility of Stepwise Design of Multitolerant Programs,12
+Feature maintenance with emergent interfaces,31
+Feature model extraction from large collections of informal product descriptions,123
+Feature-model interfaces: the highway to compositional analyses of highly-configurable systems,32
+FeatureIDE: A tool framework for feature-oriented software development,218
+Featured Transition Systems: Foundations for Verifying Variability-Intensive Systems and Their Application to LTL Model Checking,164
+Featured model-based mutation analysis,36
+Feedback-based debugging,15
+Feedback-directed differential testing of interactive debuggers,1
+Feedback-directed instrumentation for deployed JavaScript applications,13
+Feedback-directed unit test generation for C/C++ using concolic execution,37
+FiB: squeezing loop invariants by interpolation between Forward/Backward predicate transformers,5
+Finding Atomicity-Violation Bugs through Unserializable Interleaving Testing,22
+Finding Bugs in Web Applications Using Dynamic Test Generation and Explicit-State Model Checking,164
+Finding access control bugs in web applications with CanCheck,4
+Finding and Evaluating the Performance Impact of Redundant Data Access for Applications that are Developed Using Object-Relational Mapping Frameworks,18
+Finding and analyzing compiler warning defects,17
+Finding architectural flaws using constraints,16
+Finding incorrect compositions of atomicity,20
+Finding near-optimal configurations in product lines by random sampling,22
+Finding relevant answers in software forums,74
+Finding schedule-sensitive branches,16
+Finding security bugs in web applications using a catalog of access control patterns,17
+Fine-grained and accurate source code differencing,167
+Fine-grained test minimization,4
+Fine-tuning spectrum based fault localisation with frequent method item sets,23
+Finite satisfiability of UML class diagrams with constrained class hierarchy,29
+Fitting the pieces together: a machine-checked model of safe composition,74
+Fixing Faults in C and Java Source Code: Abbreviated vs. Full-Word Identifier Names,4
+Fixing deadlocks via lock pre-acquisitions,15
+FlagRemover: A testability transformation for transforming loop-assigned flags,22
+FlexJava: language support for safe and modular approximate programming,40
+FlexSync: An aspect-oriented approach to Java synchronization,22
+Flexible and scalable consistency checking on product line variability models,57
+Flexible design pattern detection based on feature types,35
+Floating-point precision tuning using blame analysis,28
+Floating-point symbolic execution: a case study in n-version programming,15
+FlowTalk: Language Support for Long-Latency Operations in Embedded Devices,4
+Fluid Rewards for a Stochastic Process Algebra,30
+Forecasting Java Software Evolution Trends Employing Network Models,21
+Forecasting Risk Impact on ERP Maintenance with Augmented Fuzzy Cognitive Maps,87
+Formal Analysis of the Probability of Interaction Fault Detection Using Random Testing,50
+Formal Specification-Based Inspection for Verification of Programs,31
+Formal Verification of Software Countermeasures against Side-Channel Attacks,29
+Formalizing hardware/software interface specifications,11
+Formulating Cost-Effective Monitoring Strategies for Service-Based Systems,22
+Formulating Criticality-Based Cost-Effective Fault Tolerance Strategies for Multi-Tenant Service-Based Systems,8
+Frameworks Generate Domain-Specific Languages: A Case Study in the Multimedia Domain,19
+FraudDroid: automated ad fraud detection for Android apps,8
+From UI design image to GUI skeleton: a neural machine translator to bootstrap mobile GUI implementation,12
+From UML to Petri Nets: The PCM-Based Methodology,60
+From behaviour preservation to behaviour modification: constraint-based mutant generation,10
+From business process models to process-oriented software systems,241
+From developer networks to verified communities: a fine-grained approach,37
+From diversity by numbers to diversity as process: supporting inclusiveness in software development teams with brainstorming,10
+From word embeddings to document similarities for improved information retrieval in software engineering,98
+Fusion fault localizers,39
+Fuzzy fine-grained code-history analysis,6
+GALE: Geometric Active Learning for Search-Based Software Engineering,32
+GEA: A Goal-Driven Approach toDiscovering Early Aspects,7
+GK-Tail+ An Efficient Approach to Learn Software Models,11
+GPredict: generic predictive concurrency analysis,22
+GR(1) synthesis for LTL specification patterns,17
+GUI Interaction Testing: Incorporating Event Context,187
+GUILeak: tracing privacy policy claims on user input data for Android applications,5
+Gaia-PL: A Product Line Engineering Approach for Efficiently Designing Multiagent Systems,18
+Gamification for enforcing coding conventions,12
+GenProg: A Generic Method for Automatic Software Repair,512
+Generalized data structure synthesis,8
+Generalized observational slicing for tree-represented modelling languages,6
+Generalizing evolutionary coupling with stochastic dependencies,12
+Generating API Call Rules from Version History and Stack Overflow Posts,14
+Generating Complete Controllable Test Suites for Distributed Testing,9
+Generating Domain-Specific Visual Language Tools from Abstract Visual Specifications,31
+Generating Event Sequence-Based Test Cases Using GUI Runtime State Feedback,126
+Generating TCP/UDP network data for automated unit test generation,10
+Generating Test Cases for Programs that Are Coded against Interfaces and Annotations,11
+Generating Test Cases for Real-Time Systems Based on Symbolic Models,20
+Generating Test Data from OCL Constraints with Search Techniques,94
+Generating obstacle conditions for requirements completeness,34
+Generating performance distributions via probabilistic symbolic execution,21
+Generating program inputs for database application testing,49
+Generating range fixes for software configuration,96
+Generating reusable web components from mockups,1
+Generating simpler AST edit scripts by considering copy-and-paste,7
+Genetic Algorithms for Randomized Unit Testing,87
+Getting to know you: towards a capability model for Java,6
+Glacier: transitive class immutability for Java,17
+Global and Local Deadlock Freedom in BIP,3
+Global-Aware Recommendations for Repairing Violations in Exception Handling,5
+GoPrime: A Fully Decentralized Middleware for Utility-Aware Service Assembly,8
+Goal-conflict detection based on temporal satisfiability checking,4
+Goal-conflict likelihood assessment based on model counting,1
+GossipKit: A Unified ComponentFramework for Gossip,11
+Governing Software Process Improvementsin Globally Distributed Product Development,25
+Grammar Recovery from Parse Trees and Metrics-Guided Grammar Refactoring,21
+Graph-based analysis and prediction for software evolution,172
+Graph-based mining of multiple object usage patterns,211
+"Graph-based pattern-oriented, context-sensitive source code completion",115
+Graph-based statistical language model for code,85
+Gray computing: an analysis of computing with background JavaScript tasks,8
+GreASE: A Tool for Efficient “Nonequivalence” Checking,10
+Greedy combinatorial test case generation using unsatisfiable cores,15
+Green streams for data-intensive software,27
+GreenDroid: Automated Diagnosis of Energy Inefficiency for Smartphone Applications,76
+Gremlin-ATL: a scalable model transformation framework,7
+GuideArch: guiding the exploration of architectural solution space under uncertainty,39
+Guided Mutation Testing for JavaScript Web Applications,25
+Guided differential testing of certificate validation in SSL/TLS implementations,29
+Guided test generation for database applications via synthesized database interactions,30
+Guided test generation for web applications,44
+"Guided, stochastic model-based GUI testing of Android apps",48
+Guidelines for Coverage-Based Comparisons of Non-Adequate Test Suites,19
+Guiding dynamic symbolic execution toward unverified program executions,39
+"HAMPI: A solver for word equations over strings, regular expressions, and context-free grammars",42
+HOLMES: Effective statistical debugging via efficient path profiling,272
+HYDRA: Massively Compositional Model for Cross-Project Defect Prediction,88
+Has the bug really been fixed?,81
+Heap cloning: Enabling dynamic symbolic execution of java programs,9
+Helping developers help themselves: automatic decomposition of code review changesets,66
+Hercules: reproducing crashes in real-world application binaries,20
+Heterogeneous Defect Prediction,95
+Heterogeneous cross-company defect prediction by unified metric representation and CCA-based transfer learning,77
+Heuristically matching solution spaces of arithmetic formulas to efficiently reuse solutions,6
+"Hey, you have given me too many knobs!: understanding and dealing with over-designed configuration in system software",66
+Hidden truths in dead software paths,8
+Hierarchical Program Paths,4
+HireBuild: an automatic approach to history-driven repair of build scripts,10
+History slicing,30
+"Hope for the best, prepare for the worst: multi-tier control for adaptive systems",40
+How Developers' Experience and Ability Influence Web Application Comprehension Tasks Supported by UML Stereotypes: A Series of Four Experiments,79
+How Effectively Does Metamorphic Testing Alleviate the Oracle Problem?,94
+How Far We Have Progressed in the Journey? An Examination of Cross-Project Defect Prediction,13
+"How Programmers Debug, Revisited: An Information Foraging Theory Perspective",119
+How Reliable Are Systematic Reviews in Empirical Software Engineering?,83
+How Social and Communication Channels Shape and Challenge a Participatory Culture in Software Development,59
+How Software Designers Interact with Sketches at the Whiteboard,21
+How Software Developers Use Tagging to Support Reminding and Refinding,63
+"How We Refactor, and How We Know It",493
+How Well Do Search Engines Support Code Retrieval on the Web?,54
+How can I use this method?,65
+How developers search for code: a case study,64
+How did you specify your test suite,32
+How do API documentation and static typing affect API usability?,50
+How do centralized and distributed version control systems impact software changes?,77
+How do developers fix cross-project correlated bugs?: a case study on the GitHub scientific python ecosystem,25
+How do professional developers comprehend software?,147
+How do professionals perceive legacy systems and software modernization?,40
+How does regression test prioritization perform in real-world software evolution?,39
+How does the degree of variability affect bug finding?,41
+How good are the specs? a study of the bug-finding effectiveness of existing Java API specifications,14
+How good is a security policy against real breaches?: a HIPAA case study,9
+How many of all bugs do we find? a study of static bug detectors,7
+How modern news aggregators help development communities shape and share knowledge,12
+How much up-front?: a grounded theory of agile architecture,25
+How not to structure your database-backed web applications: a study of performance bugs in the wild,8
+How practitioners perceive the relevance of software engineering research,64
+How should compilers explain problems to developers?,2
+How tagging helps bridge the gap between social and technical aspects in software development,81
+How to avoid drastic software process change (using stochastic stability),28
+How to effectively use topic models for software engineering tasks? an approach based on genetic algorithms,205
+How to make best use of cross-company data in software effort estimation?,41
+How well are regular expressions tested in the wild?,5
+"How, and why, process metrics are better",176
+Human Competitiveness of Genetic Programming in Spectrum-Based Fault Localisation: Theoretical and Empirical Analysis,11
+Human performance regression testing,13
+HybriDroid: static analysis framework for Android hybrid applications,29
+Hybrid Program Dependence Approximation for Effective Dynamic Impact Prediction,1
+Hybrid regression test selection,19
+IccTA: detecting inter-component privacy leaks in Android apps,350
+Identification of Move Method Refactoring Opportunities,256
+"Identification, Impact, and Refactoring of Smells in Pipe-Like Web Mashups",19
+Identifying Code of Individual Features in Client-Side Web Applications,28
+Identifying Extract Method Refactoring Opportunities Based on Functional Relevance,11
+Identifying Linux bug fixing patches,90
+Identifying Renaming Opportunities by Expanding Conducted Rename Refactorings,8
+Identifying and Summarizing Systematic Code Changes via Rule Inference,53
+Identifying and quantifying architectural debt,39
+Identifying crosscutting concerns using historical code changes,54
+Identifying design problems in the source code: a grounded theory,5
+Identifying domain elements from textual specifications,7
+Identifying execution points for dynamic analyses,3
+Identifying features in forks,4
+Identifying future field accesses in exhaustive state space traversal,15
+Identifying impactful service system problems via log analysis,2
+Identifying message flow in distributed event-based systems,29
+Identifying patch correctness in test-based program repair,25
+Impact of Budget and Schedule Pressure on Software Development Cycle Time and Effort,95
+Impact of developer turnover on quality in open-source software,37
+Impact-Driven Process Model Repair,32
+Implementing and Evaluating Candidate-Based Invariant Generation,3
+Imprecise Matching of Requirements Specifications for Software Services Using Fuzzy Logic,7
+Improved Evolutionary Algorithm Design for the Project Scheduling Problem Based on Runtime Analysis,36
+Improved query reformulation for concept location using CodeRank and document structures,6
+Improving API documentation usability with knowledge pushing,104
+Improving Automated Bug Triaging with Specialized Topic Model,38
+Improving IR-based bug localization with context-aware query reformulation,7
+Improving Multi-Objective Test Case Selection by Injecting Diversity in Genetic Algorithms,54
+Improving Source Code Lexicon via Traceability and Information Retrieval,61
+Improving automated documentation to code traceability by combining retrieval techniques,46
+Improving automated source code summarization via an eye-tracking study of programmers,97
+Improving automatic source code summarization via deep reinforcement learning,7
+Improving bug localization using structured information retrieval,178
+Improving bug triage with bug tossing graphs,376
+Improving early detection of software merge conflicts,93
+Improving feature location practice with multi-faceted interactive exploration,39
+Improving model-based test generation by model decomposition,2
+Improving refactoring speed by 10X,17
+Improving slice accuracy by compression of data and control flow paths,10
+Improving software modularization via automated analysis of latent topics and dependencies,88
+Improving software text retrieval using conceptual knowledge in source code,3
+Improving the accuracy of oracle verdicts through automated model steering,5
+Improving the effectiveness of spectra-based fault localization using specifications,40
+Improving trace accuracy through data-driven configuration and composition of tracing features,61
+In-field healing of integration problems with COTS components,33
+In-memory fuzzing for binary code similarity analysis,8
+IncA: a DSL for the definition of incremental program analyses,24
+Incremental Test Generation for Software Product Lines,91
+Incrementally synthesizing controllers from scenario-based product line specifications,28
+Inductive verification of data model invariants for web applications,16
+Inferring Extended Probabilistic Finite-State Automaton Models from Software Executions,2
+"Inferring Loop Invariants by Mutation, Dynamic Analysis, and Static Checking",12
+Inferring and asserting distributed system invariants,6
+Inferring annotations for device drivers from verification histories,7
+Inferring class level specifications for distributed systems,24
+Inferring hierarchical motifs from execution traces,6
+Inferring likely mappings between APIs,41
+Inferring method specifications from natural language API descriptions,113
+Inferring models of concurrent systems from logs of their behavior with CSight,87
+Inferring project-specific bug patterns for detecting sibling bugs,9
+Inflow and Retention in OSS Communities with Commercial Involvement: A Case Study of Three Hybrid Projects,23
+Influence of social and technical factors for evaluating contribution in GitHub,198
+Information flows as a permission mechanism,43
+Information retrieval and spectrum based bug localization: better together,63
+Inheritance usage patterns in open-source systems,1
+Inner Source in Platform-Based Product Engineering,13
+"Input Domain Reduction through Irrelevant Variable Removal and Its Effect on Local, Global, and Hybrid Search-Based Structural Test Data Generation",66
+Input-Sensitive Profiling,15
+Insights from expert software design practice,42
+Instance Generator and Problem Representation to Improve Object Oriented Code Coverage,46
+IntEQ: recognizing benign integer overflows via equivalence checking across multiple precisions,5
+Integer Linear Programming-Based Property Checking for Asynchronous Reactive Systems,5
+Integer Parameter Synthesis for Real-Time Systems,50
+Integrated impact analysis for managing software changes,124
+Integrating adaptive user interface capabilities in enterprise applications,17
+Integrating legacy systems with MDE,19
+Integrating technical debt management and software quality management processes: a framework and field tests,4
+Intelligent Code Completion with Bayesian Networks,27
+Interacting process classes,14
+Interaction Models and Automated Control under Partial Observable Environments,5
+Interaction-based test-suite minimization,35
+Interactive code review for systematic changes,40
+"Interactive, Evolutionary Search in Upstream Object-Oriented Class Design",85
+Interpolated n-grams for model based testing,27
+Invariant-Based Automatic Testing of Modern Web Applications,133
+Invariant-based automatic testing of AJAX user interfaces,243
+Investigating Country Differences in Mobile App User Behavior and Challenges for Software Engineering,106
+"Is ""better data"" better than ""better data miners""?: on the benefits of tuning SMOTE for defect prediction",33
+Is operator-based mutant selection superior to random mutant selection?,96
+Is spreadsheet ambiguity harmful? detecting and repairing spreadsheet smells due to ambiguous computation,30
+Is the cure worse than the disease? overfitting in automated program repair,136
+Is there a mismatch between real-world feature models and product-line research?,15
+Is this class thread-safe? inferring documentation using graph-based learning,2
+"It's not a bug, it's a feature: how misclassification impacts bug prediction",248
+Iterative distribution-aware sampling for probabilistic symbolic execution,11
+Iterative mining of resource-releasing specifications,23
+J-Orchestra: Enhancing Java programs with distribution capabilities,59
+JFlow: practical refactorings for flow-based parallelism,5
+JITProf: pinpointing JIT-unfriendly JavaScript code,46
+Jalangi: a selective record-replay and dynamic analysis framework for JavaScript,190
+Join point interfaces for safe and flexible decoupling of aspects,45
+Jumping through hoops: why do Java developers struggle with cryptography APIs?,68
+KATCH: high-coverage testing of software patches,76
+Keeping the Development Environment Up to Date—A Study of the Situated Practices of Appropriating the Eclipse IDE,8
+Key factors for adopting inner source,47
+Keyword Search for Building Service-Based Systems,11
+Kmax: finding all configurations of Kbuild makefiles statically,6
+LACE2: better privacy-preserving data sharing for cross project defect prediction,41
+LAMP: data provenance for graph based machine learning algorithms through derivative computation,3
+LASE: locating and applying systematic edits by learning from examples,131
+LEAKPOINT: pinpointing the causes of memory leaks,78
+Language Inclusion Checking of Timed Automata with Non-Zenoness,0
+Language-Independent and Automated Software Composition: The FeatureHouse Experience,103
+Large-scale analysis of framework-specific exceptions in Android apps,19
+Large-scale study of substitutability in the presence of effects,0
+Lattice-Based Sampling for Path Property Monitoring,2
+Launch-mode-aware context-sensitive activity transition analysis,5
+Learn&Fuzz: machine learning for input fuzzing,90
+Learning API usages from bytecode: a statistical approach,22
+Learning Assumptions for CompositionalVerification of Timed Systems,18
+Learning Communicating Automata from MSCs,25
+Learning Project Management Decisions: A Case Study with Case-Based Reasoning versus Data Farming,6
+Learning Weighted Assumptions for Compositional Verification of Markov Decision Processes,6
+Learning a Metric for Code Readability,187
+Learning a dual-language vector space for domain-specific cross-lingual question retrieval,15
+Learning combinatorial interaction test generation strategies using hyperheuristic search,69
+Learning from examples to improve code completion systems,252
+Learning operational requirements from goal models,88
+Learning revised models for planning in adaptive systems,50
+Learning syntactic program transformations from examples,67
+Learning to log: helping developers make informed logging decisions,73
+Learning to prioritize test programs for compiler testing,14
+Learning to sample: exploiting similarities across environments to learn performance models for configurable systems,7
+Less is More: Estimating Probabilistic Rewards over Partial System Explorations,4
+Leveraging existing tests in automated test generation for web applications,53
+Leveraging program analysis to reduce user-perceived latency in mobile applications,8
+Leveraging program equivalence for adaptive program repair: models and first results,167
+Leveraging syntax-related code for automated program repair,42
+Leveraging test generation and specification mining for automated bug detection without false positives,57
+Liability in software engineering: overview of the LISE approach and illustration on a case study,20
+LibD: scalable and precise third-party library detection in android markets,43
+License integration patterns: Addressing license mismatches in component-based development,113
+Lifting model transformations to product lines,39
+Lightweight adaptive filtering for efficient learning and updating of probabilistic models,35
+Lightweight fault-localization using multiple coverage types,284
+"Lightweight, Obfuscation-Resilient Detection and Family Identification of Android Malware",22
+Linear Programming as a Baseline for Software Effort Estimation,7
+Linear and Branching System Metrics,77
+Linking Model-Driven Development and Software Architecture: A Case Study,69
+Linking e-mails and source code artifacts,150
+Listening to programmers Taxonomies and characteristics of comments in operating system code,47
+Live API documentation,150
+Local versus Global Lessons for Defect Prediction and Effort Estimation,160
+Local vs. global models for effort estimation and defect prediction,124
+Local-based active classification of test report to assist crowdsourced testing,25
+Localization of concurrency bugs using shared memory access pairs,10
+Localizing SQL faults in database applications,29
+Locating Need-to-Externalize Constant Strings for Software Internationalization with Generalized String-Taint Analysis,5
+Locating Software Faults Based on Minimum Debugging Frontier Set,5
+Locating need-to-translate constant strings for software internationalization,18
+LockPeeker: detecting latent locks in Java APIs,5
+Locking discipline inference and checking,9
+Locus: locating bugs from software changes,35
+Loopster: static loop termination analysis,1
+Loupe: Verifying Publish-Subscribe Architectures with a Magnifying Lens,15
+MADMatch: Many-to-Many Approximate Diagram Matching for Design Comparison,23
+MAHAKIL: Diversity Based Oversampling Approach to Alleviate the Class Imbalance Issue in Software Defect Prediction,43
+MIMIC: locating and understanding bugs by analyzing mimicked executions,21
+MINTS: A general framework and tool for supporting test-suite minimization,99
+MODE: automated neural network model debugging via state differential analysis and input selection,3
+MOSES: A Framework for QoS Driven Runtime Adaptation of Service-Oriented Systems,171
+MSeer: an advanced technique for locating multiple bugs in parallel,7
+MSeqGen: object-oriented unit-test generation via mining source code,92
+Machine learning-based detection of open source license exceptions,10
+Machine-learning-guided selectively unsound static analysis,14
+MagicFuzzer: scalable deadlock detection for large-scale applications,68
+Maintaining Architecture-Implementation Conformance to Support Architecture Centrality: From Single System to Product Line Development,4
+Maintaining and evolving GUI-directed test scripts,171
+Maintaining invariant traceability through bidirectional transformations,46
+Making CEGAR More Efficient in Software Model Checking,17
+Making malory behave maliciously: targeted fuzzing of android execution environments,26
+Making offline analyses continuous,20
+Making system user interactive tests repeatable: when and what should we control?,19
+Making web applications more energy efficient for OLED smartphones,93
+Managing Technical Debt in Enterprise Software Packages,24
+Managing non-functional uncertainty via model-driven adaptivity,85
+Manual refactoring changes with automated refactoring validation,43
+Many-Objective Software Remodularization Using NSGA-III,96
+"Mapping Bug Reports to Relevant Files: A Ranking Model, a Fine-Grained Benchmark, and Feature Evaluation",24
+Marple: Detecting faults in path segments using automatically generated analyses,4
+Matching and Merging of Variant Feature Specifications,32
+Matching dependence-related queries in the system dependence graph,44
+Maturing Software Engineering Knowledge through Classifications: A Case Study on Unit Testing Techniques,37
+Measure it? Manage it? Ignore it? software practitioners and technical debt,96
+Measuring Code Quality to Improve Specification Mining,39
+Measuring Program Comprehension: A Large-Scale Field Study with Professionals,18
+"Measuring complexity, effectiveness and efficiency in software course projects",14
+Measuring neural efficiency of program comprehension,22
+Measuring program comprehension: a large-scale field study with professionals,18
+Measuring software redundancy,21
+Measuring the Discriminative Power of Object-Oriented Class Cohesion Metrics,65
+Measuring the Impact of Code Dependencies on Software Architecture Recovery Techniques,14
+Measuring the cost of regression testing in practice: a study of Java projects using continuous integration,25
+Measuring the strength of information flows in programs,44
+Measuring the structural complexity of feature models,25
+MemFix: static analysis-based repair of memory deallocation errors for C,3
+MemInsight: platform-independent memory debugging for JavaScript,20
+Metadata invariants: checking and inferring metadata coding conventions,15
+Metamorphic Testing for Software Quality Assessment: A Study of Search Engines,53
+Metamorphic Testing of RESTful Web APIs,11
+Metamorphic model-based testing applied on NASA DAT: an experience report,37
+Method and developer characteristics for effective agile method tailoring: A study of XP expert opinion,122
+Methodbook: Recommending Move Method Refactorings via Relational Topic Models,95
+MiL testing of highly configurable continuous controllers: scalable search using surrogate models,12
+Micro execution,38
+Migrating cascading style sheets to preprocessors by introducing mixins,9
+Mimic: computing models for opaque code,19
+Mind the gap: assessing the conformance of software traceability to relevant guidelines,51
+Minimizing CPU time shortage risks in integrated embedded software,5
+Mining API mapping for language migration,113
+Mining Crosscutting Concerns through Random Walks,13
+Mining Privacy Goals from Privacy Policies Using Hybridized Task Recomposition,16
+Mining SQL injection and cross site scripting vulnerabilities using hybrid program analysis,76
+Mining Semantic Loop Idioms,6
+Mining Sequences of Developer Interactions in Visual Studio for Usage Smells,17
+Mining Unit Tests for Discovery and Migration of Math APIs,4
+Mining Version Histories for Detecting Code Smells,123
+Mining Workflow Models from Web Applications,7
+Mining apps for abnormal usage of sensitive data,155
+Mining behavior models from enterprise web applications,49
+Mining behavior models from user-intensive web applications,68
+Mining billions of AST nodes to study actual and potential usage of Java language features,66
+Mining branching-time scenarios,32
+Mining configuration constraints: static analyses and empirical results,104
+Mining exception-handling rules as sequence association rules,111
+Mining file histories: should we consider branches?,4
+Mining fine-grained code changes to detect unknown change patterns,73
+Mining implicit design templates for actionable code reuse,5
+"Mining interprocedural, data-oriented usage patterns in JavaScript web applications",16
+Mining sandboxes,28
+Mining succinct predicated bug signatures,21
+MintHint: automated synthesis of repair hints,70
+Missing data imputation based on low-rank recovery and semi-supervised regression for software effort estimation,7
+MobiPlay: a remote execution based record-and-replay tool for mobile applications,37
+Model Checking Probabilistic and Stochastic Extensions of the π-Calculus,32
+Model Checking Semantically Annotated Services,40
+Model Checking Software with First Order Logic Specifications Using AIG Solvers,2
+Model Checking Timed and Stochastic Properties with CSL^{TA},98
+Model Transformation Modularization as a Many-Objective Optimization Problem,21
+Model based test validation and oracles for data acquisition systems,10
+Model checking distributed systems by combining caching and process checkpointing,12
+Model checking lots of systems: efficient verification of temporal properties in software product lines,308
+Model evolution by run-time parameter adaptation,276
+"Model transformation languages under a magnifying glass: a controlled experiment with Xtend, ATL, and QVT",1
+Model-Based Self-Aware Performance and Resource Management Using the Descartes Modeling Language,38
+Model-Based Test Oracle Generation for Automated Unit Testing of Agent Systems,53
+Model-Transformation Design Patterns,48
+Model-based synthesis of control software from system-level formal specifications,22
+Model-based whitebox fuzzing for program binaries,44
+Model-driven run-time enforcement of complex role-based access control policies,1
+"Model-level, platform-independent debugging in the context of the model-driven development of real-time systems",12
+Modeling Human-in-the-Loop Security Analysis and Decision-Making Processes,7
+Modeling Product Line Software Assets Using Domain-Specific Kits,14
+Modeling and verification of evolving cyber-physical spaces,15
+Modeling and verifying hierarchical real-time systems using stateful timed CSP,66
+Modeling readability to improve unit tests,46
+"Modify, enhance, select: co-evolution of combinatorial models and test plans",1
+Modular Software Model Checking for Distributed Systems,26
+Modular aspect-oriented design with XPIs,56
+Modular string-sensitive permission analysis with demand-driven precision,37
+Modular verification of interrupt-driven software,6
+Monitor-Based Instant Software Refactoring,35
+Monitoring Data Usage in Distributed Systems,19
+Monitoring probabilistic properties,43
+More accurate recommendations for method-level changes,2
+More effective interpolations in software model checking,3
+Morpheus: variability-aware refactoring in the wild,34
+Move-optimized source code tree differencing,20
+Moving into a new software project landscape,115
+Multi-Criteria Code Refactoring Using Search-Based Software Engineering: An Industrial Case Study,38
+Multi-Objective Optimization of Energy Consumption of GUIs in Android Apps,2
+Multi-Objective Quality-Driven Service Selection—A Fully Polynomial Time Approximation Scheme,38
+Multi-Step Learning and Adaptive Search for Learning Complex Model Transformations from Examples,15
+Multi-granular conflict and dependency analysis in software engineering based on graph transformation,6
+Multi-objective integer programming approaches for solving optimal feature selection problem: a new perspective on multi-objective optimization problems in SBSE,0
+Multi-objective optimization in rule-based design space exploration,43
+Multi-objective software effort estimation,71
+Multi-objective test report prioritization using image understanding,23
+MultiSE: multi-path symbolic execution using value summaries,69
+Mutable Protection Domains: Adapting System Fault Isolation for Reliability and Efficiency,10
+Mutation Operators for Spreadsheets,73
+Mutation-Driven Generation of Unit Tests and Oracles,330
+N-way model merging,46
+NAR-miner: discovering negative association rules from code for bug detection,0
+NLP-KAOS for Systems Goal Elicitation: Smart Metering System Case Study,23
+Name-Based Analysis of Equally Typed Method Arguments,5
+Navigating the maze: the impact of configurability in bioinformatics software,4
+NeedFeed: taming change notifications by modeling code relevance,15
+Nemo: multi-criteria test-suite minimization with integer nonlinear programming,3
+Neural-augmented static analysis of Android communication,2
+Neural-machine-translation-based commit message generation: how far are we?,8
+Neuro-symbolic program corrector for introductory programming assignments,9
+"No PAIN, no gain?: the utility of PArallel fault INjections",23
+NoFAQ: synthesizing command repairs from examples,8
+Noise and heterogeneity in historical build data: an empirical study of Travis CI,5
+Nomen est omen: exploring and exploiting similarities between argument and parameter names,15
+Nopol: Automatic Repair of Conditional Statement Bugs in Java Programs,140
+Not going to take this anymore: multi-objective overtime planning for software engineering projects,61
+O2O service composition with social collaboration,2
+OASIS: prioritizing static analysis warnings for Android apps based on app user reviews,5
+OBEY: Optimal Batched Refactoring Plan Execution for Class Responsibility Redistribution,6
+Object-centric debugging,62
+Observable modified Condition/Decision coverage,40
+On Accelerating Source Code Analysis at Massive Scale,2
+On Event-Based Middleware for Location-Aware Mobile Applications,34
+On Fault Representativeness of Software Fault Injection,150
+On adopting linters to deal with performance concerns in Android apps,2
+On cross-stack configuration errors,11
+On essential configuration complexity: measuring interactions in highly-configurable systems,58
+On evidence preservation requirements for forensic-ready systems,1
+On software component co-installability,31
+"On the ""naturalness"" of buggy code",89
+"On the Accuracy, Efficiency, and Reusability of Automated Test Oracles for Android Devices",40
+On the Asymptotic Behavior of Adaptive Testing Strategy for Software Reliability Assessment,23
+On the Composability of Design Patterns,10
+On the Comprehension of Program Comprehension,98
+On the Distribution of Bugs in the Eclipse System,47
+On the Effectiveness of Contracts as Test Oracles in the Detection and Diagnosis of Functional Faults in Concurrent Object-Oriented Software,9
+On the Evolution of Services,115
+On the Positive Effect of Reactive Programming on Software Comprehension: An Empirical Study,14
+On the Semantics of Distributed Reactive Programming: The Cost of Consistency,9
+On the Use of Hidden Markov Model to Predict the Time to Fix Bugs,4
+On the Value of Ensemble Effort Estimation,187
+On the analysis of evolution of software artefacts and programs,1
+On the dichotomy of debugging behavior among programmers,10
+On the impact of UML analysis models on source-code comprehensibility and modifiability,31
+On the limits of mutation reduction strategies,27
+On the naturalness of software,405
+On the relationship between process maturity and geographic distribution: an empirical analysis of their impact on software quality,50
+On the scalability of Linux kernel maintainers' work,3
+"On the techniques we create, the tools we build, and their misalignments: a study of KLEE",11
+On the use of delta debugging to reduce recordings and facilitate debugging of web applications,19
+On the use of hidden Markov model to predict the time to fix bugs,4
+On the value of user preferences in search-based software engineering: a case study in software product lines,187
+On-demand test suite reduction,68
+One size does not fit all: an empirical study of containerized continuous deployment workflows,1
+Online Reliability Prediction via Motifs-Based Dynamic Bayesian Networks for Service-Oriented Systems,13
+Online app review analysis for identifying emerging issues,11
+Online inference and enforcement of temporal properties,101
+"Open source barriers to entry, revisited: a sociotechnical perspective",22
+Open source-style collaborative development practices in commercial projects using GitHub,49
+Operator-based and random mutant selection: better together,56
+Optimized Resource Allocation for Software Release Planning,58
+Optimizing Ordered Throughput Using Autonomic Cloud Bursting Schedulers,26
+Optimizing customized program coverage,11
+Optimizing energy consumption of GUIs in Android apps: a multi-objective approach,62
+Optimizing selection of competing services with probabilistic hierarchical refinement,13
+Optimizing test placement for module-level regression testing,11
+Optimizing test prioritization via test distribution analysis,1
+Oracle-guided component-based program synthesis,327
+Oracles for Distributed Testing,33
+Oracles for Testing Software Timeliness with Uncertainty,0
+Oreo: detection of clones in the twilight zone,13
+Organizing self-organizing teams,119
+Overcoming open source project entry barriers with a portal for newcomers,49
+Overcoming the challenges in cost estimation for distributed software projects,33
+P3: partitioned path profiling,5
+PAC learning-based verification and model synthesis,11
+PARTI: a multi-interval theory solver for symbolic execution,1
+PATDroid: permission-aware GUI testing of Android,15
+PEoPL: projectional editing of product lines,10
+PFix: fixing concurrency bugs based on memory access patterns,1
+PIEtrace: platform independent executable trace,4
+PLASMA: a plan-based layered architecture for software model-driven adaptation,86
+PRADA: prioritizing android devices for apps by mining large-scale usage data,29
+PaMpeR: proof method recommendation system for Isabelle/HOL,4
+"Pair Programming and Software Defects--A Large, Industrial Case Study",63
+Palantir: Early Detection of Development Conflicts Arising from Parallel Code Changes,89
+Parallel Algorithms for Generating Distinguishing Sequences for Observable Non-deterministic FSMs,6
+Parallel Algorithms for Testing Finite State Machines:Generating UIO Sequences,13
+Parallel Performance Problems on Shared-Memory Multicore Systems: Taxonomy and Observation,6
+Parallel bug-finding in concurrent programs via reduced interleaving instances,6
+Parameterized model counting for string and numeric constraints,1
+Parsimony: an IDE for example-guided synthesis of lexers and parsers,2
+Partial constraint checking for context consistency in pervasive computing,73
+Partial evaluation of model transformations,16
+Partial models: towards modeling and reasoning with uncertainty,113
+Partition-based regression verification,42
+Patch verification via multiversion interprocedural control flow graphs,21
+Path exploration based on symbolic output,45
+Path sensitive static analysis of web applications for remote code execution vulnerability detection,50
+Path- and index-sensitive string analysis based on monadic second-order logic,69
+Path-based function embedding and its application to error-handling specification mining,6
+Patterns of Knowledge in API Reference Documentation,82
+"Peer Review on Open-Source Software Projects: Parameters, Statistical Models, and Theory",52
+PerLa: A Language and Middleware Architecture for Data Management and Integration in Pervasive Information Systems,64
+Perceived language complexity in GitHub issue discussions and their effect on issue resolution,9
+PerfLearner: learning from bug reports to understand and generate performance test frames,1
+Performance Specification and Evaluation with Unified Stochastic Probes and Fluid Analysis,32
+Performance comprehension at WiredTiger,0
+Performance debugging in the large via mining millions of stack traces,144
+Performance diagnosis for inefficient loops,14
+Performance issues and optimizations in JavaScript: an empirical study,38
+Performance regression testing target prioritization via performance risk analysis,37
+Performance-influence models for highly configurable systems,103
+Perses: syntax-guided program reduction,7
+Personalized Reliability Prediction of Web Services,78
+Personalized defect prediction,122
+Pert: The Application-Aware Tailoring of Java Object Persistence,4
+Perturbation analysis of stochastic systems with empirical distribution parameters,13
+Phys: probabilistic physical unit assignment and inconsistency detection,0
+Plat_Forms: A Web Development Platform Comparison by an Exploratory Experiment Searching for Emergent Platform Properties,28
+Platys: An Active Learning Framework for Place-Aware Application Development and Its Evaluation,24
+Pointcut Rejuvenation: Recovering Pointcut Expressions in Evolving Aspect-Oriented Software,26
+PorchLight: a tag-based approach to bug triaging,25
+Portfolio: Searching for relevant functions and their usages in millions of lines of code,54
+Potential biases in bug localization: do they matter?,32
+Power-Law Distributions of Component Size in General Software Systems,34
+PrIMe: A methodology for developing provenance-aware applications,76
+Practical Combinatorial Interaction Testing: Empirical Findings on Efficiency and Early Fault Detection,47
+Practical fault localization for dynamic web applications,91
+Practical guidelines for change recommendation using association rule mining,12
+Practical isolation of failure-inducing changes for debugging regression faults,22
+Practical static analysis of JavaScript applications in the presence of frameworks and libraries,101
+Precise Calling Context Encoding,60
+Precise concolic unit testing of C programs using extended units and symbolic alarm filtering,6
+Precise condition synthesis for program repair,91
+Precise memory leak detection for java software using container profiling,13
+Precise semantic history slicing through dynamic delta refinement,8
+Precision reuse for efficient regression verification,36
+Precomputing possible configuration error diagnoses,73
+Predicting Consistency-Maintenance Requirement of Code Clonesat Copy-and-Paste Time,8
+Predicting Delivery Capability in Iterative Software Development,10
+Predicting Future Developer Behavior in the IDE Using Topic Models,5
+Predicting Node failure in cloud service systems,2
+Predicting Project Velocity in XP Using a Learning Dynamic Bayesian Network Model,69
+Predicting Query Quality for Applications of Text Retrieval to Software Engineering Tasks,13
+Predicting Vulnerable Software Components via Text Mining,122
+Predicting build failures using social network analysis on developer communication,204
+Predicting faults using the complexity of code changes,485
+Predicting performance via automated feature-interaction detection,154
+Predicting recurring crash stacks,30
+Predicting relevance of change recommendations,4
+Predicting semantically linkable knowledge in developer online forums via convolutional neural network,57
+Prediction of atomic web services reliability based on k-means clustering,38
+PrefFinder: getting the right preference in configurable software systems,20
+Presence-condition simplification in highly configurable systems,27
+Prevalence of coincidental correctness and mitigation of its impact on fault localization,50
+Preventing Defects: The Impact of Requirements Traceability Completeness on Software Quality,25
+Preventing Temporal Violations in Scientific Workflows: Where and How,58
+Preventing database deadlocks in applications,17
+Prioritizing browser environments for web application test execution,0
+Prioritizing tests for fault localization through ambiguity group reduction,56
+Privacy and utility for defect prediction: experiments with MORPH,42
+Privacy preserving via interval covering based subclass division and manifold learning based bi-directional obfuscation for effort estimation,4
+ProEva: runtime proactive performance evaluation based on continuous-time markov chains,6
+"Proactive Self-Adaptation for Improving the Reliability of Mission-Critical, Embedded, and Mobile Software",17
+Proactive and Reactive Runtime Service Discovery: A Framework and Its Evaluation,34
+Proactive self-adaptation under uncertainty: a probabilistic model checking approach,87
+Probabilistic Interface Automata,0
+Probabilistic Model Checking of Regenerative Concurrent Systems,20
+Probabilistic environments in the quantitative analysis of (non-probabilistic) behaviour models,11
+Probabilistic model checking of perturbed MDPs with applications to cloud computing,3
+Probing for requirements knowledge to stimulate architectural thinking,5
+Process Aspects and Social Dynamics of Contemporary Code Review: Insights from Open Source Development and Industrial Practice at Microsoft,22
+Program Behavior Discovery and Verification: A Graph Grammar Approach,34
+Program Characterization Using Runtime Values and Its Application to Software Plagiarism Detection,22
+Program analysis for secure big data processing,17
+Program splicing,3
+Program synthesis using natural language,33
+Program transformations to fix C integers,57
+Programmer-Friendly Refactoring Errors,17
+Programmers' build errors: a case study (at google),85
+Programming not only by example,0
+Programming pervasive and mobile computing applications: The TOTA approach,212
+Promoting secondary orders of event pairs in randomized scheduling using a randomized stride,1
+Proofs from Tests,179
+Propagating configuration decisions with modal implication graphs,5
+Property differencing for incremental checking,30
+Prove it! Inferring Formal Proof Scripts from CafeOBJ Proof Scores,0
+Providing Architectural Languages and Tools Interoperability through Model Transformation Technologies,105
+Proving MCAPI executions are correct using SMT,8
+Putback-based bidirectional model transformations,0
+Putting Preemptive Time Petri Nets to Work in a V-Model SW Life Cycle,17
+Puzzle-based automatic testing: bringing humans into the loop by solving puzzles,39
+QTEP: quality-aware test case prioritization,19
+QVM: An Efficient Runtime for Detecting Defects in Deployed Systems,30
+QoS Assurance for Dynamic Reconfiguration of Component-Based Software Systems,32
+Qos-driven runtime adaptation of service oriented architectures,141
+Quality Requirements in Industrial Practice—An Extended Interview Study at Eleven Companies,67
+Quality and productivity outcomes relating to continuous integration in GitHub,141
+Quality experience: a grounded theory of successful agile projects without dedicated testers,12
+Quality of service profiling,219
+Quality-Aware Service Selection for Service-Based Systems Based on Iterative Multi-Attribute Combinatorial Auction,71
+Quantifying and mitigating turnover-induced knowledge loss: case studies of chrome and a project at avaya,25
+Quantifying developers' adoption of security tools,34
+Quantifying the Effect of Code Smells on Maintenance Effort,211
+Quantitative Evaluation of Model-Driven Performance Analysis and Simulation of Component-Based Architectures,61
+Query quality prediction and reformulation for source code search: the refoqus tool,14
+Query-based configuration of text retrieval solutions for software engineering tasks,24
+Questions developers ask while diagnosing potential security vulnerabilities with static analysis,35
+RADAR: a lightweight tool for requirements and architecture decision analysis,13
+RClassify: classifying race conditions in web applications via deterministic replay,8
+RECONTEST: effective regression testing of concurrent programs,25
+RELAI Testing: A Technique to Assess and Improve Software Reliability,12
+REPENT: Analyzing the Nature of Identifier Renamings,37
+RERAN: timing- and touch-sensitive record and replay for Android,263
+RESISTing reliability degradation through proactive reconfiguration,31
+RESTful API Automated Test Case Generation with EvoMaster,3
+RETracer: triaging crashes by reverse execution from partial memory dumps,28
+RFC-directed differential testing of certificate validation in SSL/TLS implementations,2
+Radius aware probabilistic testing of deadlocks with guarantees,3
+Random Testing: Theoretical Results and Practical Implications,134
+Range Fixes: Interactive Error Resolution for Software Configuration,22
+Ranger: parallel analysis of alloy models by range partitioning,14
+Ranking and Clustering Software Cost Estimation Models through a Multiple Comparisons Algorithm,109
+Rate-Based Queueing Simulation Model of Open Source Software Debugging Activities,11
+ReCBuLC: reproducing concurrency bugs using local clocks,11
+ReScue: crafting regular expression DoS attacks,3
+Reasoning About Identifier Spaces: How to Make Chord Correct,7
+Reasoning about edits to feature models,355
+"Reasoning about the Reliability of Diverse Two-Channel Systems in Which One Channel Is ""Possibly Perfect""",39
+Recommending Adaptive Changes for Framework Evolution,199
+Recommending Who to Follow in the Software Engineering Twitter Space,2
+Recommending and localizing change requests for mobile apps based on user reviews,48
+Recommending relevant classes for bug reports using multi-objective search,16
+Recommending source code for use in rapid software prototypes,55
+Recomputing Coverage Information to Assist Regression Testing,63
+Reconciling manual and automatic refactoring,90
+"Recovering clear, natural identifiers from obfuscated JS names",21
+Recovering traceability links between an API and its learning resources,108
+Recurring bug fixes in object-oriented programs,118
+Redefining prioritization: continuous prioritization for continuous integration,8
+Reducer-based construction of conditional verifiers,5
+Reducing Features to Improve Code Change-Based Bug Prediction,154
+Reducing Masking Effects in CombinatorialInteraction Testing: A Feedback DrivenAdaptive Approach,24
+Reducing Unauthorized Modification of Digital Objects,8
+Reducing combinatorics in GUI testing of android applications,54
+Reducing confounding bias in predicate-level statistical debugging metrics,35
+Reducing interactive refactoring effort via clustering-based multi-objective search,1
+Reducing the effort of bug report triage: Recommenders for development-oriented decisions,208
+Refactoring Inspection Support for Manual Refactoring Edits,3
+Refactoring Multi-Level Models,2
+Refactoring for reentrancy,77
+Refactoring sequential Java code for concurrency via concurrent libraries,145
+"Reference hijacking: patching, protecting and analyzing on unmodified and non-rooted android devices",20
+RefiNym: using names to refine types,1
+Regression test selection across JVM boundaries,13
+Regression tests to expose change interaction errors,35
+Regular property guided dynamic symbolic execution,21
+Release planning of mobile apps based on user reviews,99
+Reliability analysis in symbolic pathfinder,86
+Reliability of Run-Time Quality-of-Service evaluation using parametric model checking,17
+Renaming and shifted code in structured merging: looking ahead for precision and performance,5
+Repairing crashes in Android apps,9
+Repairing event race errors by controlling nondeterminism,18
+Replay without recording of production bugs for service oriented applications,2
+Replicating and Re-Evaluating the Theory of Relative Defect-Proneness,13
+Reproducing concurrency failures from crash stacks,10
+Required behavior of sequence diagrams: Semantics and conformance,9
+Requirements Elicitation and Specification Using the Agent Paradigm: The Case Study of an Aircraft Turnaround Simulator,37
+Requirements fixation,36
+Requirements modelling by synthesis of deontic input-output automata,21
+Researcher Bias: The Use of Machine Learning in Software Defect Prediction,184
+Residual Investigation: Predictive and Precise Bug Detection,15
+"Resource Management for Complex, Dynamic Environments",28
+Responsive designs in a snap,8
+Reuse-oriented reverse engineering of functional components from x86 binaries,15
+Reverb: recommending code-related web pages,38
+Reviser: efficiently updating IDE-/IFDS-based data-flow analyses in response to incremental program changes,27
+Revisit of automatic debugging via human focus-tracking analysis,24
+Revisiting code ownership and its relationship with software quality in the scope of modern code review,44
+Revisiting the Performance Evaluation of Automated Approaches for the Retrieval of Duplicate Issue Reports,9
+Revisiting the impact of classification techniques on the performance of defect prediction models,166
+Revisiting unsupervised learning for defect prediction,25
+Reviving Sequential Program Birthmarking for Multithreaded Software Plagiarism Detection,7
+Risk-driven revision of requirements models,6
+Robust reconfigurations of component assemblies,47
+Roles and impacts of hands-on software architects in five industrial case studies,0
+Round-up: runtime checking quasi linearizability of concurrent data structures,12
+Rule-based extraction of goal-use case models from text,8
+Runtime Fault Detection in Programmed Molecular Systems,3
+Runtime Verification for LTL and TLTL,441
+Runtime monitoring of software energy hotspots,42
+S3: syntax- and semantic-guided repair synthesis via programming by examples,75
+SABRINE: state-based robustness testing of operating systems,16
+SEDGE: symbolic example data generation for dataflow programs,11
+SEEDE: simultaneous execution and editing in a development environment,0
+SEEDS: a software engineer's energy-optimization decision support framework,126
+SIP: Optimal Product Selection from Feature Models Using Many-Objective Evolutionary Optimization,50
+SITAR: GUI Test Script Repair,28
+SMT-Based Bounded Model Checking for Embedded ANSI-C Software,250
+SOFIA: an automated security oracle for black-box testing of SQL-injection vulnerabilities,11
+SPAIN: security patch analysis for binaries towards understanding the pain and pills,12
+SPLat: lightweight dynamic analysis for reducing combinatorics in testing configurable systems,51
+STADS: Software Testing as Species Discovery,3
+STAR: Stack Trace Based Automatic Crash Reproduction via Symbolic Execution,29
+SWIM: synthesizing what i mean: code search and idiomatic snippet synthesis,55
+Safe asynchronous multicore memory operations,2
+Safe memory-leak fixing for C programs,55
+Safe software updates via multi-version execution,72
+Safe stream-based programming with refinement types,2
+Safe-commit analysis to facilitate team software development,57
+Safer User Interfaces: A Case Study in Improving Number Entry,22
+Sample size vs. bias in defect prediction,68
+Saturation-based testing of concurrent programs,30
+Scalability-first pointer analysis with self-tuning context-sensitivity,5
+Scalable Differential Analysis of Process Algebra Models,120
+Scalable Runtime Bloat Detection Using Abstract Dynamic Slicing,17
+Scalable analysis of variable software,132
+Scalable and Effective Test Generation for Role-Based Access Control Systems,42
+Scalable and incremental software bug detection,24
+Scalable and precise symbolic analysis for atomicity violations,13
+Scalable incremental building with dynamic task dependencies,0
+Scalable product line configuration: a straw to break the camel's back,117
+Scalable thread sharing analysis,8
+Scaling Up Symbolic Analysis by Removing Z-Equivalent States,5
+Scaling exact multi-objective combinatorial optimization by parallelization,38
+Scaling predictive analysis of concurrent programs by removing trace redundancy,20
+Scaling up automated test generation: Automatically generating maintainable regression unit tests for programs,46
+Schedule of Bad Smell Detection and Resolution: A New Way to Save Effort,95
+Scheduling constraint based abstraction refinement for weak memory models,0
+Search-based genetic optimization for deployment and reconfiguration of software in the cloud,122
+Search-based inference of polynomial metamorphic relations,32
+Search-based test data generation for SQL queries,2
+Search-carrying code,5
+Search-driven string constraint solving for vulnerability detection,16
+Searching for better configurations: a rigorous approach to clone evaluation,126
+Second-order constraints in dynamic invariant inference,7
+Secure coding practices in Java: challenges and vulnerabilities,15
+Security-driven model-based dynamic adaptation,42
+Seer: A Lightweight Online Failure Prediction Approach,10
+Segmented symbolic analysis,18
+Self-Adapting Reliability in Distributed Software Systems,19
+Self-Adaptive and Online QoS Modeling for Cloud-Based Software Services,18
+Self-Management of Adaptable Component-Based Applications,33
+Self-Organizing Roles on Agile Software Development Teams,158
+Self-Supervising BPEL Processes,137
+Self-adaptation through incremental generative model transformations at runtime,39
+Self-adaptive software meets control theory: A preliminary approach supporting reliability requirements,80
+Self-hiding behavior in Android apps: detection and characterization,1
+Self-protection of Android systems from inter-component communication attacks,0
+SemFix: program repair via semantic analysis,357
+Semantic Slicing of Software Version Histories,22
+Semantic crash bucketing,6
+Semantic program repair using a reference implementation,18
+Semantic self-assessment of query results in dynamic environments,15
+Semantically enhanced software traceability using deep learning techniques,43
+Semantics-assisted code review: an efficient toolchain and a user study,4
+Semantics-based code search,270
+"Semi-Proving: An Integrated Method for Program Proving, Testing, and Debugging",59
+Semi-automatically extracting FAQs to improve accessibility of software development knowledge,47
+Sentiment analysis for software engineering: how far can we go?,23
+Server interface descriptions for automated testing of JavaScript web applications,10
+Service-Level Agreements for Electronic Services,69
+Session Reliability of Web Systems under Heavy-Tailed Workloads: An Approach Based on Design and Analysis of Experiments,10
+Shadow Symbolic Execution for Testing Software Patches,1
+Shadow of a doubt: testing for divergences between software versions,21
+SimRT: an automated framework to support regression testing for data races,36
+SimplyDroid: efficient event sequence simplification for Android application,4
+Simulation-based abstractions for software product-line model checking,60
+Singularity: pattern fuzzing for worst case complexity,3
+Sireum/Topi LDP: a lightweight semi-decision procedure for optimizing symbolic execution-based analyses,18
+Size-Constrained Regression Test Case Selection Using Multicriteria Optimization,64
+Slicing MATLAB simulink models,59
+Software Change Contracts,8
+"Software Dependencies, Work Dependencies, and Their Impact on Failures",259
+Software Development Estimation Biases: The Role of Interdependence,36
+Software Development in Startup Companies: The Greenfield Startup Model,78
+Software Module Clustering as a Multi-Objective Search Problem,269
+Software Numerical Instability Detection and Diagnosis by Combining Stochastic and Infinite-Precision Testing,4
+Software Plagiarism Detection with Birthmarks Based on Dynamic Key Instruction Sequences,29
+Software Reliability Analysis Using Weakest Preconditions in Linear Assignment Programs,2
+Software Reliability Modeling with Software Metrics Data via Gaussian Processes,13
+Software Reliability and Testing Time Allocation: An Architecture-Based Approach,87
+Software analytics for incident management of online services: an experience report,31
+Software change dynamics: evidence from 35 java projects,15
+Software design sketching with calico,55
+Software development waste,35
+Software effort estimation as a multiobjective learning problem,73
+Software engineering abstractions for the multi-touch revolution,11
+Software engineering at the speed of light: how developers stay current using twitter,79
+"Software model checking for distributed systems with selector-based, non-blocking communication",18
+Software performance self-adaptation through efficient model predictive control,5
+Software process evaluation: A machine learning approach,17
+Software protection on the go: a large-scale empirical study on mobile app obfuscation,6
+Software traceability with topic modeling,285
+Solving string constraints lazily,55
+Solving the Class Responsibility Assignment Problem in Object-Oriented Analysis with Multi-Objective Genetic Algorithms,107
+Solving the Large Scale Next Release Problem with a Backbone-Based Multilevel Algorithm,72
+Solving the Search for Source Code,65
+Some Code Smells Have a Significant but Small Effect on Faults,77
+Sound empirical evidence in software testing,124
+Sound static deadlock analysis for C/Pthreads,11
+SourcererCC: scaling code clone detection to big-code,129
+Spatio-temporal context reduction: a pointer-analysis-based static approach for detecting use-after-free vulnerabilities,7
+Specialising Software for Different Downstream Applications Using Genetic Improvement and Code Transplantation,11
+Specification and Verification of Normative Texts Using C-O Diagrams,18
+Specifying Dynamic Analyses by Extending Language Semantics,1
+Specifying and Validating Data-Aware Temporal Web Service Properties,50
+Specifying and detecting meaningful changes in programs,16
+Specifying event-based systems with a counting fluent temporal logic,5
+Spectrum-Based Fault Localization in Model Transformations,2
+Speedoo: prioritizing performance optimization opportunities,2
+Spotting working code examples,72
+Staged program repair with condition synthesis,202
+StakeNet: using social networks to analyse the stakeholders of large-scale software projects,125
+StakeRare: Using Social Networks and Collaborative Filtering for Large-Scale Requirements Elicitation,147
+StakeSource: harnessing the power of crowdsourcing and social networks in stakeholder analysis,101
+State-Density Functions over DBM Domains in the Analysis of Non-Markovian Models,40
+Static Analysis of Model Transformations,25
+Static Fault Localization in Model Transformations,50
+Static automated program repair for heap properties,16
+Static control-flow analysis of user-driven callbacks in Android applications,120
+Static data race detection for concurrent programs with asynchronous calls,67
+Static detection of asymptotic resource side-channel vulnerabilities in web applications,1
+Static detection of resource contention problems in server-side scripts,23
+Static race detection for device drivers: the Goblint approach,13
+"Static, lightweight includes resolution for PHP",14
+Statically checking API protocol conformance with mined multi-object specifications,65
+Statically checking web API requests in JavaScript,17
+Statistical learning approach for mining API usage mappings for code migration,55
+Statistical learning of API fully qualified names in code snippets of online forums,4
+Steelix: program-state based binary fuzzing,63
+Stochastic Performance Analysis of Global Software Development Teams,3
+Stochastic energy optimization for mobile GPS applications,2
+Stochastic optimization of program obfuscation,10
+StraightTaint: decoupled offline symbolic taint analysis,18
+Strategies for product-line verification: case studies and experiments,130
+Stressing Search with Scenarios for Flexible Solutions to Real-Time Task Allocation Problems,23
+Stride: search-based deterministic replay in polynomial time via bounded linkage,29
+String analysis for Java and Android applications,31
+Structural Complexity and Programmer Team Strategy: An Experimental Test,17
+Structured merge with auto-tuning: balancing precision and performance,46
+StubDroid: automatic inference of precise data-flow summaries for the android framework,33
+Stuck and frustrated or in flow and happy: sensing developers' emotions and progress,85
+Succession: Measuring transfer of code and developer productivity,56
+Suggesting accurate method and class names,141
+Summarizing and measuring development activity,23
+Summarizing software artifacts: a case study of bug reports,142
+Supporting Change Impact Analysis Using a Recommendation System: An Industrial Case Study in a Safety-Critical Context,25
+Supporting Domain Analysis through Mining and Recommending Features from Online Product Listings,78
+Supporting Process Model Validation through Natural Language Generation,70
+"Supporting Scope Tracking and Visualization for Very Large-Scale Requirements Engineering-Utilizing FSC+, Decision Patterns, and Atomic Decision Visualizations",11
+Supporting Self-Adaptation via Quantitative Verification and Sensitivity Analysis at Run Time,61
+Supporting automated vulnerability analysis using formalized vulnerability signatures,35
+Supporting automatic model inconsistency fixing,91
+Supporting developers with natural language queries,56
+Supporting domain-specific state space reductions through local partial-order reduction,20
+Supporting dynamic aspect-oriented features,14
+Supporting oracle construction via static analysis,7
+Supporting selective undo in a code editor,33
+Supporting software developers with a holistic recommender system,11
+Supporting swift reaction: automatically uncovering performance problems by systematic experiments,53
+Supporting the Combined Selection of Model-Based Testing Techniques,14
+Swarm Verification Techniques,78
+SymCrash: selective recording for reproducing crashes,22
+SymInfer: inferring program invariants using symbolic states,4
+SymbexNet: Testing Network Protocol Implementations with Symbolic Execution and Rule-Based Specifications,25
+Symbolic Crosschecking of Data-Parallel Floating-Point Code,21
+Symbolic PathFinder: symbolic execution of Java bytecode,224
+Symbolic assume-guarantee reasoning through BDD learning,6
+Symbolic execution of programmable logic controller code,9
+Symbolic execution of programs with heap inputs,18
+Symbolic execution of stored procedures in database management systems,4
+Symbolic execution with existential second-order constraints,5
+Symbolic model checking of product-line requirements using SAT-based methods,12
+Symbolic model extraction for web application verification,6
+Symbolic pruning of concurrent program executions,49
+Symbolic search-based testing,88
+Symbolic state validation through runtime data,0
+Symbolic verification of regular properties,0
+Syntactic and semantic differencing for combinatorial models of test designs,4
+Syntax-guided synthesis of Datalog programs,9
+Synthesis of Partial Behavior Models from Properties and Scenarios,126
+Synthesis of component and connector models from crosscutting structural views,38
+Synthesizing API usage examples,136
+Synthesizing Modal Transition Systems from Triggered Scenarios,19
+Synthesizing Multithreaded Code from Real-Time Object-Oriented Models via Schedulability-Aware Thread Derivation,6
+Synthesizing framework models for symbolic execution,24
+Synthesizing hierarchical state machines from expressive scenario descriptions,54
+Synthesizing intensional behavior models by graph transformation,100
+Synthesizing nonanomalous event-based controllers for liveness goals,47
+Synthesizing partial component-level behavior models from system specifications,46
+Synthesizing tests for detecting atomicity violations,22
+Synthetic data generation for statistical testing,6
+System reliability calculation based on the run-time analysis of ladder program,12
+Systematic Elaboration of Scalability Requirements through Goal-Obstacle Analysis,30
+Systematic reduction of GUI test sequences,3
+Systematic testing of asynchronous reactive systems,21
+Systematically testing background services of mobile apps,5
+Systematizing pragmatic software reuse,85
+TACO: Efficient SAT-Based Bounded Verification Using Symmetry Breaking and Tight Bounds,39
+TDroid: exposing app switching attacks in Android with control flow specialization,3
+"TLV: abstraction through testing, learning, and validation",9
+TRIMMER: application specialization for code debloating,7
+Tackling combinatorial explosion: a study of industrial needs and practices for analyzing highly configurable systems,2
+Taint-based directed whitebox fuzzing,263
+Taming Android fragmentation: characterizing and detecting compatibility issues for Android apps,58
+Taming Dynamically Adaptive Systems using models and aspects,258
+Taming coincidental correctness: Coverage refinement with context patterns to improve fault localization,143
+Taming test inputs for separation assurance,15
+Targeted Scrum: Applying Mission Command to Agile Software Development,17
+"Task Environment Complexity, Global Team Dispersion, Process Capabilities, and Coordination in Software Development",29
+Tell them apart: distilling technology differences from crowd-scale comparison discussions,4
+Template-guided concolic testing via online learning,1
+Temporal analysis of API usage concepts,43
+Temporal dependency-based checkpoint selection for dynamic verification of temporal constraints in scientific workflow systems,76
+Tempura: temporal dimension for IDEs,4
+Termination proofs from tests,26
+Termination-checking for LLVM peephole optimizations,6
+Tesseract: Interactive visual exploration of socio-technical relationships in software development,177
+Test Case Generation for Boolean Expressions by Cell Covering,1
+Test Case Prioritization Using Extended Digraphs,6
+Test Case Prioritization Using Lexicographical Ordering,16
+Test Case-Aware Combinatorial Interaction Testing,24
+Test Code Quality and Its Relation to Issue Handling Performance,55
+Test Oracle Strategies for Model-Based Testing,21
+Test confessions: a study of testing practices for plug-in systems,59
+Test generation through programming in UDITA,148
+Test generation to expose changes in evolving programs,54
+Test report prioritization to assist crowdsourced testing,32
+Test suite parallelization in open-source projects: a study on its usage and impact,4
+Test-Equivalence Analysis for Automatic Patch Generation,5
+Test-and-adapt: An approach for improving service interchangeability,11
+Testing advanced driver assistance systems using multi-objective search and neural networks,32
+Testing autonomous cars for feature interaction failures using many-objective search,4
+Testing from Partial Finite State Machines without Harmonised Traces,4
+Testing intermediate representations for binary analysis,13
+Testing multithreaded programs via thread speed control,1
+Testing probabilistic programming systems,2
+Testing properties of dataflow program operators,6
+Testing vision-based control systems using learnable evolutionary algorithms,19
+The ABC of Software Engineering Research,7
+"The Awareness Network, To Whom Should I Display My Actions? And, Whose Actions Should I Monitor?",96
+The Choice Calculus: A Representation for Software Variation,126
+The Design Space of Bug Fixes and How Developers Navigate It,34
+The Effect of GoF Design Patterns on Stability: A Case Study,41
+The Effect of Program and Model Structure on the Effectiveness of MC/DC Test Adequacy Coverage,16
+The Effectiveness of Test Coverage Criteria for Relational Database Schema Integrity Constraints,17
+The Effects of Time Constraints on Test Case Prioritization: A Series of Controlled Experiments,136
+The Impact of API Change- and Fault-Proneness on the User Ratings of Android Apps,120
+The Impact of Classifier Configuration and Classifier Combination on Bug Localization,66
+The Impact of Design and Code Reviews on Software Quality: An Empirical Study Based on PSP Data,119
+The Impact of Irrelevant and Misleading Information on Software Development Effort Estimates: A Randomized Controlled Field Experiment,52
+The Impact of Lessons-Learned Sessions on Effort Estimation and Uncertainty Assessments,83
+The Impact of View Histories on Edit Recommendations,19
+The Link between Dependency and Cochange: Empirical Evidence,25
+The Minimal Failure-Causing Schema of Combinatorial Testing,56
+The Probabilistic Program Dependence Graph and Its Application to Fault Diagnosis,181
+The Risks of Coverage-Directed Test Case Generation,52
+The Role of Ethnographic Studies in Empirical Software Engineering,34
+The Role of Method Chains and Comments in Software Readability and Comprehension—An Experiment,6
+The Role of the Tester's Knowledge in Exploratory Software Testing,69
+The Scent of a Smell: An Extensive Comparison Between Textual and Structural Smells,26
+The State of Empirical Evaluation in Static Feature Location,4
+The Use of Summation to Aggregate Software Metrics Hinders the Performance of Defect Prediction Models,27
+The Value of Exact Analysis in Requirements Selection,15
+"The Work Life of Developers: Activities, Switches and Perceived Productivity",33
+The art of testing less without sacrificing quality,62
+The care and feeding of wild-caught mutants,22
+The challenges of staying together while moving fast: an exploratory study,19
+The design of bug fixes,48
+The dimensions of software engineering success,39
+The emerging role of data scientists on software development teams,68
+The evolution of C programming practices: a study of the Unix operating system 1973--2015,8
+The evolution of continuous experimentation in software product development: from data to a data-driven organization at scale,46
+The evolution of requirements practices in software startups,14
+The impact of continuous integration on other software development practices: a large-scale empirical study,32
+The impact of mislabelling on the performance and interpretation of defect prediction models,56
+The impact of process choice in high maturity environments: An empirical analysis,29
+The impact of regular expression denial of service (ReDoS) in practice: an empirical study at the ecosystem scale,2
+The impact of test case summaries on bug fixing performance: an empirical investigation,50
+The making of cloud applications: an empirical study on software development for the cloud,62
+The massification and webification of systems' modeling and simulation with virtual worlds,8
+The potential of polyhedral optimization: an empirical study,7
+"The power of ""why"" and ""why not"": enriching scenario exploration with provenance",14
+The quamoco product quality modelling and assessment approach,103
+The road not taken: Estimating path execution frequency statically,47
+The road to live programming: insights from the practice,5
+The role of domain knowledge and cross-functional communication in socio-technical coordination,29
+The scent of a smell: an extensive comparison between textual and structural smells,26
+The secret life of bugs: Going past the errors and omissions in software repositories,224
+The sky is not the limit: multitasking across GitHub projects,42
+The small-world effect: The influence of macro-level properties of developer collaboration networks on open-source project success,97
+The strength of random search on automated program repair,181
+The value of design rationale information,39
+The “Physics” of Notations: Toward a Scientific Basis for Constructing Visual Notations in Software Engineering,1075
+Thread-modular static analysis for relaxed memory models,7
+Tightfit: adaptive parallelization with foresight,3
+Time and Probability-Based Information Flow Analysis,15
+Time pressure: a controlled experiment of test case development and requirements review,18
+Time to clean your test objectives,6
+Timed Automata Modeling and Verification for Publish-Subscribe Structures Using Distributed Resources,9
+To Be Optimal or Not in Test-Case Prioritization,42
+To distribute or not to distribute?: why licensing bugs matter,2
+To preserve or not to preserve invalid solutions in search-based software engineering: a case study in software product lines,0
+To type or not to type: quantifying detectable bugs in JavaScript,18
+To what extent could we detect field defects? an empirical study of false negatives in static bug finding tools,28
+Toddler: detecting performance problems via similar memory-access patterns,117
+Too long; didn't watch!: extracting relevant fragments from software development video tutorials,34
+Too much automation? the bellwether effect and its implications for transfer learning,30
+Tool support for essential use cases to better capture software requirements,33
+Tools and experiments supporting a testing-based theory of component composition,21
+Tools for the Rapid Prototyping of Provably Correct Ambient Intelligence Applications,26
+Tortoise: interactive system configuration repair,16
+Toward Comprehensible Software Fault Prediction Models Using Bayesian Network Classifiers,139
+Toward a Formalism for Conservative Claims about the Dependability of Software-Based Systems,28
+Toward a Tool-Based Development Methodology for Pervasive Computing Applications,59
+Toward a framework for detecting privacy policy violations in android application code,55
+Toward full elasticity in distributed static analysis: the case of callgraph analysis,6
+Towards Model Checking Android Applications,9
+Towards Prioritizing Documentation Effort,4
+Towards an intelligent domain-specific traceability solution,11
+Towards automatically generating descriptive names for unit tests,14
+Towards automatically generating summary comments for Java methods,257
+Towards contextual and on-demand code clone management by continuous monitoring,9
+Towards contextualised software engineering education: an African perspective,21
+Towards efficient optimization in package management systems,18
+Towards mining replacement queries for hard-to-retrieve traces,68
+Towards more accurate retrieval of duplicate bug reports,204
+Towards optimal concolic testing,6
+Towards practical program repair with on-demand candidate generation,34
+Towards precise metrics for predicting graph query performance,19
+Towards refactoring-aware regression test selection,5
+Towards robust instruction-level trace alignment of binary code,0
+TrEKer: tracing error propagation in operating system kernels,3
+Traceability and SysML design slices to support safety inspections: A controlled experiment,46
+Traceability in the wild: automatically augmenting incomplete trace links,12
+Traceability maintenance: factors and guidelines,18
+Tracing software build processes to uncover license compliance inconsistencies,12
+Tracing software developers' eyes and interactions for change tasks,41
+Tracking Load-Time Configuration Options,43
+Tracking load-time configuration options,43
+Tracking static analysis violations over time to capture developer characteristics,14
+"Trade-offs in continuous integration: assurance, security, and flexibility",45
+TradeMaker: automated dynamic analysis of synthesized tradespaces,18
+Trading obliviousness for modularity with cooperative aspect-oriented programming,9
+Trading robustness for maintainability: an empirical study of evolving c# programs,29
+Transfer defect learning,247
+Transfer learning for performance modeling of configurable systems: an exploratory analysis,24
+Transferring an automated test generation tool to practice: from pex to fakes and code digger,41
+"Transition from centralized to decentralized version control systems: a case study on reasons, barriers, and outcomes",35
+Trends in the Quality of Human-Centric Software Engineering Experiments--A Quasi-Experiment,18
+Tricorder: building a program analysis ecosystem,103
+"Trivial compiler equivalence: a large scale empirical study of a simple, fast and effective equivalent mutant detection technique",115
+Trustrace: Mining Software Repositories to Improve the Accuracy of Requirement Traceability Links,74
+Truth in advertising: the hidden cost of mobile ads for software developers,80
+Tuning Temporal Features within the Stochastic π-Calculus,15
+Turning programs against each other: high coverage fuzz-testing using binary-code mutation and dynamic slicing,30
+Two Studies of Framework-Usage Templates Extracted from Dynamic Traces,18
+"Two's company, three's a crowd: a case study of crowdsourcing software development",135
+Two-Phase Assessment Approach to Improve the Efficiency of Refactoring Identification,1
+Type checking annotation-based product lines,146
+Type-Based Call Graph Construction Algorithms for Scala,6
+Type-aware concolic testing of JavaScript programs,11
+TypeDevil: dynamic type inconsistency analysis for JavaScript,43
+Types and modularity for implicit invocation with implicit announcement,89
+TzuYu: learning stateful typestates,26
+UFO: predictive concurrency use-after-free detection,0
+UI driven Android application reduction,2
+UML diagram refinement (focusing on class- and use case diagrams),2
+UML in practice,206
+UNDEAD: detecting and preventing deadlocks in production software,9
+Unbounded data model verification using SMT solvers,12
+"Uncertainty, risk, and information value in software requirements and architecture",72
+Uncovering performance problems in Java applications with reference propagation profiling,52
+Understanding Diverse Usage Patterns from Large-Scale Appstore-Service Profiles,19
+Understanding Exception Handling: Viewpoints of Novices and Experts,56
+Understanding Integer Overflow in C/C++,141
+Understanding JavaScript Event-Based Interactions with Clematis,8
+Understanding JavaScript event-based interactions,58
+Understanding and Combating Memory Bloat in Managed Data-Intensive Systems,4
+Understanding and detecting callback compatibility issues for Android applications,1
+Understanding and detecting evolution-induced compatibility issues in Android apps,8
+Understanding and fixing multiple language interoperability issues: the C/Fortran case,2
+Understanding and improving software build teams,19
+Understanding and overcoming parallelism bottlenecks in ForkJoin applications,6
+Understanding asynchronous interactions in full-stack JavaScript,26
+Understanding developers' needs on deprecation as a language feature,10
+Understanding feature requests by leveraging fuzzy method and linguistic analysis,0
+Understanding integer overflow in C/C++,141
+Understanding misunderstandings in source code,11
+Understanding performance stairs: elucidating heuristics,8
+Understanding the impact of refactoring on smells: a longitudinal study of 23 software projects,9
+Understanding the impact of support for iteration on code search,5
+"Understanding the impressions, motivations, and barriers of one time code contributors to FLOSS projects: a survey",19
+Understanding understanding source code with functional magnetic resonance imaging,96
+Unifying FSM-inference algorithms through declarative specification,46
+Unifying aspect- and object-oriented design,27
+Unit test virtualization with VMVM,48
+Unleashing concurrency for irregular data structures,6
+Unsupervised software-specific morphological forms inference from informal discussions,17
+"Us and them: a study of privacy requirements across north america, asia, and europe",25
+Usability through Software Design,58
+"Usage, costs, and benefits of continuous integration in open-source projects",107
+Use case and task models: An integrated development methodology and its formal foundation,10
+"Use, disuse, and misuse of automated refactorings",123
+User-aware privacy control via extended static-information-flow analysis,45
+Users beware: preference inconsistencies ahead,17
+Using (bio)metrics to predict code quality online,19
+Using Cohesion and Coupling for Software Remodularization: Is It Enough?,36
+"Using Declarative Specification to Improve the Understanding, Extensibility, and Comparison of Model-Inference Algorithms",23
+Using Dependency Structures for Prioritization of Functional Test Suites,41
+Using Genetic Search for Reverse Engineering of Parametric Behavior Models for Performance Prediction,70
+Using Local Clocks to Reproduce Concurrency Bugs,0
+Using Natural Language Processing to Automatically Detect Self-Admitted Technical Debt,36
+Using Reduced Execution Flow Graph to Identify Library Functions in Binary Code,10
+Using Stochastic State Classes in Quantitative Evaluation of Dense-Time Reactive Systems,67
+Using Timed Automata for Modeling Distributed Systems with Clocks: Challenges and Solutions,17
+Using Traceability Links to Recommend Adaptive Changes for Documentation Evolution,14
+Using a functional size measurement procedure to evaluate the quality of models in MDD environments,9
+Using bad learners to find good configurations,31
+Using dynamic analysis to discover polynomial and array invariants,66
+Using dynamic analysis to generate disjunctive invariants,22
+Using finite-state models for log differencing,1
+Using information fragments to answer the questions developers ask,164
+Using psycho-physiological measures to assess task difficulty in software development,123
+Using quantitative analysis to implement autonomic IT systems,108
+Using symbolic evaluation to understand behavior in configurable software systems,109
+Using twinning to adapt programs to alternative APIs,70
+Using unfoldings in automated testing of multithreaded programs,24
+Using visual dataflow programming for interactive model comparison,5
+VDTest: an automated framework to support testing for virtual devices,1
+Validating Second-Order Mutation at System Level,28
+Validating ajax applications using a delay-based mutation technique,4
+Validating software metrics: A spectrum of philosophies,75
+Validation of contracts using enabledness preserving finite state abstractions,22
+Validation of requirements for hybrid systems: A formal approach,34
+Variability Analysis of Requirements: Considering Behavioral Differences and Reflecting Stakeholders’ Perspectives,28
+Variability Bugs in Highly Configurable Systems: A Qualitative Analysis,13
+Variability Mining: Consistent Semi-automatic Detection of Product-Line Features,63
+Variability and Reproducibility in Software Engineering: A Study of Four Companies that Developed the Same System,78
+Variability modeling in the real: a perspective from the operating systems domain,155
+Variability-Aware Static Analysis at Scale: An Empirical Study,3
+Variability-aware performance prediction: a statistical learning approach,91
+Vejovis: suggesting fixes for JavaScript faults,39
+Verdict functions in testing with a fault domain or test hypotheses,20
+Verification across Intellectual Property Boundaries,5
+Verification and Trade-Off Analysis of Security Properties in UML System Models,32
+Verification and Validation of UML Conceptual Schemas with OCL Constraints,67
+Verification-driven slicing of UML/OCL models,55
+Verifying Linearizability via Optimized Refinement Checking,24
+Verifying Protocol Conformance Using Software Model Checking for the Model-Driven Development of Embedded Systems,8
+Verifying Synchronization for Atomicity Violation Fixing,4
+Verifying client-side input validation functions using string analysis,24
+Verifying component and connector models against crosscutting structural views,20
+Verifying self-adaptive applications suffering uncertainty,24
+Verifying the Evolution of Probability Distributions Governed by a DTMC,11
+Verifying the long-run behavior of probabilistic system models in the presence of uncertainty,0
+Views on internal and external validity in empirical software engineering,108
+Views: object-inspired concurrency control,16
+VikiBuilder: end-user specification and generation of visual wikis,4
+Visual web test repair,7
+Visualization of combinatorial models and test plans,4
+Visualizing Co-Change Information with the Evolution Radar,95
+Vulnerability Discovery with Attack Injection,52
+WAM—The Weighted Average Method for Predicting the Performance of Systems with Bursts of Customer Sessions,23
+WISE: Automated test generation for worst-case complexity,102
+Weak Alphabet Merging of Partial Behavior Models,26
+What Do We Know about the Effectiveness of Software Design Patterns?,95
+What Industry Needs from Architectural Languages: A Survey,224
+What Makes a Good Bug Report?,446
+What Types of Defects Are Really Discovered in Code Reviews?,134
+What causes my test alarm?: automatic cause analysis for test alarms in system and integration testing,15
+What change history tells us about thread synchronization,22
+What developers want and need from program analysis: an empirical study,54
+What good are strong specifications?,46
+What make long term contributors: willingness and opportunity in OSS community,104
+What makes a code change easier to review: an empirical investigation on code change reviewability,5
+What makes a great manager of software engineers?,7
+What makes a great software engineer?,47
+What scope is there for adopting evidence-informed teaching in SE?,18
+When and How to Use Multilevel Modelling,86
+When and Why Your Code Starts to Smell Bad (and Whether the Smells Go Away),45
+When and why your code starts to smell bad,140
+When not to comment: questions and tradeoffs with API documentation for C++ projects,0
+When testing meets code review: why and how developers review tests,8
+"When, how, and why developers (do not) test in their IDEs",83
+Where Do Configuration Constraints Stem From? An Extraction Approach and an Empirical Study,49
+Where Should We Fix This Bug? A Two-Phase Recommendation Model,100
+Where does this code come from and where does it go? - integrated code history tracker for open source systems -,31
+Where is the bug and how is it fixed? an experiment with practitioners,2
+Where should the bugs be fixed? - more accurate information retrieval-based bug localization based on bug reports,332
+Which Crashes Should I Fix First?: Predicting Top Crashes at an Early Stage to Prioritize Debugging Efforts,69
+Which configuration option should I change?,53
+Which generated test failures are fault revealing? prioritizing failures based on inferred precondition violations using PAF,0
+Whitening SOA Testing via Event Exposure,30
+Whitening SOA testing,59
+Who Will Stay in the FLOSS Community? Modeling Participant’s Initial Behavior,57
+Whole Test Suite Generation,328
+WhoseFault: automatic developer-to-fault assignment through fault localization,50
+Why and how JavaScript developers use linters,11
+Why do developers use trivial packages? an empirical case study on npm,28
+Why don't software developers use static analysis tools to find bugs?,287
+Why good developers write bad code: an observational case study of the impacts of organizational factors on software quality,31
+Why modern open source projects fail,33
+Will you still compile me tomorrow? static cross-version compiler validation,22
+Winning the app production rally,4
+WitchDoctor: IDE support for real-time auto-completion of refactorings,72
+Witness validation and stepwise testification across software verifiers,43
+Work Item Tagging: Communicating Concerns in Collaborative Software Development,52
+Work practices and challenges in pull-based development: the contributor's perspective,95
+Work practices and challenges in pull-based development: the integrator's perspective,152
+X-PERT: accurate identification of cross-browser issues in web applications,96
+You Are the Only Possible Oracle: Effective Test Selection for End Users of Interactive Machine Learning Systems,22
+Z3-str: a z3-based string solver for web application analysis,157
+Zebu: A Language-Based Approach for Network Protocol Message Processing,24
+ZenIDS: introspective intrusion detection for PHP applications,1
+ZoomIn: discovering failures by detecting wrong assertions,7
+aToucan: An Automated Framework to Derive UML Analysis Models from Use Case Models,48
+iCoq: regression proof selection for large-scale verification projects,3
+iDice: problem identification for emerging issues,7
+iProbe: a lightweight user-level dynamic instrumentation tool,4
+iTree: Efficiently Discovering High-Coverage Configurations Using Interaction Trees,39
+make test-zesti: a symbolic execution solution for improving regression testing,66
+relifix: automated repair of software regressions,81
+symMMU: symbolically executed runtime libraries for symbolic memory access,4
+µDroid: an energy-aware mutation testing framework for Android,16
+αDiff: cross-version binary code similarity detection with DNN,7
