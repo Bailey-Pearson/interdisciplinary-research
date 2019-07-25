@@ -7,12 +7,6 @@ require 'nokogiri'
 
 def getVolumes(browser)
 
-  # Load database
-  db = SQLite3::Database.new( "/home/taylor/Documents/RIT-REU/interdisciplinary-research/cs_papers.db" )
-
-  # Update query
-  update = "UPDATE article SET year=? WHERE title=?"
-
   # Switch to single page view
   browser.link(text: 'single page view').click
 
@@ -50,7 +44,7 @@ def getArticles(browser,volumes)
     browser.goto(vol)
 
     # Grab the volume's year
-    year = browser.span(text: %r{(2009|201[0-9])}).text[1..4]
+    year = browser.img(src: "images/ACM_mini.jpg").parent.text[0..3].to_i
 
     # Grab all Article links
     vol_toc = browser.links(href: %r{citation\.cfm\?id=[0-9]*})
