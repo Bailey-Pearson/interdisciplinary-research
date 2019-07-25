@@ -7,6 +7,12 @@ require 'nokogiri'
 
 def getVolumes(browser)
 
+  # Load database
+  db = SQLite3::Database.new( "/home/taylor/Documents/RIT-REU/interdisciplinary-research/cs_papers.db" )
+
+  # Update query
+  update = "UPDATE article SET year=? WHERE title=?"
+
   # Switch to single page view
   browser.link(text: 'single page view').click
 
@@ -31,11 +37,20 @@ def getArticles(browser,volumes)
   # Array to hold article links
   articles = []
 
+  # Load database
+  db = SQLite3::Database.new( "/home/taylor/Documents/RIT-REU/interdisciplinary-research/cs_papers.db" )
+
+  # Update query
+  update = "UPDATE article SET year=? WHERE title=?"
+
   # For each volume
   volumes.each do |vol|
 
     # Visit volume
     browser.goto(vol)
+
+    # Grab the volume's year
+    year = browser.span(text: %r{(2009|201[0-9])}).text[1..4]
 
     # Grab all Article links
     vol_toc = browser.links(href: %r{citation\.cfm\?id=[0-9]*})
@@ -45,11 +60,15 @@ def getArticles(browser,volumes)
       link.attribute_list.count == 1 and link.text != 'tabbed view' and !link.text.include? "Editorial"}
 
     # Place each article link into the article array
+    # update the article's year in the database
     vol_toc.each do |link|
       articles << [link.text,link.href]
+      db.execute(update,year,link.text)
     end
 
   end
+
+  db.close
 
   # Return the array of article links
   return articles
@@ -191,7 +210,7 @@ def runAmber(links)
   browser.link(text: 'single page view').click
 
   articles = getArticles(browser,links)
-  storeArticleData(browser,articles)
+  #storeArticleData(browser,articles)
 
 end
 
@@ -203,7 +222,7 @@ def runTaylor
 
   volumes = getVolumes(browser)
   articles = getArticles(browser,volumes)
-  storeArticleData(browser,articles)
+  #storeArticleData(browser,articles)
 
 end
 
