@@ -44,7 +44,10 @@ def getArticles(browser,volumes)
     browser.goto(vol)
 
     # Grab the volume's year
-    year = browser.img(src: "images/ACM_mini.jpg").parent.text[0..3].to_i
+    # Use this line for TOSEM
+    # year = browser.img(src: images/ACM_mini.jpg).parent.text[0..3].to_i
+    # Use this line for the others
+    year = browser.span(text: %r{(2009|201[0-9])}).text[1..4].to_i
 
     # Grab all Article links
     vol_toc = browser.links(href: %r{citation\.cfm\?id=[0-9]*})
@@ -204,7 +207,7 @@ def runAmber(links)
   browser.link(text: 'single page view').click
 
   articles = getArticles(browser,links)
-  #storeArticleData(browser,articles)
+  storeArticleData(browser,articles)
 
 end
 
@@ -216,7 +219,7 @@ def runTaylor
 
   volumes = getVolumes(browser)
   articles = getArticles(browser,volumes)
-  #storeArticleData(browser,articles)
+  storeArticleData(browser,articles)
 
 end
 
