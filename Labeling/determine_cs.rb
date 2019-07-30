@@ -61,4 +61,72 @@ def update_db
 
 end
 
-update_db
+def calculate_percentage
+
+  # Select queries
+  selectArts = "SELECT title FROM article"
+  selectAuths = "SELECT author FROM write WHERE article=?"
+  selectRefs = "SELECT reference FROM cite WHERE article=?"
+  selectLabel = "SELECT isCS FROM reference WHERE title=?"
+
+  # Update query
+  updateAuths = "UPDATE article SET numAuths=? WHERE title=?"
+  updateCS = "UPDATE article SET percentNonCS=? WHERE title=?"
+
+
+  # Load database
+  db = SQLite3::Database.new( "/home/taylor/Documents/RIT-REU/interdisciplinary-research/cs_papers.db" )
+
+  # Get article titles
+  articles = db.execute(selectArts)
+
+  # For each article
+  articles.each do |art|
+
+    nonCSCount = 0
+
+    # Grab the article's references
+    references = db.execute(selectRefs,art)
+
+    # Grab the article's authors
+    authors = db.execute(selectAuths,art)
+
+    # Update article's number of authors in database
+    db.execute(updateAuths,authors.count,art)
+
+    # For each reference
+    references.each do |ref|
+
+      # Get ref's isCS labels
+      labels = db.execute(selectLabel,ref)
+
+      # For each label
+      labels.each do |label|
+
+        # Update non-CS counter if reference is non-CS
+        unless label[0] == 1
+          nonCSCount += 1
+        end
+
+      end
+
+    end
+
+    # Calculate non-CS percentage
+    percentage = 0
+    unless references.count == 0
+      percentage = (nonCSCount.to_f / references.count) * 100
+    end
+
+    # Update article in database w/ percentage
+    db.execute(updateCS,percentage,art)
+
+  end
+
+  # Close database
+  db.close
+
+end
+
+#update_db
+calculate_percentage
